@@ -10,208 +10,127 @@
         body { font-family: 'Plus Jakarta Sans', sans-serif; background: #020617; color: #f8fafc; }
         .glass { background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.05); }
         .gradient-text { background: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .hero-blob { position: absolute; filter: blur(80px); z-index: -1; border-radius: 50%; }
+        .expert-card { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .expert-card:hover { transform: translateY(-5px); border-color: #38bdf8; box-shadow: 0 10px 40px -10px rgba(56, 189, 248, 0.3); }
     </style>
 </head>
 <body class="selection:bg-sky-500/30 selection:text-sky-200">
 
-    <!-- Blobs de fond pour le design -->
-    <div class="hero-blob bg-sky-600/10 w-[500px] h-[500px] -top-48 -left-48"></div>
-    <div class="hero-blob bg-indigo-600/10 w-[400px] h-[400px] bottom-0 -right-24"></div>
-
-    <!-- Navigation -->
-    <nav class="fixed top-0 w-full z-50 glass border-b border-white/5 py-4">
-        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
-            <div class="text-xl font-extrabold tracking-tighter">SAMIRA<span class="text-sky-400">.</span>SALAH</div>
-            <div class="hidden md:flex gap-8 text-xs font-bold tracking-widest text-slate-400 uppercase">
-                <a href="#profile" class="hover:text-sky-400 transition">Profil</a>
-                <a href="#ai-value" class="hover:text-sky-400 transition">Impact IA</a>
-                <a href="#projects" class="hover:text-sky-400 transition">Projets</a>
-                <a href="#contact" class="hover:text-sky-400 transition">Contact</a>
+    <!-- Header / Profil -->
+    <header class="pt-32 pb-20 px-6 max-w-7xl mx-auto">
+        <div class="inline-block glass px-4 py-1 rounded-full text-sky-400 text-[10px] font-black uppercase tracking-[0.2em] mb-6 border-sky-400/20">
+            Basée en Allemagne • Disponible Freelance
+        </div>
+        <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight">
+            Senior <span class="gradient-text">AI-First</span> <br>Mobile Architect.
+        </h1>
+        <p class="text-slate-400 text-lg max-w-3xl leading-relaxed mb-8">
+            <b>8+ ans d'expérience</b> en ingénierie mobile de pointe. J'accélère les cycles de livraison de <b>30%</b> grâce à l'intégration d'agents IA autonomes et d'architectures <b>KMP</b> permettant de partager 60% du code métier.
+        </p>
+        <div class="flex flex-wrap gap-4">
+            <a href="mailto:samirasalahsalah@gmail.com" class="bg-sky-500 hover:bg-sky-400 text-white font-bold px-8 py-3 rounded-xl transition">Contact Direct</a>
+            <div class="glass px-6 py-3 rounded-xl border-white/10 text-xs font-bold self-center">
+                Android Expert • KMP • Flutter • IoT
             </div>
         </div>
-    </nav>
+    </header>
 
-    <!-- Section Profil / Hero -->
-    <section id="profile" class="pt-32 pb-20 px-6 max-w-7xl mx-auto text-center md:text-left md:flex items-center gap-12">
-        <div class="flex-1">
-            <span class="inline-block glass px-4 py-1 rounded-full text-sky-400 text-[10px] font-black uppercase tracking-[0.2em] mb-6 border-sky-400/20">
-                Senior Mobile Architect • 8+ Ans d'Expérience [1]
-            </span>
-            <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight">
-                Architecte Mobile <br><span class="gradient-text">AI-First</span>.
-            </h1>
-            <p class="text-slate-400 text-lg max-w-2xl leading-relaxed mb-8">
-                Basée en <b>Allemagne</b>, j'aide les entreprises à combler le fossé entre les besoins métier complexes et les solutions mobiles de pointe via l'automatisation intelligente et le leadership technique [1].
-            </p>
-            <div class="flex flex-wrap gap-4 justify-center md:justify-start">
-                <a href="#contact" class="bg-sky-500 hover:bg-sky-400 text-white font-bold px-8 py-3 rounded-xl transition shadow-lg shadow-sky-500/20">Recruter en Freelance</a>
-                <div class="flex items-center gap-3 glass px-6 py-3 rounded-xl border-white/10">
-                    <span class="text-emerald-400">●</span> <span class="text-xs font-bold">Disponible actuellement</span>
-                </div>
+    <!-- Section Impact IA & Productivité -->
+    <section class="py-20 px-6 max-w-7xl mx-auto border-y border-white/5 bg-sky-500/5">
+        <div class="grid md:grid-cols-3 gap-12">
+            <div class="text-center md:text-left">
+                <h2 class="text-4xl font-black text-sky-400 mb-2">+30%</h2>
+                <p class="text-sm font-bold uppercase tracking-widest text-white mb-2">Productivité IA</p>
+                <p class="text-xs text-slate-400 leading-relaxed">Réduction des délais de refactoring et de QA via des agents autonomes Python.</p>
             </div>
-        </div>
-        <div class="hidden lg:block w-1/3">
-            <div class="glass p-8 rounded-[40px] border-sky-500/20 rotate-3">
-                <div class="space-y-4">
-                    <div class="h-2 w-20 bg-sky-500 rounded-full"></div>
-                    <p class="text-sm font-bold text-sky-400 italic">"Pionnière des workflows pilotés par l'IA pour le développement mobile" [1]</p>
-                    <div class="h-px bg-white/10 w-full"></div>
-                    <div class="flex justify-between text-[10px] font-bold text-slate-500 uppercase">
-                        <span>Kotlin Multiplatform</span>
-                        <span>Jetpack Compose</span>
-                    </div>
-                </div>
+            <div class="text-center md:text-left">
+                <h2 class="text-4xl font-black text-indigo-400 mb-2">60%</h2>
+                <p class="text-sm font-bold uppercase tracking-widest text-white mb-2">Code Sharing</p>
+                <p class="text-xs text-slate-400 leading-relaxed">Transition vers Kotlin Multiplatform (KMP) pour une logique métier unifiée iOS/Android.</p>
+            </div>
+            <div class="text-center md:text-left">
+                <h2 class="text-4xl font-black text-emerald-400 mb-2">20+</h2>
+                <p class="text-sm font-bold uppercase tracking-widest text-white mb-2">Apps Production</p>
+                <p class="text-xs text-slate-400 leading-relaxed">Historique prouvé de déploiements complexes sur le marché global.</p>
             </div>
         </div>
     </section>
 
-    <!-- Section Impact IA : La Valeur Ajoutée -->
-    <section id="ai-value" class="py-20 px-6 max-w-7xl mx-auto">
-        <div class="glass p-12 rounded-[40px] border-sky-400/20 relative overflow-hidden">
-            <div class="relative z-10 md:flex items-center gap-12">
-                <div class="text-center md:text-left mb-8 md:mb-0">
-                    <h2 class="text-4xl font-black mb-4">L'Avantage <span class="text-sky-400">IA</span></h2>
-                    <p class="text-slate-400 text-sm max-w-md">J'utilise des agents autonomes et des LLM pour transformer la productivité technique [1, 2].</p>
-                </div>
-                <div class="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-6">
-                    <div class="bg-white/5 p-6 rounded-2xl">
-                        <div class="text-4xl font-black text-sky-400 mb-2">+30%</div>
-                        <p class="text-xs font-bold text-white uppercase tracking-wider mb-2">Gain de Temps</p>
-                        <p class="text-[11px] text-slate-400">Réduction massive du temps de refactoring, de documentation et de tests grâce aux workflows assistés par IA [2].</p>
-                    </div>
-                    <div class="bg-white/5 p-6 rounded-2xl">
-                        <div class="text-4xl font-black text-indigo-400 mb-2">Auto-QA</div>
-                        <p class="text-xs font-bold text-white uppercase tracking-wider mb-2">Agents de Test</p>
-                        <p class="text-[11px] text-slate-400">Création d'agents Python autonomes pour automatiser les tests de régression sur terminaux physiques [3].</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section Projets par Catégories -->
-    <section id="projects" class="py-20 px-6 max-w-7xl mx-auto">
-        <div class="flex justify-between items-end mb-12">
-            <div>
-                <h2 class="text-3xl font-black">Réalisations Master</h2>
-                <p class="text-slate-400 text-sm mt-2">Plus de 20 applications déployées en production [4].</p>
-            </div>
-        </div>
-
-        <!-- CATEGORIE: IOT & HEALTH -->
-        <div class="mb-16">
-            <h3 class="text-sky-400 text-xs font-black uppercase tracking-widest mb-6 flex items-center gap-3">
-                <span class="h-px w-8 bg-sky-400/30"></span> IoT & Santé Connectée
-            </h3>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Digitsole -->
-                <div class="glass p-8 rounded-3xl hover:bg-white/5 transition group">
-                    <h4 class="text-xl font-bold mb-2 group-hover:text-sky-400 transition">Digitsole Run & Walk</h4>
-                    <p class="text-xs text-slate-400 leading-relaxed mb-6">Biomécanique de course intelligente et coaching audio en temps réel [5, 6].</p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="text-[9px] font-black bg-sky-500/10 text-sky-400 px-2 py-1 rounded">BLE (Bluetooth)</span>
-                        <span class="text-[9px] font-black bg-white/5 text-slate-400 px-2 py-1 rounded">AWS Amplify</span>
-                        <span class="text-[9px] font-black bg-white/5 text-slate-400 px-2 py-1 rounded">MPAndroidChart</span>
-                    </div>
-                </div>
-                <!-- Knowlepsy -->
-                <div class="glass p-8 rounded-3xl hover:bg-white/5 transition group">
-                    <h4 class="text-xl font-bold mb-2">Knowlepsy</h4>
-                    <p class="text-xs text-slate-400 leading-relaxed mb-6">Module de communication pour bracelet électronique de santé [7, 8].</p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="text-[9px] font-black bg-sky-500/10 text-sky-400 px-2 py-1 rounded">IoT BLE</span>
-                        <span class="text-[9px] font-black bg-white/5 text-slate-400 px-2 py-1 rounded">Sensors</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- CATEGORIE: ENTERPRISE & GOV -->
-        <div class="mb-16">
-            <h3 class="text-indigo-400 text-xs font-black uppercase tracking-widest mb-6 flex items-center gap-3">
-                <span class="h-px w-8 bg-indigo-400/30"></span> Corporate & Secteur Public
-            </h3>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Proxym / Maskan -->
-                <div class="glass p-8 rounded-3xl border-indigo-500/10">
-                    <h4 class="text-xl font-bold mb-2">Maskan / Dubai Chamber</h4>
-                    <p class="text-xs text-slate-400 leading-relaxed mb-6">Intégration complexe UAE Pass pour les services publics de Dubaï [9, 10].</p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="text-[9px] font-black bg-indigo-500/10 text-indigo-400 px-2 py-1 rounded">KMP (Logic sharing 60%)</span>
-                        <span class="text-[9px] font-black bg-white/5 text-slate-400 px-2 py-1 rounded">Jetpack Compose</span>
-                    </div>
-                </div>
-                <!-- Schneider -->
-                <div class="glass p-8 rounded-3xl border-indigo-500/10">
-                    <h4 class="text-xl font-bold mb-2">mySchneider App</h4>
-                    <p class="text-xs text-slate-400 leading-relaxed mb-6">Expert Lead pour l'automatisation CI/CD et l'architecture industrielle [10, 11].</p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="text-[9px] font-black bg-indigo-500/10 text-indigo-400 px-2 py-1 rounded">Azure DevOps</span>
-                        <span class="text-[9px] font-black bg-white/5 text-slate-400 px-2 py-1 rounded">Industrial Scalability</span>
-                    </div>
-                </div>
-                <!-- UVote -->
-                <div class="glass p-8 rounded-3xl border-indigo-500/10">
-                    <h4 class="text-xl font-bold mb-2">UVote & VoteAlgérie</h4>
-                    <p class="text-xs text-slate-400 leading-relaxed mb-6">Systèmes de consultation citoyenne et gestion électorale [12, 13].</p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="text-[9px] font-black bg-indigo-500/10 text-indigo-400 px-2 py-1 rounded">Firebase RT</span>
-                        <span class="text-[9px] font-black bg-white/5 text-slate-400 px-2 py-1 rounded">Participation Citoyenne</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- CATEGORIE: FINTECH & VOIP -->
-        <div class="mb-16">
-            <h3 class="text-emerald-400 text-xs font-black uppercase tracking-widest mb-6 flex items-center gap-3">
-                <span class="h-px w-8 bg-emerald-400/30"></span> Fintech & Temps Réel
-            </h3>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- BTU Direct -->
-                <div class="glass p-8 rounded-3xl border-emerald-500/10">
-                    <h4 class="text-xl font-bold mb-2">BTU-Direct (Fintech)</h4>
-                    <p class="text-xs text-slate-400 leading-relaxed mb-6">Crypto-wallet Ethereum gérant les jetons BTU en temps réel [13-15].</p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="text-[9px] font-black bg-emerald-500/10 text-emerald-400 px-2 py-1 rounded">Web3j</span>
-                        <span class="text-[9px] font-black bg-white/5 text-slate-400 px-2 py-1 rounded">Ethereum Blockchain</span>
-                    </div>
-                </div>
-                <!-- Translatly -->
-                <div class="glass p-8 rounded-3xl border-emerald-500/10">
-                    <h4 class="text-xl font-bold mb-2">Translatly (VoIP)</h4>
-                    <p class="text-xs text-slate-400 leading-relaxed mb-6">Communication vidéo/audio sécurisée pour traduction médicale [16, 17].</p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="text-[9px] font-black bg-emerald-500/10 text-emerald-400 px-2 py-1 rounded">Flutter</span>
-                        <span class="text-[9px] font-black bg-white/5 text-slate-400 px-2 py-1 rounded">Twilio VoIP</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer / Contact -->
-    <footer id="contact" class="py-24 px-6 max-w-7xl mx-auto border-t border-white/5 text-center">
-        <h2 class="text-4xl font-black mb-4">Prêt à moderniser votre infrastructure mobile ?</h2>
-        <p class="text-slate-400 mb-12 max-w-xl mx-auto">Je suis disponible pour des contrats freelance (Remote ou Allemagne). Travaillons ensemble sur votre prochaine architecture "AI-First".</p>
+    <!-- SECTION PROJETS : SHOWCASE STRATÉGIQUE -->
+    <section class="py-24 px-6 max-w-7xl mx-auto">
         
-        <div class="grid md:grid-cols-3 gap-8 mb-16 max-w-4xl mx-auto">
-            <div class="glass p-6 rounded-2xl">
-                <p class="text-[10px] font-black text-sky-400 uppercase tracking-widest mb-2">Email Direct</p>
-                <a href="mailto:samirasalahsalah@gmail.com" class="text-sm font-bold hover:text-sky-400 transition">samirasalahsalah@gmail.com [18]</a>
+        <!-- GROUPE : GOUVERNEMENT & SERVICES PUBLICS (DUBAI) -->
+        <h3 class="text-sky-400 text-[10px] font-black uppercase tracking-[0.3em] mb-8">Secteur Public & Gouvernemental (Émirats)</h3>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
+            <div class="expert-card glass p-6 rounded-3xl">
+                <h4 class="font-bold text-white mb-2">Dubai Police</h4>
+                <p class="text-[11px] text-slate-400">Applications <b>Dispatcher</b> & <b>iServe</b>. Systèmes critiques temps réel.</p>
             </div>
-            <div class="glass p-6 rounded-2xl">
-                <p class="text-[10px] font-black text-sky-400 uppercase tracking-widest mb-2">LinkedIn</p>
-                <a href="https://linkedin.com/in/samira-salah-22a93883/" class="text-sm font-bold hover:text-sky-400 transition">Samira Salah [1]</a>
+            <div class="expert-card glass p-6 rounded-3xl border-sky-500/20">
+                <h4 class="font-bold text-white mb-2">Maskan</h4>
+                <p class="text-[11px] text-slate-400">Intégration <b>UAE Pass</b> (App-to-App) & Clean Architecture.</p>
             </div>
-            <div class="glass p-6 rounded-2xl">
-                <p class="text-[10px] font-black text-sky-400 uppercase tracking-widest mb-2">GitHub</p>
-                <a href="https://github.com/samirasalah" class="text-sm font-bold hover:text-sky-400 transition">samirasalah [1]</a>
+            <div class="expert-card glass p-6 rounded-3xl">
+                <h4 class="font-bold text-white mb-2">Dubai Chamber</h4>
+                <p class="text-[11px] text-slate-400">Plateforme de services business. Optimisation Android & Huawei AppGallery.</p>
+            </div>
+            <div class="expert-card glass p-6 rounded-3xl">
+                <h4 class="font-bold text-white mb-2">Dubai Culture</h4>
+                <p class="text-[11px] text-slate-400">Plateforme culturelle interactive.</p>
             </div>
         </div>
 
-        <p class="text-[10px] text-slate-600 font-bold uppercase tracking-[0.4em]">© 2024 Samira Salah • Bergneustadt, Allemagne [1]</p>
+        <!-- GROUPE : INDUSTRIE, IOT & PERFORMANCE -->
+        <h3 class="text-indigo-400 text-[10px] font-black uppercase tracking-[0.3em] mb-8">Industrie 4.0, IoT & Performance</h3>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
+            <div class="expert-card glass p-8 rounded-[32px] border-indigo-500/20">
+                <h4 class="text-xl font-bold text-white mb-3">Schneider Electric</h4>
+                <p class="text-xs text-slate-400 leading-relaxed mb-6">Lead Technique sur <b>mySchneider</b>. Automatisation CI/CD via Azure DevOps & Scalabilité industrielle.</p>
+                <div class="flex gap-2"><span class="text-[9px] bg-white/5 px-2 py-1 rounded">Azure Pipelines</span> <span class="text-[9px] bg-white/5 px-2 py-1 rounded">Industrial QA</span></div>
+            </div>
+            <div class="expert-card glass p-8 rounded-[32px] border-indigo-500/20">
+                <h4 class="text-xl font-bold text-white mb-3">Digitsole (Run & Walk)</h4>
+                <p class="text-xs text-slate-400 leading-relaxed mb-6">IoT expert. Communication <b>BLE</b>, coaching audio temps réel et migration cloud vers <b>AWS Amplify</b>.</p>
+                <div class="flex gap-2"><span class="text-[9px] bg-indigo-500/10 text-indigo-400 px-2 py-1 rounded">Bluetooth LE</span> <span class="text-[9px] bg-white/5 px-2 py-1 rounded">Audio Processing</span></div>
+            </div>
+            <div class="expert-card glass p-8 rounded-[32px] border-indigo-500/20">
+                <h4 class="text-xl font-bold text-white mb-3">Runnrz</h4>
+                <p class="text-xs text-slate-400 leading-relaxed mb-6">Tracking haute précision avec <b>MapBox</b> & intégration <b>Google Fit</b>. Migration MVC vers MVVM.</p>
+                <div class="flex gap-2"><span class="text-[9px] bg-white/5 px-2 py-1 rounded">Geolocation</span> <span class="text-[9px] bg-white/5 px-2 py-1 rounded">Health Data</span></div>
+            </div>
+        </div>
+
+        <!-- GROUPE : FINTECH & SOCIAL -->
+        <h3 class="text-emerald-400 text-[10px] font-black uppercase tracking-[0.3em] mb-8">Fintech, Crypto & Écosystèmes Sociaux</h3>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="expert-card glass p-6 rounded-3xl">
+                <h4 class="font-bold text-white mb-2">BTU-Direct</h4>
+                <p class="text-[11px] text-slate-400">Wallet Crypto Ethereum. Intégration <b>Web3j</b> & Realm DB.</p>
+            </div>
+            <div class="expert-card glass p-6 rounded-3xl">
+                <h4 class="font-bold text-white mb-2">Bazary</h4>
+                <p class="text-[11px] text-slate-400">Réseau social complexe. Chat temps réel via <b>Websockets</b> & Animations MotionLayout.</p>
+            </div>
+            <div class="expert-card glass p-6 rounded-3xl">
+                <h4 class="font-bold text-white mb-2">Resto'lib</h4>
+                <p class="text-[11px] text-slate-400">Plateforme communautaire. Gestion d'états complexes & UX fluide.</p>
+            </div>
+            <div class="expert-card glass p-6 rounded-3xl">
+                <h4 class="font-bold text-white mb-2">E3lanet</h4>
+                <p class="text-[11px] text-slate-400">Application de publicité et de gestion d'annonces.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer & Contact -->
+    <footer id="contact" class="py-32 px-6 max-w-7xl mx-auto border-t border-white/5 text-center">
+        <h2 class="text-4xl font-black mb-6">Expertise Mobile au service de votre ROI.</h2>
+        <div class="flex flex-wrap justify-center gap-8 text-xs font-bold tracking-widest text-slate-500 uppercase">
+            <a href="mailto:samirasalahsalah@gmail.com" class="hover:text-sky-400 transition">Email</a>
+            <a href="https://linkedin.com/in/samira-salah-22a93883" class="hover:text-sky-400 transition">LinkedIn</a>
+            <a href="https://github.com/samirasalah" class="hover:text-sky-400 transition">GitHub</a>
+        </div>
+        <p class="mt-12 text-[10px] text-slate-600">© 2024 Samira Salah • Senior AI-First Mobile Architect • Bergneustadt, DE</p>
     </footer>
 
 </body>
