@@ -1,1 +1,190 @@
-<object data="myfile.pdf" type='application/pdf'/>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samira Salah | The AI Powered Blueprint</title>
+    <style>
+        :root {
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --primary: #38bdf8;
+            --accent: #818cf8;
+            --text: #f8fafc;
+        }
+        body { font-family: 'Inter', sans-serif; background-color: var(--bg); color: var(--text); margin: 0; overflow: hidden; }
+        .slide-container { width: 100vw; height: 100vh; display: flex; transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1); }
+        section { min-width: 100vw; height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 2rem; box-sizing: border-box; text-align: center; }
+        
+        h1 { font-size: 3.5rem; margin-bottom: 0.5rem; color: var(--primary); }
+        h2 { font-size: 2rem; color: var(--accent); margin-top: 0; }
+        p { font-size: 1.2rem; max-width: 800px; line-height: 1.6; }
+        
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; width: 80%; margin-top: 2rem; }
+        .card { background: var(--card-bg); padding: 1.5rem; border-radius: 12px; border: 1px solid #334155; }
+        .card h3 { color: var(--primary); margin-top: 0; }
+        
+        .ai-boost { font-size: 4rem; font-weight: bold; color: var(--primary); margin: 1rem 0; }
+        .tag { background: var(--primary); color: var(--bg); padding: 0.3rem 0.8rem; border-radius: 20px; font-weight: bold; font-size: 0.9rem; margin: 0.2rem; display: inline-block; }
+        
+        .nav-btn { position: fixed; bottom: 2rem; background: var(--primary); border: none; padding: 1rem; border-radius: 50%; cursor: pointer; color: var(--bg); font-weight: bold; z-index: 100; }
+        #prev { left: 2rem; }
+        #next { right: 2rem; }
+        .progress { position: fixed; top: 0; left: 0; height: 5px; background: var(--primary); transition: width 0.3s; }
+    </style>
+</head>
+<body>
+
+<div class="progress" id="progress"></div>
+
+<div class="slide-container" id="slider">
+    <!-- SLIDE 1: TITLE -->
+    <section>
+        <span class="tag">Professional Portfolio</span>
+        <h1>The AI Powered Blueprint</h1>
+        <h2>Senior AI-First Mobile Architect</h2>
+        <p>Strategic Mobile Solutions & Autonomous Engineering Systems</p>
+        <p>📍 Bergneustadt, Germany | Available for Freelance</p>
+    </section>
+
+    <!-- SLIDE 2: WHO AM I -->
+    <section>
+        <h2>Expertise at a Glance</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>8+ Years</h3>
+                <p>Of professional mobile engineering across native and hybrid platforms [1].</p>
+            </div>
+            <div class="card">
+                <h3>Full Lifecycle</h3>
+                <p>From technical design to maintenance and Play Store delivery [2, 3].</p>
+            </div>
+            <div class="card">
+                <h3>Leadership</h3>
+                <p>Technical Lead for multi-national corporate projects [4, 5].</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 3: THE AI ADVANTAGE -->
+    <section>
+        <h2>The AI-First Advantage</h2>
+        <div class="ai-boost">+30%</div>
+        <p><strong>Delivery Cycle Acceleration</strong></p>
+        <p>Using autonomous agents for UI testing and LLMs for refactoring to slash technical debt and improve code quality [1, 6, 7].</p>
+    </section>
+
+    <!-- SLIDE 4: TECH ECOSYSTEM -->
+    <section>
+        <h2>Technical Ecosystem</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Mobile Foundation</h3>
+                <span class="tag">Android (Kotlin/Compose)</span> <span class="tag">Flutter</span> <span class="tag">KMP</span> [6, 8]
+            </div>
+            <div class="card">
+                <h3>Cloud & DevOps</h3>
+                <span class="tag">AWS Amplify</span> <span class="tag">Azure DevOps</span> <span class="tag">CI/CD</span> [9, 10]
+            </div>
+            <div class="card">
+                <h3>Specialized</h3>
+                <span class="tag">BLE</span> <span class="tag">Web3j</span> <span class="tag">VoIP (Twilio)</span> [11-13]
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 5: CORPORATE IMPACT -->
+    <section>
+        <h2>Corporate Track Record</h2>
+        <div class="card" style="width: 70%;">
+            <h3>Schneider Electric</h3>
+            <p>Architectural support and build automation efficiency through CI/CD pipelines in Azure DevOps [9].</p>
+            <h3>Proxym Middle East</h3>
+            <p>Modernized legacy codebases with Jetpack Compose and automated QA with custom Python-based AI agents [7].</p>
+        </div>
+    </section>
+
+    <!-- SLIDE 6: SHOWCASE 1 - IoT -->
+    <section>
+        <h2>Showcase: IoT & Health</h2>
+        <h3>Digitsole Running / Walk</h3>
+        <p>Smart footwear biomechanics tracking. Integrated BLE communication, complex MPAndroidChart graphics, and real-time audio coaching [12, 14, 15].</p>
+        <p><span class="tag">Kotlin</span> <span class="tag">AWS Migration</span> <span class="tag">BLE</span></p>
+    </section>
+
+    <!-- SLIDE 7: SHOWCASE 2 - ENTERPRISE & FINTECH -->
+    <section>
+        <h2>Showcase: Enterprise & Fintech</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Maskan & Dubai Chamber</h3>
+                <p>High-security integration with UAE Pass for public sector services [5, 13].</p>
+            </div>
+            <div class="card">
+                <h3>BTU-Direct</h3>
+                <p>Cryptocurrency wallet for Ethereum and BTU tokens using Web3j [11, 16].</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 8: SHOWCASE 3 - LIFESTYLE -->
+    <section>
+        <h2>Showcase: Lifestyle & Real-time</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Translatly</h3>
+                <p>Real-time translation via secure VoIP architecture using Twilio [13].</p>
+            </div>
+            <div class="card">
+                <h3>Runnrz</h3>
+                <p>Advanced mapping with MapBox and Google Fit integration for performance tracking [17].</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 9: CONTACT -->
+    <section>
+        <h1>Let's Build Together</h1>
+        <p>Available for freelance projects in Germany and remotely.</p>
+        <p><strong>Email:</strong> samirasalahsalah@gmail.com</p>
+        <p><strong>LinkedIn:</strong> linkedin.com/in/samira-salah-22a93883</p>
+        <p><strong>GitHub:</strong> github.com/samirasalah</p>
+    </section>
+</div>
+
+<button class="nav-btn" id="prev"> < </button>
+<button class="nav-btn" id="next"> > </button>
+
+<script>
+    const slider = document.getElementById('slider');
+    const next = document.getElementById('next');
+    const prev = document.getElementById('prev');
+    const progress = document.getElementById('progress');
+    let current = 0;
+    const total = 9;
+
+    function update() {
+        slider.style.transform = `translateX(-${current * 100}vw)`;
+        progress.style.width = `${((current + 1) / total) * 100}%`;
+    }
+
+    next.addEventListener('click', () => {
+        if (current < total - 1) current++;
+        else current = 0;
+        update();
+    });
+
+    prev.addEventListener('click', () => {
+        if (current > 0) current--;
+        update();
+    });
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight') next.click();
+        if (e.key === 'ArrowLeft') prev.click();
+    });
+</script>
+
+</body>
+</html>
