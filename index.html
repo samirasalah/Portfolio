@@ -1,181 +1,675 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samira Salah | Senior AI-First Mobile Architect</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Space Grotesk', sans-serif; background: #05070a; color: #f1f5f9; }
-        .glass-card { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.08); transition: 0.4s; }
-        .glass-card:hover { border-color: #38bdf8; transform: translateY(-5px); box-shadow: 0 20px 40px -20px rgba(56, 189, 248, 0.3); }
-        .skill-tag { background: rgba(56, 189, 248, 0.1); color: #38bdf8; font-size: 0.65rem; font-weight: 700; padding: 0.2rem 0.6rem; border-radius: 4px; border: 1px solid rgba(56, 189, 248, 0.2); }
-        .gradient-text { background: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Samira Salah — Senior Android &amp; Mobile Engineer. Jetpack Compose, Flutter, KMP, LLM integration. 30+ apps, AI-driven delivery for EU &amp; MENA clients.">
+  <meta name="author" content="Samira Salah">
+  <title>Samira Salah — Senior Android &amp; Mobile Engineer · AI-driven delivery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="ambient" aria-hidden="true"></div>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="nav-logo" href="#top">Samira <span>Salah</span></a>
+      <span class="nav-status" aria-label="Available for projects">Available</span>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="nav-menu" class="nav-menu" aria-label="Primary">
+        <ul class="nav-links">
+          <li><a href="#ai">AI edge</a></li>
+          <li><a href="#expertise">Expertise</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a class="btn btn-nav nav-menu-cta" href="#contact">Hire me</a>
+      </nav>
+    </div>
+  </header>
 
-    <!-- NAVIGATION -->
-    <nav class="fixed top-0 w-full z-50 bg-[#05070a]/80 backdrop-blur-md border-b border-white/5 py-5 px-8">
-        <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <div class="text-xl font-bold tracking-tighter">SAMIRA<span class="text-sky-400">.</span>SALAH</div>
-            <div class="hidden md:flex gap-10 text-[10px] font-black uppercase tracking-widest text-slate-400">
-                <a href="#about" class="hover:text-sky-400 transition">Strategy</a>
-                <a href="#projects" class="hover:text-sky-400 transition">Case Studies</a>
-                <a href="#contact" class="hover:text-sky-400 transition">Hire Me</a>
-            </div>
-        </div>
-    </nav>
+  <main id="main">
 
-    <!-- HERO SECTION -->
-    <section id="about" class="pt-40 pb-20 px-8 max-w-7xl mx-auto">
-        <div class="max-w-4xl">
-            <span class="text-sky-400 text-xs font-black tracking-[0.3em] uppercase mb-4 block">Based in Germany • Freelance Available</span>
-            <h1 class="text-6xl md:text-8xl font-bold mb-8 leading-tight">
-                Senior <span class="gradient-text">AI-First</span> <br>Mobile Architect.
-            </h1>
-            <p class="text-slate-400 text-lg leading-relaxed mb-10 max-w-2xl">
-                Bridging the gap between industrial complexity and production-ready mobile solutions. I leverage <b>Autonomous AI Agents</b> and <b>Kotlin Multiplatform (KMP)</b> to accelerate delivery cycles by <b>30%</b>.
-            </p>
-            <div class="flex flex-wrap gap-8">
-                <div><p class="text-3xl font-bold text-white">+30%</p><p class="text-[10px] text-slate-500 uppercase font-black">AI Productivity Boost</p></div>
-                <div><p class="text-3xl font-bold text-white">60%</p><p class="text-[10px] text-slate-500 uppercase font-black">Logic Sharing (KMP)</p></div>
-                <div><p class="text-3xl font-bold text-white">8+ Years</p><p class="text-[10px] text-slate-500 uppercase font-black">Engineering Expertise</p></div>
+    <section id="top" class="hero section-block">
+      <div class="container hero-grid">
+        <div class="hero-main">
+          <div class="hero-intro">
+            <figure class="hero-photo" id="hero-photo">
+              <img
+                src="images/samira-salah.jpeg"
+                alt="Samira Salah"
+                width="148"
+                height="148"
+                decoding="async"
+                fetchpriority="high"
+                onerror="this.closest('.hero-photo').classList.add('is-placeholder'); this.remove();"
+              >
+              <span class="hero-photo-fallback" aria-hidden="true">SS</span>
+            </figure>
+            <div class="hero-copy">
+              <p class="eyebrow">Freelance · Germany · EU remote</p>
+              <h1>Samira Salah</h1>
+              <p class="hero-trade">Contracting via <strong>HB IT Services</strong></p>
+              <p class="hero-title">Senior Android &amp; Mobile Engineer — Compose, Flutter &amp; <span class="accent">AI-driven delivery</span></p>
+              <p class="hero-lead">
+                I ship <strong>Android &amp; Flutter</strong> to the store — architecture, releases (Play Store &amp; App Gallery), and <strong>AI-accelerated delivery</strong> with security and privacy built in.
+              </p>
             </div>
+          </div>
+          <ul class="hero-proof" aria-label="Key metrics">
+            <li><strong>8+</strong><span>years senior mobile</span></li>
+            <li><strong>30+</strong><span>apps in production</span></li>
+            <li><strong>LLM</strong><span>features in production</span></li>
+          </ul>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="mailto:samirasalahsalah@gmail.com?subject=Freelance%20project%20inquiry">Book a call</a>
+            <a class="btn btn-outline" href="#work">See case work</a>
+            <a class="btn btn-ghost" href="https://www.linkedin.com/in/samira-salah-22a93883/" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+          <p class="hero-meta">
+            <span>Bergneustadt, Germany</span>
+            <span>samirasalahsalah@gmail.com</span>
+            <span>+49 152 51534047</span>
+          </p>
         </div>
+
+        <aside class="hero-panel" aria-label="AI delivery impact">
+          <p class="panel-label">Why clients hire me</p>
+          <h2 class="panel-title">AI is your <em>delivery multiplier</em></h2>
+          <p class="panel-summary">I use AI to shorten build and refactor cycles while keeping architecture, security reviews, and store releases under human control — not vibe-coded prototypes.</p>
+          <a class="panel-cta" href="#ai">How I use AI on delivery →</a>
+        </aside>
+      </div>
     </section>
 
-    <!-- PROJECTS SECTION -->
-    <section id="projects" class="py-24 px-8 max-w-7xl mx-auto">
-        
-        <!-- SECTOR: GOVERNMENT & PUBLIC SERVICES -->
-        <div class="mb-20">
-            <h2 class="text-xs font-black text-sky-500 uppercase tracking-[0.4em] mb-12 flex items-center gap-4">
-                <span class="h-px w-12 bg-sky-500/30"></span> Public Sector & High Security
-            </h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Dubai Police -->
-                <div class="glass-card p-8 rounded-3xl">
-                    <h3 class="text-xl font-bold mb-2">Dubai Police: Dispatcher & iServe</h3>
-                    <p class="text-xs text-slate-500 mb-6">High-criticality real-time systems for public safety and emergency dispatch.</p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-tag">Real-time Sockets</span> <span class="skill-tag">Security</span> <span class="skill-tag">Kotlin</span>
-                    </div>
-                </div>
-                <!-- Maskan -->
-                <div class="glass-card p-8 rounded-3xl border-sky-500/20">
-                    <h3 class="text-xl font-bold mb-2">Maskan (Real Estate)</h3>
-                    <p class="text-xs text-slate-500 mb-6">Integrated **UAE Pass** authentication for secure government-linked real estate services [3, 4].</p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-tag">Jetpack Compose</span> <span class="skill-tag">UAE Pass</span> <span class="skill-tag">Clean Arch</span>
-                    </div>
-                </div>
-                <!-- Dubai Chamber -->
-                <div class="glass-card p-8 rounded-3xl">
-                    <h3 class="text-xl font-bold mb-2">Dubai Chamber</h3>
-                    <p class="text-xs text-slate-500 mb-6">Business services platform optimized for Android and Huawei AppGallery [5].</p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-tag">Huawei ML Kit</span> <span class="skill-tag">REST API</span> <span class="skill-tag">Kotlin</span>
-                    </div>
-                </div>
-                <!-- Dubai Culture -->
-                <div class="glass-card p-8 rounded-3xl">
-                    <h3 class="text-xl font-bold mb-2">Dubai Culture</h3>
-                    <p class="text-xs text-slate-500 mb-6">Public mobile engagement platform for cultural heritage and services.</p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-tag">UI/UX Optimization</span> <span class="skill-tag">Firebase</span>
-                    </div>
-                </div>
+    <section id="ai" class="section-ai section-block">
+      <div class="container">
+        <header class="section-head">
+          <p class="section-label">Freelance advantage</p>
+          <h2 class="section-title">Ship faster — without gambling on quality</h2>
+          <p class="section-intro">AI speeds up execution; I keep architecture, QA, and releases under senior ownership.</p>
+        </header>
+
+        <div class="ai-split">
+          <div class="ai-metrics">
+            <article class="metric-card">
+              <h3>Engineering velocity</h3>
+              <p class="metric-big">2×</p>
+              <p>Shorter loops on features, refactors &amp; integration work when AI handles the repetitive layer and I own the design.</p>
+            </article>
+            <article class="metric-card">
+              <h3>Routine work offload</h3>
+              <p class="metric-big">50–70%</p>
+              <p>Scaffolding, unit/UI test drafts, API glue, migration helpers, release notes — reviewed and production-hardened.</p>
+            </article>
+            <article class="metric-card">
+              <h3>MVP / slice delivery</h3>
+              <p class="metric-big">40–60%</p>
+              <p>Clear scope → working build faster: ideal for freelance phases, PoCs, and parallel product tracks.</p>
+            </article>
+            <article class="metric-card highlight">
+              <h3>In-app intelligence</h3>
+              <p class="metric-big">LLM</p>
+              <p>Assistants, smart forms, and guided UX — OpenAI &amp; Gemini with privacy-aware APIs and maintainable architecture.</p>
+            </article>
+          </div>
+
+          <div class="ai-compare">
+            <div class="compare-col">
+              <h4>Typical freelance hire</h4>
+              <ul>
+                <li>Manual boilerplate &amp; slow test coverage</li>
+                <li>LLM demos that never reach stores</li>
+                <li>QA bottlenecks on real devices</li>
+                <li>Architecture debt after speed hacks</li>
+              </ul>
             </div>
+            <div class="compare-col win">
+              <h4>Working with me</h4>
+              <ul>
+                <li>AI-accelerated execution, human-owned architecture</li>
+                <li>LLM features shipped to production users</li>
+                <li>Structured device QA before Play Store &amp; App Gallery releases</li>
+                <li>DI-first architecture, vulnerability fixes, predictable releases</li>
+              </ul>
+            </div>
+          </div>
         </div>
 
-        <!-- SECTOR: INDUSTRY, IOT & PERFORMANCE -->
-        <div class="mb-20">
-            <h2 class="text-xs font-black text-indigo-500 uppercase tracking-[0.4em] mb-12 flex items-center gap-4">
-                <span class="h-px w-12 bg-indigo-500/30"></span> Industry, IoT & Performance
-            </h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Schneider Electric -->
-                <div class="glass-card p-8 rounded-3xl border-indigo-500/20">
-                    <h4 class="text-xl font-bold text-white mb-2 italic">Schneider Electric</h4>
-                    <p class="text-xs text-slate-500 mb-6">Tech Lead for **mySchneider**. Optimized CI/CD pipelines via Azure DevOps [6].</p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-tag">Azure DevOps</span> <span class="skill-tag">Build Automation</span> <span class="skill-tag">Java/Kotlin</span>
-                    </div>
-                </div>
-                <!-- Digitsole -->
-                <div class="glass-card p-8 rounded-3xl border-indigo-500/20">
-                    <h4 class="text-xl font-bold text-white mb-2 italic">Digitsole (Run & Walk)</h4>
-                    <p class="text-xs text-slate-500 mb-6">Smart footwear tracking. Integrated **BLE**, AWS migration, and real-time audio coaching [7-9].</p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-tag">Bluetooth LE</span> <span class="skill-tag">AWS Amplify</span> <span class="skill-tag">MPAndroidChart</span>
-                    </div>
-                </div>
-                <!-- Runnerz -->
-                <div class="glass-card p-8 rounded-3xl">
-                    <h4 class="text-xl font-bold text-white mb-2 italic">Runnerz</h4>
-                    <p class="text-xs text-slate-500 mb-6">Advanced tracking with **MapBox** and **Google Fit** integration [10].</p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-tag">MapBox</span> <span class="skill-tag">Google Fit</span> <span class="skill-tag">MVVM</span>
-                    </div>
-                </div>
-            </div>
+        <div class="process-strip">
+          <span class="process-step"><strong>01</strong> Scope &amp; architecture</span>
+          <span class="process-step"><strong>02</strong> Build with AI-assisted velocity</span>
+          <span class="process-step"><strong>03</strong> QA, release ownership &amp; handover</span>
         </div>
-
-        <!-- SECTOR: FINTECH, SOCIAL & PARTICIPATION -->
-        <div class="mb-20">
-            <h2 class="text-xs font-black text-emerald-500 uppercase tracking-[0.4em] mb-12 flex items-center gap-4">
-                <span class="h-px w-12 bg-emerald-500/30"></span> Fintech & Global Ecosystems
-            </h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- BTU Direct -->
-                <div class="glass-card p-6 rounded-3xl">
-                    <h4 class="font-bold text-white mb-2">BTU-Direct</h4>
-                    <p class="text-[10px] text-slate-500 mb-4">Ethereum Wallet. Token management via Web3j [11, 12].</p>
-                    <div class="flex flex-wrap gap-1">
-                        <span class="skill-tag">Web3j</span> <span class="skill-tag">Blockchain</span>
-                    </div>
-                </div>
-                <!-- UVote / VoteAlgerie -->
-                <div class="glass-card p-6 rounded-3xl">
-                    <h4 class="font-bold text-white mb-2">UVote / VoteAlgérie</h4>
-                    <p class="text-[10px] text-slate-500 mb-4">Public participation and real-time results tracking [12].</p>
-                    <div class="flex flex-wrap gap-1">
-                        <span class="skill-tag">Firebase</span> <span class="skill-tag">Complex UI</span>
-                    </div>
-                </div>
-                <!-- Bazary -->
-                <div class="glass-card p-6 rounded-3xl">
-                    <h4 class="font-bold text-white mb-2">Bazary</h4>
-                    <p class="text-[10px] text-slate-500 mb-4">Social network for providers. MotionLayout animations [13].</p>
-                    <div class="flex flex-wrap gap-1">
-                        <span class="skill-tag">MotionLayout</span> <span class="skill-tag">WebSockets</span>
-                    </div>
-                </div>
-                <!-- Resto'lib -->
-                <div class="glass-card p-6 rounded-3xl">
-                    <h4 class="font-bold text-white mb-2">Resto'lib</h4>
-                    <p class="text-[10px] text-slate-500 mb-4">Community platform for restaurant owners and clients [14, 15].</p>
-                    <div class="flex flex-wrap gap-1">
-                        <span class="skill-tag">Google Auth</span> <span class="skill-tag">RXJava</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </section>
 
-    <!-- CONTACT SECTION -->
-    <footer id="contact" class="py-32 px-8 max-w-7xl mx-auto border-t border-white/5 text-center">
-        <h2 class="text-4xl font-bold mb-8">Ready to Scale Your Production?</h2>
-        <p class="text-slate-500 mb-12">Expert Solutions • AI Acceleration • Mobile Mastery</p>
-        <div class="flex justify-center gap-10 text-[10px] font-black uppercase tracking-widest">
-            <a href="mailto:samirasalahsalah@gmail.com" class="text-sky-400 hover:underline transition">Email</a>
-            <a href="https://linkedin.com/in/samira-salah-22a93883" class="text-sky-400 hover:underline transition">LinkedIn</a>
-            <a href="https://github.com/samirasalah" class="text-sky-400 hover:underline transition">GitHub</a>
+    <section id="expertise" class="section-block">
+      <div class="container">
+        <header class="section-head">
+          <p class="section-label">Core expertise</p>
+          <h2 class="section-title">What you get as a freelance expert</h2>
+          <p class="section-intro">End-to-end mobile delivery — scoping, build, release, and handover — with clear communication and no junior surprise on critical paths.</p>
+        </header>
+        <div class="services-row">
+          <article class="service-pill"><strong>Greenfield apps</strong><span>Compose / Flutter — architecture through release</span></article>
+          <article class="service-pill"><strong>Legacy modernization</strong><span>Java → Kotlin, DI (Hilt / Koin), CVE &amp; dependency fixes</span></article>
+          <article class="service-pill accent"><strong>AI in your product</strong><span>LLM features users touch — not slide decks</span></article>
+          <article class="service-pill"><strong>Rescue &amp; acceleration</strong><span>Refactor, vulnerability remediation, CI/CD, QA</span></article>
         </div>
-        <p class="mt-16 text-[9px] text-slate-700 font-bold uppercase tracking-[0.5em]">© 2024 Samira Salah | Senior AI-First Mobile Architect | Bergneustadt, Germany</p>
-    </footer>
+        <div class="expertise-grid">
+          <article class="expertise-card">
+            <h3>Android &amp; architecture</h3>
+            <p>Kotlin, Jetpack Compose, Clean Architecture, MVVM/MVI, Hilt &amp; Koin, legacy Java migration, and store releases on Play Store &amp; App Gallery.</p>
+          </article>
+          <article class="expertise-card accent-ai">
+            <h3>AI in product &amp; process</h3>
+            <p>LLM integrations, Model Context Protocol (MCP), AI-assisted refactoring, Cursor delivery — certified in Generative AI for Software Development &amp; Gemini CLI.</p>
+          </article>
+          <article class="expertise-card">
+            <h3>Cross-platform</h3>
+            <p>Kotlin Multiplatform, Flutter, and iOS collaboration — one senior owner across the mobile surface.</p>
+          </article>
+          <article class="expertise-card">
+            <h3>Integrations &amp; ops</h3>
+            <p>REST, Firebase, AWS, OAuth, CI/CD. Maps: Esri, HERE, Mapbox, Google Maps. Security: dependency audits, CVE fixes, store compliance.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
+    <section id="work" class="section-block">
+      <div class="container">
+        <header class="section-head">
+          <p class="section-label">Case work</p>
+          <h2 class="section-title">Problems solved — with proof</h2>
+          <p class="section-intro">Each card covers context, delivery, impact, and the stack used on that project.</p>
+        </header>
+
+        <h3 class="work-group-title">Enterprise &amp; government</h3>
+        <div class="work-grid work-grid--solo">
+          <article class="work-card work-card-featured" id="myschneider">
+            <div class="work-head">
+              <span class="work-domain">Enterprise · B2B</span>
+              <h3>mySchneider</h3>
+            </div>
+            <p class="work-role">Android Team Leader · Schneider Electric</p>
+            <p class="work-value">Team lead on Schneider’s global <strong>mySchneider</strong> Android app — enabling developers, integrating architect modules, and owning quality, CI/CD, and Play Store delivery.</p>
+            <ul class="work-details">
+              <li><strong class="work-detail-label">Challenge</strong><span class="work-detail-body">Keep a large B2B app shipping safely: <strong>MAP</strong> (Module Architect Program) updates, client integrations, multi-stakeholder feature design, dependency hygiene, and reliable production releases.</span></li>
+              <li><strong class="work-detail-label">Delivered</strong><span class="work-detail-body">Led and supported the Android team; advised Owner, PM, GM, DM, Mobile Experience Manager, BAs, and clients on new features and modules. Integrated architect-built modules and helped client developers integrate. Verified and merged <strong>MAP</strong> updates; drove <strong>unit test</strong> integration. <strong>PR reviews</strong> on <strong>GitHub</strong>; <strong>Dependabot</strong> for dependency updates and auto-PRs. Stabilized <strong>Azure DevOps</strong> pipelines and fixed recurring issues. Owned <strong>production deployment</strong> and <strong>Play Store</strong> releases.</span></li>
+              <li><strong class="work-detail-label">Impact</strong><span class="work-detail-body">Governed integrations, reviewed code, up-to-date dependencies, and predictable prod → Play Store delivery for a global Schneider app.</span></li>
+            </ul>
+            <div class="work-skills" aria-label="Skills on this project">
+              <span>Kotlin</span><span>Java</span><span>Hilt</span><span>MAP modules</span><span>GitHub</span><span>Code review</span><span>Dependabot</span><span>Unit testing</span><span>Azure DevOps</span><span>CI/CD</span><span>Play Store</span>
+            </div>
+            <a class="work-link" href="https://play.google.com/store/apps/details?id=com.schneider.qrcode.tocase" target="_blank" rel="noopener">Play Store →</a>
+          </article>
+        </div>
+
+        <h3 class="work-group-title">PROXYM Middle East · 2024–present · UAE public sector</h3>
+        <p class="work-group-note">Software Team Lead Android · PROXYM Middle East</p>
+        <div class="work-grid work-grid--featured">
+          <article class="work-card work-card-featured" id="maskan">
+            <div class="work-head">
+              <span class="work-domain">Government · UAE · FTA</span>
+              <h3>Maskan — VAT refund</h3>
+            </div>
+            <p class="work-role">Technical Leader · Android</p>
+            <p class="work-value">FTA <strong>Maskan</strong> — VAT refunds for UAE nationals building new homes. I owned baseline architecture, flagship integrations, and Play Store delivery.</p>
+            <ul class="work-details">
+              <li><strong class="work-detail-label">Challenge</strong><span class="work-detail-body">Greenfield government product: FTA policy rules, secure citizen data, UAE identity handoffs, Google Wallet, and store-grade release discipline.</span></li>
+              <li><strong class="work-detail-label">Delivered</strong><span class="work-detail-body">Baseline architecture (<strong>Koin</strong>, modular applications / documents / refunds). Shipped <strong>App-to-App</strong> &amp; <strong>App-to-Web authentication</strong>, <strong>Google Wallet</strong>, and core journeys. Owned <strong>release process</strong> &amp; <strong>Play Store deployment</strong>.</span></li>
+              <li><strong class="work-detail-label">Impact</strong><span class="work-detail-body">Live FTA app on a scalable Android base — secure auth handoffs and predictable store releases.</span></li>
+            </ul>
+            <div class="work-skills">
+              <span>Kotlin</span><span>Koin</span><span>Architecture</span><span>App-to-App auth</span><span>App-to-Web auth</span><span>Google Wallet</span><span>Play Store</span>
+            </div>
+            <a class="work-link" href="https://play.google.com/store/apps/details?id=maskanrefund.tax.gov.ae" target="_blank" rel="noopener">Play Store →</a>
+          </article>
+
+          <article class="work-card work-card-featured" id="dubai-chamber">
+            <div class="work-head">
+              <span class="work-domain">Government · UAE</span>
+              <h3>Dubai Chambers</h3>
+            </div>
+            <p class="work-value">Official <strong>Dubai Chambers</strong> app — membership, attestations, certificates of origin, and service tracking.</p>
+            <ul class="work-details">
+              <li><strong>Challenge</strong> Extend a live government codebase: multi-step services, REST APIs, Play Store and Huawei App Gallery.</li>
+              <li><strong>Delivered</strong> Features on a <strong>Dagger Hilt</strong> stack; <strong>release ownership</strong> on Play Store and App Gallery.</li>
+              <li><strong>Impact</strong> Mobile access to Chamber services for Dubai entrepreneurs and exporters.</li>
+            </ul>
+            <div class="work-skills">
+              <span>Kotlin</span><span>Dagger Hilt</span><span>REST</span><span>Retrofit</span><span>MVVM</span><span>Release management</span>
+            </div>
+            <div class="work-links">
+              <a href="https://play.google.com/store/apps/details?id=com.app.dubaichamber" target="_blank" rel="noopener">Play Store</a>
+              <a href="https://appgallery.huawei.com/#/app/C116963383" target="_blank" rel="noopener">App Gallery</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="work-grid">
+          <article class="work-card" id="dubai-culture">
+            <div class="work-head">
+              <span class="work-domain">Government · UAE</span>
+              <h3>Dubai Culture</h3>
+            </div>
+            <p class="work-value">Extend <strong>Dubai Culture’s mobile services</strong> — digital access to cultural programs, institutions, and resident-facing offerings.</p>
+            <ul class="work-details">
+              <li><strong class="work-detail-label">Challenge</strong><span class="work-detail-body">Ship on a production codebase with strict quality expectations and coordinated backend releases.</span></li>
+              <li><strong class="work-detail-label">Delivered</strong><span class="work-detail-body">Android features, API integration, and delivery alignment with product, backend, and QA.</span></li>
+              <li><strong class="work-detail-label">Impact</strong><span class="work-detail-body">More cultural services reachable on mobile for Dubai residents and partners.</span></li>
+            </ul>
+            <div class="work-skills">
+              <span>Kotlin</span><span>Android SDK</span><span>REST</span><span>Retrofit</span><span>MVVM</span>
+            </div>
+            <a class="work-link" href="https://play.google.com/store/apps/details?id=com.dubaiculture" target="_blank" rel="noopener">Play Store →</a>
+          </article>
+
+          <article class="work-card" id="dubai-police">
+            <div class="work-head">
+              <span class="work-domain">Government · UAE · Police</span>
+              <h3>Dispatcher &amp; IServe</h3>
+            </div>
+            <p class="work-value">Production support for <strong>Dubai Police</strong> field tools — <strong>Dispatcher</strong> (<strong>Esri</strong> &amp; <strong>HERE Maps</strong>) and <strong>IServe</strong> (<strong>Google Maps</strong>) — used in daily operations.</p>
+            <ul class="work-details">
+              <li><strong>Challenge</strong> Keep two mission-critical apps stable while evolving map flows — enterprise geospatial on Dispatcher and Google Maps on IServe.</li>
+              <li><strong>Delivered</strong> Android maintenance and features: <strong>Esri</strong> &amp; <strong>HERE Maps</strong> on <strong>Dispatcher</strong>; <strong>Google Maps</strong> on <strong>IServe</strong> — plus bug fixes, API updates, and release coordination.</li>
+              <li><strong>Impact</strong> Dependable mobile layer for police operations, with the right map stack per app (dispatch vs. field service).</li>
+            </ul>
+            <div class="work-skills">
+              <span>Kotlin</span><span>Esri</span><span>HERE Maps</span><span>Google Maps</span><span>Android SDK</span><span>REST</span><span>Production support</span><span>Release management</span>
+            </div>
+          </article>
+
+          <article class="work-card work-card-ai">
+            <div class="work-head">
+              <div class="work-head-top">
+                <span class="work-domain">AI · Cross-program</span>
+                <span class="work-ai-badge">LLM + MCP</span>
+              </div>
+              <h3>AI-powered mobile features</h3>
+            </div>
+            <p class="work-value"><strong>LLM-assisted UX</strong> on government apps — faster iteration on legacy code without weakening architecture or releases.</p>
+            <ul class="work-details">
+              <li><strong>Challenge</strong> Public-sector apps needed smarter user help and shorter delivery cycles on established codebases.</li>
+              <li><strong>Delivered</strong> LLM API integrations, fallback-safe UX patterns, and AI-assisted refactors; architectures with clear separation of AI vs. core logic.</li>
+              <li><strong>Impact</strong> Shorter iteration on regulated products — backed by Generative AI &amp; Gemini CLI certifications.</li>
+            </ul>
+            <div class="work-skills">
+              <span>Jetpack Compose</span><span>OpenAI</span><span>Gemini</span><span>MCP</span><span>Clean Architecture</span><span>AI-assisted dev</span>
+            </div>
+          </article>
+        </div>
+
+        <h3 class="work-group-title">Product &amp; scale · consumer &amp; vertical apps</h3>
+        <div class="work-grid">
+          <article class="work-card" id="digitsole">
+            <div class="work-head">
+              <span class="work-domain">IoT · Fitness</span>
+              <h3>Digitsole Running &amp; Walk</h3>
+            </div>
+            <p class="work-role">Android Consultant · Digitsole</p>
+            <p class="work-value">Turn smart insoles into a <strong>coaching product</strong> — live biomechanics, maps, and audio guidance for runners and walkers.</p>
+            <ul class="work-details">
+              <li><strong>Challenge</strong> Bluetooth reliability, heavy sensor data, and migration off Firebase to AWS.</li>
+              <li><strong>Delivered</strong> Lead Android, AWS Amplify, OAuth, push, audio coaching — two companion apps (Running &amp; Walk).</li>
+              <li><strong>Impact</strong> Maintained live user base through cloud migration without killing engagement.</li>
+            </ul>
+            <div class="work-skills">
+              <span>Kotlin</span><span>Room</span><span>AWS Amplify</span><span>Bluetooth LE</span><span>Google Maps</span><span>FCM</span>
+            </div>
+          </article>
+
+          <article class="work-card" id="runnrz">
+            <div class="work-head">
+              <span class="work-domain">Mobility · Fitness</span>
+              <h3>Runnrz</h3>
+            </div>
+            <p class="work-role">Android Developer · WIMOBI</p>
+            <p class="work-value">Migrated the <strong>iOS app to Android</strong> and delivered <strong>Walk, Run, and Cycling</strong> activities with <strong>Mapbox</strong> maps and a stronger quality bar.</p>
+            <ul class="work-details">
+              <li><strong class="work-detail-label">Challenge</strong><span class="work-detail-body">Bring an existing iOS product to Android: parity for core flows, new activity modes (walk, run, cycle), reliable <strong>Mapbox</strong> tracking, and measurable quality improvements.</span></li>
+              <li><strong class="work-detail-label">Delivered</strong><span class="work-detail-body"><strong>iOS → Android migration</strong>; integrated <strong>Walk</strong>, <strong>Run</strong>, and <strong>Cycling</strong> activity types; wired <strong>Mapbox</strong> for maps, routing, and live location. Raised app quality following the team’s engineering guide (structure, stability, UX polish).</span></li>
+              <li><strong class="work-detail-label">Impact</strong><span class="work-detail-body">Production Android app on Play Store with multi-activity fitness tracking and a maintainable codebase after the port.</span></li>
+            </ul>
+            <div class="work-skills">
+              <span>Kotlin</span><span>iOS migration</span><span>Mapbox</span><span>Walk · Run · Cycling</span><span>Location services</span><span>Quality engineering</span>
+            </div>
+            <a class="work-link" href="https://play.google.com/store/apps/details?id=com.everglow.app.runnrz" target="_blank" rel="noopener">Play Store →</a>
+          </article>
+
+          <article class="work-card" id="knowlepsy">
+            <div class="work-head">
+              <span class="work-domain">HealthTech</span>
+              <h3>Knowlepsy</h3>
+            </div>
+            <p class="work-role">Senior Flutter Developer · Knowlepsy</p>
+            <p class="work-value">Flutter module for <strong>epilepsy care</strong> — capture medical device data in the background and keep it synced with the server.</p>
+            <ul class="work-details">
+              <li><strong>Challenge</strong> Background Bluetooth to medical devices, real-time sync, and stable behaviour across network conditions.</li>
+              <li><strong>Delivered</strong> Flutter module with background BLE, server sync, and improved connectivity handling (internet + Bluetooth).</li>
+              <li><strong>Impact</strong> More accurate data and better engagement for users managing epilepsy.</li>
+            </ul>
+            <div class="work-skills">
+              <span>Flutter</span><span>Dart</span><span>Bluetooth LE</span><span>Background tasks</span><span>REST sync</span>
+            </div>
+          </article>
+
+          <article class="work-card" id="gesundheitspersonal">
+            <div class="work-head">
+              <span class="work-domain">Healthcare · DE</span>
+              <h3>Gesundheitspersonal</h3>
+            </div>
+            <p class="work-role">Tech Lead &amp; Flutter Developer · CodeCooperation GmbH · Germany</p>
+            <p class="work-value">German healthcare platform — <strong>Doctor</strong> (video care) and <strong>Translatly</strong> (live translation), two store apps under Gesundheitspersonal.</p>
+            <ul class="work-details">
+              <li><strong>Challenge</strong> Ship low-latency video and translation in a regulated market — reliable sessions, clear UX, and GDPR-conscious data handling.</li>
+              <li><strong>Delivered</strong> Tech lead on Flutter (Clean Architecture, REST, Firebase, push, Twilio); Android contributions and coordinated Play Store / App Store releases.</li>
+              <li><strong>Impact</strong> Live in German healthcare — <strong>10,000+ downloads in the first month</strong> after launch.</li>
+            </ul>
+            <div class="work-skills">
+              <span>Flutter</span><span>Kotlin</span><span>Clean Architecture</span><span>Firebase</span><span>REST</span><span>Twilio</span><span>GDPR-aware patterns</span>
+            </div>
+          </article>
+
+          <article class="work-card" id="cote-puces">
+            <div class="work-head">
+              <span class="work-domain">Marketplace</span>
+              <h3>Côté Puces</h3>
+            </div>
+            <p class="work-role">Android Developer · Coté Puces</p>
+            <p class="work-value">Marketplace for <strong>bargain hunters, dealers, and designers</strong> — second-hand goods, antiques, and interiors.</p>
+            <ul class="work-details">
+              <li><strong>Challenge</strong> Listing discovery, seller/buyer flows, and a polished Android experience for a niche retail audience.</li>
+              <li><strong>Delivered</strong> End-to-end Android app development for the Côté Puces platform.</li>
+              <li><strong>Impact</strong> Live mobile channel for the flea-market &amp; antiques community.</li>
+            </ul>
+            <div class="work-skills">
+              <span>Kotlin</span><span>Android SDK</span><span>REST</span><span>MVVM</span>
+            </div>
+          </article>
+
+          <article class="work-card">
+            <div class="work-head">
+              <span class="work-domain">Fintech · Web3</span>
+              <h3>BTU-Directs</h3>
+            </div>
+            <p class="work-role">Android Developer · WIMOBI</p>
+            <p class="work-value">Crypto <strong>wallet for everyday users</strong> — balances, transactions, and chain interaction with a focus on trust and clarity.</p>
+            <ul class="work-details">
+              <li><strong>Challenge</strong> Blockchain APIs and secure local storage on consumer Android devices.</li>
+              <li><strong>Delivered</strong> Web3J integration, Realm persistence, transaction flows.</li>
+              <li><strong>Impact</strong> Production wallet in a high-risk fintech domain.</li>
+            </ul>
+            <div class="work-skills">
+              <span>Kotlin</span><span>Web3J</span><span>Realm</span><span>Security</span><span>Transaction UX</span>
+            </div>
+          </article>
+
+          <article class="work-card">
+            <div class="work-head">
+              <span class="work-domain">Mobility · Social</span>
+              <h3>Resto'lib · Intigo · Logistics</h3>
+            </div>
+            <p class="work-role">Senior Android / Flutter · WIMOBI</p>
+            <p class="work-value">High-traffic consumer apps: <strong>restaurant social</strong>, <strong>ride-hailing</strong>, and <strong>logistics</strong> — maps, payments, and real-time updates.</p>
+            <ul class="work-details">
+              <li><strong>Challenge</strong> Location, payments, and notification-heavy UX under load.</li>
+              <li><strong>Delivered</strong> Feature delivery across Kotlin and Flutter codebases, Firebase backends.</li>
+              <li><strong>Impact</strong> Apps used daily in competitive consumer markets.</li>
+            </ul>
+            <div class="work-skills">
+              <span>Flutter</span><span>Kotlin</span><span>Firebase</span><span>Google Maps</span><span>Payments</span><span>Push</span>
+            </div>
+          </article>
+
+          <article class="work-card work-card-more">
+            <div class="work-head">
+              <span class="work-domain">30+ shipped</span>
+              <h3>Extended portfolio</h3>
+            </div>
+            <p class="work-value">Additional WIMOBI-era and client deliveries beyond the case cards above.</p>
+            <ul class="work-details">
+              <li><strong>Examples</strong> Coffreo, SearchDoc, NumCode, Halel, UVote, Bazary.</li>
+            </ul>
+            <a class="work-link" href="https://play.google.com/store/apps/details?id=com.coffreo.coffreo.coffreo" target="_blank" rel="noopener">Coffreo on Play Store →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section-block">
+      <div class="container">
+        <header class="section-head">
+          <p class="section-label">Career</p>
+          <h2 class="section-title">Experience</h2>
+          <p class="section-intro">Timeline of roles — open the <a href="#work">case work</a> section for project details.</p>
+        </header>
+
+        <div class="exp-summary" aria-label="Career highlights">
+          <div class="exp-stat"><strong>UAE</strong><span>public-sector lead</span></div>
+          <div class="exp-stat"><strong>Enterprise</strong><span>Schneider &amp; B2B</span></div>
+          <div class="exp-stat"><strong>AI + LLM</strong><span>in production apps</span></div>
+          <div class="exp-stat"><strong>Remote</strong><span>EU &amp; MENA</span></div>
+        </div>
+
+        <ol class="exp-list">
+          <li class="exp-item exp-item-current">
+            <article class="exp-card">
+              <div class="exp-card-top">
+                <div>
+                  <h3>PROXYM Middle East</h3>
+                  <p class="exp-role">Software Team Lead Android</p>
+                </div>
+                <div class="exp-meta">
+                  <time datetime="2024-05">May 2024 — Present</time>
+                  <span class="exp-location">Dubai, UAE · Remote</span>
+                </div>
+              </div>
+              <p class="exp-summary-text">UAE government &amp; public-sector mobile programs.</p>
+              <div class="exp-links">
+                <a class="exp-link" href="#maskan">Maskan</a>
+                <a class="exp-link" href="#dubai-chamber">Dubai Chambers</a>
+                <a class="exp-link" href="#dubai-culture">Dubai Culture</a>
+                <a class="exp-link" href="#dubai-police">Dubai Police</a>
+              </div>
+            </article>
+          </li>
+
+          <li class="exp-item">
+            <article class="exp-card">
+              <div class="exp-card-top">
+                <div>
+                  <h3>WIMOBI</h3>
+                  <p class="exp-role">Leader Android &amp; Flutter</p>
+                </div>
+                <div class="exp-meta">
+                  <time datetime="2017-01">Jan 2017 — Present</time>
+                  <span class="exp-location">Mahdia, Tunisia · Remote EU</span>
+                </div>
+              </div>
+              <p class="exp-summary-text">Agency studio — 30+ production apps for EU &amp; MENA clients (2017–present, alongside client roles).</p>
+              <a class="exp-link" href="#work">WIMOBI-era case work →</a>
+            </article>
+          </li>
+
+          <li class="exp-item">
+            <article class="exp-card">
+              <div class="exp-card-top">
+                <div>
+                  <h3>Schneider Electric</h3>
+                  <p class="exp-role">Android Team Leader</p>
+                </div>
+                <div class="exp-meta">
+                  <time datetime="2023-05/2024-03">May 2023 — Mar 2024</time>
+                  <span class="exp-location">France · Remote</span>
+                </div>
+              </div>
+              <p class="exp-summary-text">Android Team Leader — <strong>mySchneider</strong>: team enablement, MAP integrations, GitHub/Dependabot, CI/CD, Play Store (May 2023 – Mar 2024).</p>
+              <div class="exp-links">
+                <a class="exp-link" href="#myschneider">Case study</a>
+                <a class="exp-link" href="https://play.google.com/store/apps/details?id=com.schneider.qrcode.tocase" target="_blank" rel="noopener">Play Store</a>
+              </div>
+            </article>
+          </li>
+
+          <li class="exp-item">
+            <article class="exp-card">
+              <div class="exp-card-top">
+                <div>
+                  <h3>Knowlepsy</h3>
+                  <p class="exp-role">Senior Flutter Developer</p>
+                </div>
+                <div class="exp-meta">
+                  <time datetime="2023-05/2023-08">May 2023 — Aug 2023</time>
+                  <span class="exp-location">Tunis, Tunisia</span>
+                </div>
+              </div>
+              <p class="exp-summary-text">Senior Flutter Developer — epilepsy care module (May – Aug 2023).</p>
+              <a class="exp-link" href="#knowlepsy">Case study →</a>
+            </article>
+          </li>
+
+          <li class="exp-item">
+            <article class="exp-card">
+              <div class="exp-card-top">
+                <div>
+                  <h3>Digitsole</h3>
+                  <p class="exp-role">Android Consultant</p>
+                </div>
+                <div class="exp-meta">
+                  <time datetime="2021-06/2022-09">Jun 2021 — Sep 2022</time>
+                  <span class="exp-location">France</span>
+                </div>
+              </div>
+              <p class="exp-summary-text">Android Consultant — Digitsole Running &amp; Walk (Jun 2021 – Sep 2022).</p>
+              <a class="exp-link" href="#digitsole">Case study →</a>
+            </article>
+          </li>
+
+          <li class="exp-item">
+            <article class="exp-card">
+              <div class="exp-card-top">
+                <div>
+                  <h3>Côté Puces</h3>
+                  <p class="exp-role">Android Developer</p>
+                </div>
+                <div class="exp-meta">
+                  <time datetime="2021-09/2022-02">Sep 2021 — Feb 2022</time>
+                </div>
+              </div>
+              <p class="exp-summary-text">Android Developer — Côté Puces marketplace (Sep 2021 – Feb 2022).</p>
+              <a class="exp-link" href="#cote-puces">Case study →</a>
+            </article>
+          </li>
+
+          <li class="exp-item">
+            <article class="exp-card">
+              <div class="exp-card-top">
+                <div>
+                  <h3>CodeCooperation GmbH</h3>
+                  <p class="exp-role">Tech Lead &amp; Flutter Developer</p>
+                </div>
+                <div class="exp-meta">
+                  <time datetime="2020-12/2021-12">Dec 2020 — Dec 2021</time>
+                  <span class="exp-location">Germany</span>
+                </div>
+              </div>
+              <p class="exp-summary-text">Tech Lead &amp; Flutter Developer — Gesundheitspersonal / CodeCooperation (Dec 2020 – Dec 2021).</p>
+              <a class="exp-link" href="#gesundheitspersonal">Case study →</a>
+            </article>
+          </li>
+        </ol>
+
+        <div class="credentials">
+          <h3 class="credentials-title">Education &amp; credentials</h3>
+          <div class="credentials-grid">
+            <article class="credential-card">
+              <h4>Education</h4>
+              <p class="credential-main">Licence, Computer Technology</p>
+              <p class="credential-sub">ISET Sousse · 2013</p>
+              <p class="credential-sub">Erriadh High School — Computer Science · 2009</p>
+            </article>
+            <article class="credential-card">
+              <h4>Continuous learning</h4>
+              <ul class="credential-list">
+                <li>Generative AI for Software Development</li>
+                <li>Gemini CLI — Code &amp; Create with an Open-Source Agent</li>
+                <li>Pair Programming with a Large Language Model</li>
+                <li>Jetpack Compose — Udemy</li>
+                <li>Advanced Flutter UI — Coursera</li>
+                <li>AWS Amplify &amp; Firebase</li>
+              </ul>
+            </article>
+            <article class="credential-card">
+              <h4>Languages</h4>
+              <ul class="credential-list credential-lang">
+                <li><span>English</span><em>Professional</em></li>
+                <li><span>French</span><em>Professional</em></li>
+                <li><span>Arabic</span><em>Native</em></li>
+                <li><span>German</span><em>A2+ · improving</em></li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="container contact-box">
+        <header class="section-head">
+          <p class="section-label">Hire me</p>
+          <h2 class="section-title">Let's scope your next mobile build</h2>
+          <p class="section-intro">Freelance missions, fixed phases, or long-term partnership — EU remote from Germany. Share your product; I'll reply with fit, timeline, and approach.</p>
+        </header>
+        <div class="contact-business" aria-label="Business details">
+          <p class="contact-business-label">Contracts &amp; invoices</p>
+          <p class="contact-business-name"><strong>HB IT Services</strong> · Bergneustadt, Germany</p>
+          <p class="contact-business-note">EU remote · quotes &amp; invoices in EUR · tax details on request.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="btn btn-primary btn-lg" href="mailto:samirasalahsalah@gmail.com?subject=Freelance%20mobile%20project">samirasalahsalah@gmail.com</a>
+          <a class="btn btn-outline" href="tel:+4915251534047">+49 152 51534047</a>
+          <a class="btn btn-ghost" href="https://github.com/samirasalah" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Samira Salah · HB IT Services · Senior Android &amp; Mobile Engineer</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const navToggle = document.querySelector(".nav-toggle");
+    const navMenu = document.getElementById("nav-menu");
+    if (navToggle && navMenu) {
+      navToggle.addEventListener("click", () => {
+        const open = navToggle.getAttribute("aria-expanded") === "true";
+        navToggle.setAttribute("aria-expanded", String(!open));
+        navMenu.classList.toggle("is-open", !open);
+        document.body.classList.toggle("nav-open", !open);
+      });
+      navMenu.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          navToggle.setAttribute("aria-expanded", "false");
+          navMenu.classList.remove("is-open");
+          document.body.classList.remove("nav-open");
+        });
+      });
+    }
+  </script>
 </body>
 </html>
