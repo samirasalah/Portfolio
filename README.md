@@ -1,58 +1,46 @@
-# Samira Salah
+# Samira Salah — Portfolio (GitHub Pages)
 
-## AI-First Mobile Architect | Android & Kotlin Multiplatform Expert
+Professional one-page portfolio for sharing with clients and recruiters.
 
-Senior Mobile Engineer with 8+ years of experience in Android, Flutter, and cross-platform architectures.
+## Preview locally
 
-I specialize in:
-- AI-driven mobile engineering
-- Kotlin Multiplatform (KMP)
-- Clean architecture systems
-- Legacy modernization
-- Scalable enterprise mobile apps
+```bash
+cd portfolio
+# Python 3
+python3 -m http.server 8080
+# Open http://localhost:8080
+```
 
----
+Or open `index.html` in a browser (CSS path must stay `css/style.css`).
 
-## 🚀 What I Do
+## Deploy to GitHub Pages
 
-- Mobile system architecture design
-- Android (Kotlin / Jetpack Compose)
-- Flutter & cross-platform solutions
-- AI integration in mobile applications (LLMs, assistants, automation)
-- Legacy app modernization
+### Option A — User site (`samirasalah.github.io`)
 
----
+1. Create a public repo named **`samirasalah.github.io`** on GitHub.
+2. Copy the contents of this `portfolio` folder into the repo root:
+   - `index.html`
+   - `css/style.css`
+   - (optional) add `Samira-Salah-CV.pdf` in `assets/` and link it from the hero.
+3. On GitHub: **Settings → Pages → Source**: Deploy from branch **`main`**, folder **`/ (root)`**.
+4. Site URL: **https://samirasalah.github.io/**
 
-## 💼 Experience Highlights
+### Option B — Project site (`username.github.io/portfolio`)
 
-- Led Android modernization projects in enterprise environments
-- Designed scalable mobile architectures with Clean Architecture principles
-- Integrated AI-powered features into production mobile apps
-- Built cross-platform systems using Kotlin Multiplatform
+1. Push this folder to any repo (e.g. `portfolio`).
+2. Enable Pages from `/docs` or root branch.
+3. URL: `https://samirasalah.github.io/portfolio/` — update `css/style.css` path if needed.
 
----
+## Customize
 
-## 📱 Featured Projects
+- Replace Play Store links if package IDs change.
+- Add `assets/cv.pdf` and a download button in `index.html` hero section.
+- Add a professional photo: `assets/photo.jpg` and an `<img>` in the hero.
 
-- mySchneider (Enterprise mobile platform)
-- Dubai Chamber App
-- Digitsole Smart Footwear App
-- Healthcare Workforce Management System
-- Real-time translation apps (Flutter)
+## Files
 
----
-
-## 🧠 AI Focus
-
-- LLM integration (OpenAI, Gemini)
-- AI-powered mobile features
-- Automation of testing and QA processes
-- AI-assisted development workflows
-
----
-
-## 📫 Contact
-
-- Email: samirasalahsalah@gmail.com
-- LinkedIn: https://www.linkedin.com/in/samira-salah-22a93883/
-- GitHub: https://github.com/samirasalah
+| File | Purpose |
+|------|---------|
+| `index.html` | Single-page portfolio |
+| `css/style.css` | Layout and theme |
+| `README.md` | This guide |
