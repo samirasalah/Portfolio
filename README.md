@@ -1,46 +1,42 @@
 # Samira Salah — Portfolio (GitHub Pages)
 
-Professional one-page portfolio for sharing with clients and recruiters.
+Professional one-page portfolio — EN / FR / DE, AI positioning, case work, CV download.
+
+**Live URL:** https://samirasalah.github.io/
 
 ## Preview locally
 
 ```bash
 cd portfolio
-# Python 3
 python3 -m http.server 8080
 # Open http://localhost:8080
 ```
 
-Or open `index.html` in a browser (CSS path must stay `css/style.css`).
+## Deploy to GitHub Pages (one command)
 
-## Deploy to GitHub Pages
+```bash
+cd portfolio
+chmod +x deploy-github-pages.sh
+./deploy-github-pages.sh
+```
 
-### Option A — User site (`samirasalah.github.io`)
+This clones `samirasalah.github.io`, syncs this folder, commits, and pushes to `main`.
 
-1. Create a public repo named **`samirasalah.github.io`** on GitHub.
-2. Copy the contents of this `portfolio` folder into the repo root:
-   - `index.html`
-   - `css/style.css`
-   - (optional) add `Samira-Salah-CV.pdf` in `assets/` and link it from the hero.
-3. On GitHub: **Settings → Pages → Source**: Deploy from branch **`main`**, folder **`/ (root)`**.
-4. Site URL: **https://samirasalah.github.io/**
+## Contents
 
-### Option B — Project site (`username.github.io/portfolio`)
-
-1. Push this folder to any repo (e.g. `portfolio`).
-2. Enable Pages from `/docs` or root branch.
-3. URL: `https://samirasalah.github.io/portfolio/` — update `css/style.css` path if needed.
+| Path | Purpose |
+|------|---------|
+| `index.html` | Single-page site |
+| `css/style.css` | Layout & theme |
+| `js/i18n.js` | UI translations (EN/FR/DE) |
+| `js/projects-i18n.js` | Project card translations |
+| `assets/Samira-Salah-CV.pdf` | Downloadable CV |
+| `images/samira-salah.jpeg` | Profile photo |
+| `robots.txt` / `sitemap.xml` | SEO |
+| `scripts/wire-i18n.py` | Helper to wire new project cards |
 
 ## Customize
 
-- Replace Play Store links if package IDs change.
-- Add `assets/cv.pdf` and a download button in `index.html` hero section.
-- Add a professional photo: `assets/photo.jpg` and an `<img>` in the hero.
-
-## Files
-
-| File | Purpose |
-|------|---------|
-| `index.html` | Single-page portfolio |
-| `css/style.css` | Layout and theme |
-| `README.md` | This guide |
+- **CV:** Replace `assets/Samira-Salah-CV.pdf` with your latest PDF (keep the filename or update links in `index.html`).
+- **Calendly:** Add a booking URL next to “Book a call” in the hero if you use Calendly.
+- **Play Store links:** Update package IDs in project cards when needed.
