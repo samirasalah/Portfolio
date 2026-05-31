@@ -132,12 +132,12 @@
           </ul>
           <div class="hero-cta">
             <a class="btn btn-primary" href="mailto:samirasalahsalah@gmail.com?subject=Freelance%20mobile%20mission%20%E2%80%94%20France%20%2F%20EU" data-i18n="hero.ctaBook">Discuss a mission</a>
-            <a class="btn btn-outline" href="assets/cv.html" target="_blank" rel="noopener noreferrer" data-i18n="hero.ctaCv">Download CV</a>
+            <a class="btn btn-outline" href="assets/cv.html" target="_blank" rel="noopener noreferrer" data-i18n="hero.ctaCv" data-cv-link>Download CV</a>
             <a class="btn btn-outline" href="#work" data-i18n="hero.ctaWork">View references</a>
             <a class="btn btn-ghost" href="https://www.linkedin.com/in/samira-salah-22a93883/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </div>
           <p class="hero-meta">
-            <span data-i18n="exp.heroLoc">Bergneustadt, Germany</span>
+            <span data-geo-location data-geo-fallback="Bergneustadt, Germany">Bergneustadt, Germany</span>
             <span>samirasalahsalah@gmail.com</span>
             <span>+49 152 51534047</span>
           </p>
@@ -792,12 +792,12 @@
         </header>
         <div class="contact-business" aria-label="Business details" data-i18n-aria="bizAria">
           <p class="contact-business-label" data-i18n="contact.bizLabel">Contracts &amp; invoicing</p>
-          <p class="contact-business-name" data-i18n="contact.bizName" data-i18n-html="true"><strong>HB IT Services</strong> · Bergneustadt, Germany</p>
+          <p class="contact-business-name"><strong>HB IT Services</strong> · <span data-geo-location data-geo-fallback="Bergneustadt, Germany">Bergneustadt, Germany</span></p>
           <p class="contact-business-note" data-i18n="contact.bizNote">Registered EU business · quotes &amp; invoices in EUR · VAT details on request.</p>
         </div>
         <div class="contact-actions">
           <a class="btn btn-primary btn-lg" href="mailto:samirasalahsalah@gmail.com?subject=Freelance%20mobile%20mission%20%E2%80%94%20France%20%2F%20EU">samirasalahsalah@gmail.com</a>
-          <a class="btn btn-outline btn-lg" href="assets/cv.html" target="_blank" rel="noopener noreferrer" data-i18n="hero.ctaCv">Download CV</a>
+          <a class="btn btn-outline btn-lg" href="assets/cv.html" target="_blank" rel="noopener noreferrer" data-i18n="hero.ctaCv" data-cv-link>Download CV</a>
           <a class="btn btn-outline" href="tel:+4915251534047">+49 152 51534047</a>
           <a class="btn btn-ghost" href="https://github.com/samirasalah" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
@@ -817,6 +817,7 @@
   </footer>
 
   <script src="js/projects-i18n.js"></script>
+  <script src="assets/js/geo-location.js"></script>
   <script src="js/i18n.js"></script>
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();

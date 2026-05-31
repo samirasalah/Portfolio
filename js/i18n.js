@@ -5,6 +5,11 @@
   const STORAGE_KEY = "portfolio-lang";
   const LANGS = ["en", "fr", "de"];
 
+  function cvUrlForLang(lang) {
+    if (!LANGS.includes(lang)) lang = "en";
+    return lang === "en" ? "assets/cv.html" : `assets/cv.html?lang=${lang}`;
+  }
+
   const T = {
     en: {
       meta: {
@@ -39,6 +44,7 @@
         proof3: "Schneider, health & public apps",
         ctaBook: "Discuss a mission",
         ctaCv: "Download CV",
+        ctaCvUrl: "assets/cv.html",
         ctaWork: "View references",
         panelLabel: "Engagement model",
         panelTitle: "Senior ownership — <em>production-first</em>",
@@ -235,6 +241,7 @@
         proof3: "Schneider, santé & public",
         ctaBook: "Discuter d'une mission",
         ctaCv: "Télécharger le CV",
+        ctaCvUrl: "assets/cv.html?lang=fr",
         ctaWork: "Voir les références",
         panelLabel: "Modèle d'engagement",
         panelTitle: "Pilotage senior — <em>production d'abord</em>",
@@ -431,6 +438,7 @@
         proof3: "Schneider, Health & Public",
         ctaBook: "Mission besprechen",
         ctaCv: "Lebenslauf (PDF)",
+        ctaCvUrl: "assets/cv.html?lang=de",
         ctaWork: "Referenzen ansehen",
         panelLabel: "Engagement-Modell",
         panelTitle: "Senior Ownership — <em>production-first</em>",
@@ -636,6 +644,16 @@
       else el.textContent = val;
     });
 
+    document.querySelectorAll("[data-i18n-href]").forEach((el) => {
+      const key = el.getAttribute("data-i18n-href");
+      const val = get(dict, key);
+      if (val) el.setAttribute("href", val);
+    });
+
+    document.querySelectorAll("[data-cv-link]").forEach((el) => {
+      el.setAttribute("href", cvUrlForLang(lang));
+    });
+
     document.querySelectorAll("[data-i18n-aria]").forEach((el) => {
       const key = el.getAttribute("data-i18n-aria");
       const val = get(dict, key);
@@ -677,6 +695,8 @@
     });
 
     document.documentElement.classList.add("i18n-ready");
+
+    if (window.consultantGeo) window.consultantGeo.refreshGeoLabels();
 
     try {
       const url = new URL(window.location.href);
@@ -819,5 +839,5 @@
     init();
   }
 
-  window.portfolioI18n = { applyLang, T, closeLangMenu };
+  window.portfolioI18n = { applyLang, T, closeLangMenu, cvUrlForLang };
 })();
