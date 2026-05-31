@@ -53,7 +53,8 @@
       delivered: "Delivered",
       impact: "Impact",
       footerL: "HB IT Services · Registered EU business · Quotes & invoices in EUR",
-      footerR: "Full case studies: samirasalah.github.io",
+      footerRLabel: "Full case studies:",
+      footerRUrl: "samirasalah.github.io",
       present: "Present",
       roles: {
         proxym: {
@@ -163,7 +164,8 @@
       delivered: "Livré",
       impact: "Impact",
       footerL: "HB IT Services · Entreprise UE enregistrée · Devis & factures en EUR",
-      footerR: "Études de cas : samirasalah.github.io",
+      footerRLabel: "Études de cas :",
+      footerRUrl: "samirasalah.github.io",
       present: "Aujourd'hui",
       roles: {
         proxym: {
@@ -273,7 +275,8 @@
       delivered: "Geliefert",
       impact: "Impact",
       footerL: "HB IT Services · EU-registriertes Unternehmen · Angebote & Rechnungen in EUR",
-      footerR: "Fallstudien: samirasalah.github.io",
+      footerRLabel: "Fallstudien:",
+      footerRUrl: "samirasalah.github.io",
       present: "Heute",
       roles: {
         proxym: {
