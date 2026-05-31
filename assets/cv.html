@@ -7,11 +7,30 @@
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
   <title>Samira Salah — CV</title>
-  <link rel="stylesheet" href="cv.css">
+  <link rel="stylesheet" href="cv.css?v=9">
   <link rel="alternate" hreflang="en" href="cv.html">
   <link rel="alternate" hreflang="fr" href="cv.html?lang=fr">
   <link rel="alternate" hreflang="de" href="cv.html?lang=de">
-  <style>html:not(.cv-i18n-ready) body { opacity: 0; } html.cv-i18n-ready body { opacity: 1; transition: opacity .12s ease-out; }</style>
+  <style>
+    html:not(.cv-i18n-ready) body { opacity: 0; }
+    html.cv-i18n-ready body { opacity: 1; transition: opacity .12s ease-out; }
+    @media print {
+      .cv-sheet:first-of-type .cv-tagline {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        font-size: 7pt !important;
+        line-height: 1.32 !important;
+        color: #dbeafe !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      .cv-header {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+    }
+  </style>
 </head>
 <body>
   <p class="cv-export-hint" role="note">

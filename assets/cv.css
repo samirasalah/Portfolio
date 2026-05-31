@@ -1345,6 +1345,22 @@ h2 {
 
   .cv-export-hint { display: none !important; }
 
+  .cv-sheet:first-of-type .cv-tagline {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    font-size: 7pt !important;
+    line-height: 1.32 !important;
+    max-width: 108mm !important;
+    margin-top: 0.4mm !important;
+    color: #dbeafe !important;
+  }
+
+  .cv-header {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
   .cv {
     width: var(--page-w);
     max-width: var(--page-w);
