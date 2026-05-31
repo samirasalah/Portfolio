@@ -19,8 +19,6 @@
       },
       skip: "Skip to content",
       nav: {
-        status: "Available · France & EU",
-        statusAria: "Senior mobile engineer — go to contact",
         ai: "Delivery",
         expertise: "Expertise",
         highlights: "Highlights",
@@ -269,8 +267,6 @@
       },
       skip: "Aller au contenu",
       nav: {
-        status: "Disponible · France & UE",
-        statusAria: "Ingénieure mobile senior — aller au contact",
         ai: "Delivery",
         expertise: "Expertise",
         highlights: "Points forts",
@@ -519,8 +515,6 @@
       },
       skip: "Zum Inhalt springen",
       nav: {
-        status: "Verfügbar · Frankreich & EU",
-        statusAria: "Senior Mobile Engineer — zum Kontakt",
         ai: "Delivery",
         expertise: "Expertise",
         highlights: "Highlights",
