@@ -10,7 +10,7 @@
     en: {
       metaTitle: "Samira Salah — CV",
       exportHint:
-        '<strong>Export PDF</strong> — Chrome · <kbd>⌘</kbd>+<kbd>P</kbd> → <em>Save as PDF</em> · A4 · Margins <strong>None</strong> · Background graphics <strong>On</strong>. · Spacing preview: <code>?preview=print</code>',
+        '<strong>Export PDF</strong> — Chrome · <kbd>⌘</kbd>+<kbd>P</kbd> → <em>Save as PDF</em> · A4 · Spacing preview: <code>?preview=print</code>',
       langLabel: "CV language",
       title: "Senior Freelance Android & Mobile Engineer · Video & public apps",
       badgeTitle:
@@ -158,7 +158,7 @@
     fr: {
       metaTitle: "Samira Salah — CV",
       exportHint:
-        '<strong>Exporter en PDF</strong> — Chrome · <kbd>⌘</kbd>+<kbd>P</kbd> → <em>Enregistrer au format PDF</em> · A4 · Marges <strong>Aucune</strong> · Graphiques d\'arrière-plan <strong>Activés</strong>. · Prévisualiser l\'espacement : <code>?preview=print</code>',
+        '<strong>Exporter en PDF</strong> — Chrome · <kbd>⌘</kbd>+<kbd>P</kbd> → <em>Enregistrer au format PDF</em> · A4 · Prévisualiser l\'espacement : <code>?preview=print</code>',
       langLabel: "Langue du CV",
       title: "Ingénieure mobile senior freelance · Android & Flutter · Vidéo & grand public",
       badgeTitle:
@@ -306,7 +306,7 @@
     de: {
       metaTitle: "Samira Salah — Lebenslauf",
       exportHint:
-        '<strong>PDF exportieren</strong> — Chrome · <kbd>⌘</kbd>+<kbd>P</kbd> → <em>Als PDF speichern</em> · A4 · Ränder <strong>Keine</strong> (nicht Standard) · Hintergrundgrafiken <strong>Ein</strong>.',
+        '<strong>PDF exportieren</strong> — Chrome · <kbd>⌘</kbd>+<kbd>P</kbd> → <em>Als PDF speichern</em> · A4',
       langLabel: "Sprache des Lebenslaufs",
       title: "Senior Freelance Android & Mobile Engineer · Video & Public Apps",
       badgeTitle:

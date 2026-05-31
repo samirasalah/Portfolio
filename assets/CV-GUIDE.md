@@ -12,7 +12,7 @@ Objectif : comprendre la structure, centraliser les choix de design, et modifier
 | `cv.html` | Structure HTML unique (EN par défaut). **Source de vérité** pour le markup. |
 | `cv.css` | Thème, layout écran, règles print, tokens CSS. |
 | `js/cv-i18n.js` | Textes EN / FR / DE (`data-cv-i18n`). |
-| `js/cv-print-check.js` | Aperçu print + détection débordement A4. |
+| `js/cv-print-check.js` | Active le layout compact print (`?preview=print`, `beforeprint`). |
 | `js/geo-location.js` | Libellés dynamiques selon IP (France vs Allemagne). |
 | `cv-fr.html` / `cv-de.html` | Redirections ou entrées langue (si présentes). |
 
@@ -128,13 +128,8 @@ Activation automatique (`cv-print-check.js`) :
 ### Export PDF (Chrome)
 
 1. Ouvrir : `assets/cv.html?lang=fr&preview=print`
-2. Vérifier : **aucune alerte orange** (débordement A4).
-3. ⌘+P → **A4** · Margins **None** · **Background graphics On**
-
-### Contrôle de débordement
-
-`cv-print-check.js` mesure chaque `.cv-sheet` (max **297 mm**).  
-Si warning : réduire contenu page 1, `--print-block-gap`, ou padding cartes — **ne pas** forcer `min-height` sur les sheets.
+2. ⌘+P → **A4**
+3. Vérifier visuellement : **2 pages**, pas de contenu coupé entre les pages
 
 ---
 
@@ -245,7 +240,7 @@ Puis vérifier header, tags `--core`, labels refs, bordures cartes.
 
 1. Dupliquer un `article.project-card--compact` dans `cv.html`.
 2. Ajouter `projects.<id>.{sector,meta,intro,delivered,impact}` dans **EN, FR, DE** dans `cv-i18n.js`.
-3. Preview print → contrôler débordement page 1.
+3. Preview print → contrôler que page 1 tient sur une feuille A4.
 
 ### Ajouter un mini-projet (page 2)
 
@@ -276,7 +271,7 @@ Classe cible : `.cv-sheet-last .cv-block.cv-block--exp` (utiliser `margin-top`, 
 
 ## Checklist avant envoi PDF
 
-- [ ] `?lang=fr&preview=print` — pas d’alerte débordement
+- [ ] `?lang=fr&preview=print` — aperçu compact activé
 - [ ] 2 pages exactement, pas de rôle coupé en deux
 - [ ] Marges bas page 1 et page 2 visibles (~5 mm)
 - [ ] Background graphics activé (couleurs header, tags, highlight PROXYM)
