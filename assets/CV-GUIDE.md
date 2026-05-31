@@ -164,6 +164,7 @@ API console : `cvI18n.applyLang('fr')`.
 |---------|--------|
 | `profileText`, `offer1t`, `m1`… | Sections globales |
 | `refsFrance*`, `refsLive*` | Bande références |
+| *(tagline)* | **Non** — voir `[data-geo-tagline]` dans `geo-location.js` |
 | `roles.*` | Expérience page 2 |
 | `projects.<id>.intro/delivered/impact` | Fiches projet |
 
@@ -180,15 +181,49 @@ API console : `cvI18n.applyLang('fr')`.
 
 ## Géolocalisation (`geo-location.js`)
 
-IP via `ipapi.co` (cache session 6 h).
+IP via `ipapi.co` (cache session 6 h, fallback **DE** si API indisponible).
 
-| Attribut HTML | Contenu |
-|---------------|---------|
+### Règle unique (tous les hooks geo)
+
+| IP visiteur | Variante affichée |
+|-------------|-------------------|
+| **France (`FR`)** | Textes **France & UE** |
+| **Toute autre IP** | Textes **Allemagne & UE** (défaut) |
+
+La langue d’interface (EN / FR / DE via `cv-i18n.js`) choisit **la traduction** ; l’IP choisit **France vs Allemagne** dans cette traduction.
+
+### Attributs HTML
+
+| Attribut | Contenu |
+|----------|---------|
+| `[data-geo-tagline]` | Sous-titre header (`.cv-tagline`) — **source de vérité geo**, pas `cv-i18n` |
+| `[data-geo-missions]` | Pays missions dans le badge (`France` / `Allemagne` / …) |
+| `[data-geo-scope]` | Ligne badge « France & UE · remote… » / « Allemagne & UE · … » |
 | `[data-geo-location]` | Ville (Rambouillet si IP FR, sinon Bergneustadt) |
-| `[data-geo-missions]` | Pays missions dans le badge titre |
-| `[data-geo-scope]` | Ligne « France & UE » / « Allemagne & UE » |
 
-Refresh après changement de langue : `consultantGeo.refreshGeoLabels()`.
+Refresh après changement de langue : `consultantGeo.refreshGeoLabels()` (appelé par `cvI18n.applyLang`).
+
+### Textes tagline (constante `TAGLINE` dans `geo-location.js`)
+
+**Français — IP France :**
+> Apps mobiles en production pour la France & l'UE — grand public, service public, vidéo & temps réel
+
+**Français — IP hors France :**
+> Apps mobiles en production pour l'Allemagne & l'UE — grand public, service public, vidéo & temps réel
+
+**Anglais — IP France :**
+> Production mobile for France & EU — consumer, public sector, video & real-time
+
+**Anglais — IP hors France :**
+> Production mobile for Germany & EU — consumer, public sector, video & real-time
+
+**Allemand — IP France :**
+> Mobile Apps in Production für Frankreich & EU — Consumer, öffentlicher Dienst, Video & Echtzeit
+
+**Allemand — IP hors France :**
+> Mobile Apps in Production für Deutschland & EU — Consumer, öffentlicher Dienst, Video & Echtzeit
+
+Pour modifier le tagline : éditer `TAGLINE` dans `assets/js/geo-location.js` (pas `cv-i18n.js`).
 
 ---
 
@@ -262,6 +297,7 @@ Classe cible : `.cv-sheet-last .cv-block.cv-block--exp` (utiliser `margin-top`, 
 
 ```
 .cv-header / .cv-header--compact
+.cv-tagline / [data-geo-tagline]
 .cv-metrics / .metric
 .cv-refs / .cv-ref-item / .cv-ref-label / .cv-ref-clients
 .cv-body / .cv-main / .cv-aside

@@ -36,6 +36,25 @@
     },
   };
 
+  /**
+   * CV header tagline — IP FR → France & EU · otherwise → Germany & EU.
+   * Source of truth (not cv-i18n.js). See assets/CV-GUIDE.md § Géolocalisation.
+   */
+  const TAGLINE = {
+    en: {
+      fr: "Production mobile for France & EU — consumer, public sector, video & real-time",
+      default: "Production mobile for Germany & EU — consumer, public sector, video & real-time",
+    },
+    fr: {
+      fr: "Apps mobiles en production pour la France & l'UE — grand public, service public, vidéo & temps réel",
+      default: "Apps mobiles en production pour l'Allemagne & l'UE — grand public, service public, vidéo & temps réel",
+    },
+    de: {
+      fr: "Mobile Apps in Production für Frankreich & EU — Consumer, öffentlicher Dienst, Video & Echtzeit",
+      default: "Mobile Apps in Production für Deutschland & EU — Consumer, öffentlicher Dienst, Video & Echtzeit",
+    },
+  };
+
   let lastData = null;
 
   function getLang() {
@@ -59,6 +78,11 @@
 
   function formatScope(data, lang) {
     const labels = SCOPE[lang] || SCOPE.en;
+    return countryCode(data) === "FR" ? labels.fr : labels.default;
+  }
+
+  function formatTagline(data, lang) {
+    const labels = TAGLINE[lang] || TAGLINE.en;
     return countryCode(data) === "FR" ? labels.fr : labels.default;
   }
 
@@ -121,6 +145,11 @@
     document.querySelectorAll("[data-geo-scope]").forEach((el) => {
       el.textContent = scopeText;
     });
+
+    const taglineText = formatTagline(data, lang);
+    document.querySelectorAll("[data-geo-tagline]").forEach((el) => {
+      el.textContent = taglineText;
+    });
   }
 
   async function applyGeoLocation() {
@@ -139,6 +168,7 @@
     formatLocation,
     formatMissions,
     formatScope,
+    formatTagline,
   };
 
   if (document.readyState === "loading") {

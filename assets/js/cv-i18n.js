@@ -1,5 +1,6 @@
 /**
  * CV i18n — EN (default), FR, DE
+ * Tagline (France vs Germany) lives in geo-location.js — see CV-GUIDE.md § Géolocalisation.
  */
 (function () {
   const PORTFOLIO_LANG_KEY = "portfolio-lang";
@@ -12,8 +13,6 @@
         '<strong>Export PDF</strong> — Chrome · <kbd>⌘</kbd>+<kbd>P</kbd> → <em>Save as PDF</em> · A4 · Margins <strong>None</strong> · Background graphics <strong>On</strong>. · Spacing preview: <code>?preview=print</code>',
       langLabel: "CV language",
       title: "Senior Freelance Android & Mobile Engineer · Video & public apps",
-      tagline:
-        "Production mobile for France & EU — consumer, public sector, video & real-time",
       badgeTitle:
         'Freelance senior · missions in <span data-geo-missions data-geo-missions-html="true"><strong>Germany</strong></span>',
       badgeBiz: "HB IT Services · EUR invoicing",
@@ -162,8 +161,6 @@
         '<strong>Exporter en PDF</strong> — Chrome · <kbd>⌘</kbd>+<kbd>P</kbd> → <em>Enregistrer au format PDF</em> · A4 · Marges <strong>Aucune</strong> · Graphiques d\'arrière-plan <strong>Activés</strong>. · Prévisualiser l\'espacement : <code>?preview=print</code>',
       langLabel: "Langue du CV",
       title: "Ingénieure mobile senior freelance · Android & Flutter · Vidéo & grand public",
-      tagline:
-        "Apps mobiles en production pour la France & l'UE — grand public, service public, vidéo & temps réel",
       badgeTitle:
         'Freelance senior · missions en <span data-geo-missions data-geo-missions-html="true"><strong>Allemagne</strong></span>',
       badgeBiz: "HB IT Services · facturation EUR",
@@ -312,8 +309,6 @@
         '<strong>PDF exportieren</strong> — Chrome · <kbd>⌘</kbd>+<kbd>P</kbd> → <em>Als PDF speichern</em> · A4 · Ränder <strong>Keine</strong> (nicht Standard) · Hintergrundgrafiken <strong>Ein</strong>.',
       langLabel: "Sprache des Lebenslaufs",
       title: "Senior Freelance Android & Mobile Engineer · Video & Public Apps",
-      tagline:
-        "Mobile Apps mit hohem Traffic für Frankreich & EU — Consumer, öffentlicher Dienst, Video & Echtzeit",
       badgeTitle:
         'Freelance senior · Aufträge in <span data-geo-missions data-geo-missions-html="true"><strong>Deutschland</strong></span>',
       badgeBiz: "HB IT Services · EUR-Abrechnung",
