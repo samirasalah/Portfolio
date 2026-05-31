@@ -1,6 +1,6 @@
 /**
  * CV print layout — compact always on (screen = print structure).
- * White preview chrome only for ?preview=print and during print dialog.
+ * White preview chrome (cv-print-preview) only when ?preview=print is in the URL.
  */
 (function () {
   function isPrintPreviewUrl() {
@@ -11,20 +11,17 @@
     document.querySelector(".cv")?.classList.add("cv-print-compact");
   }
 
-  function enablePrintPreviewChrome() {
-    document.documentElement.classList.add("cv-print-preview");
-    enableCompactLayout();
-  }
-
-  function disablePrintPreviewChrome() {
-    if (!isPrintPreviewUrl()) {
+  function syncPreviewChrome() {
+    if (isPrintPreviewUrl()) {
+      document.documentElement.classList.add("cv-print-preview");
+    } else {
       document.documentElement.classList.remove("cv-print-preview");
     }
   }
 
   function bootstrap() {
     enableCompactLayout();
-    if (isPrintPreviewUrl()) enablePrintPreviewChrome();
+    syncPreviewChrome();
   }
 
   if (document.readyState === "loading") {
@@ -33,6 +30,5 @@
     bootstrap();
   }
 
-  window.addEventListener("beforeprint", enablePrintPreviewChrome);
-  window.addEventListener("afterprint", disablePrintPreviewChrome);
+  window.addEventListener("beforeprint", enableCompactLayout);
 })();
