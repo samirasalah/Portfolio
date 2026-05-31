@@ -41,6 +41,12 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+}
+
+section[id],
+.work-card[id] {
+  scroll-margin-top: 5.5rem;
 }
 
 body {
@@ -581,7 +587,7 @@ a.nav-status:hover {
   margin: 0;
   font-size: 0.98rem;
   color: var(--text-muted);
-  max-width: 34rem;
+  max-width: 38rem;
   line-height: 1.65;
 }
 
@@ -717,6 +723,35 @@ a.nav-status:hover {
   line-height: 1.55;
 }
 
+.panel-points {
+  margin: 0 0 1.15rem;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.panel-points li {
+  position: relative;
+  padding-left: 1.1rem;
+  font-size: 0.84rem;
+  color: var(--text);
+  line-height: 1.45;
+}
+
+.panel-points li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--ai);
+  box-shadow: 0 0 8px var(--ai-soft);
+}
+
 .panel-cta {
   font-size: 0.88rem;
   font-weight: 600;
@@ -833,9 +868,24 @@ section {
 
 .metric-card h3 {
   margin: 0 0 0.5rem;
-  font-size: 0.88rem;
+  font-size: 0.95rem;
   font-weight: 700;
-  color: var(--text-muted);
+  color: var(--text);
+}
+
+.metric-kicker {
+  display: inline-block;
+  margin: 0 0 0.45rem;
+  font-family: var(--font-display);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.metric-card.highlight .metric-kicker {
+  color: var(--ai);
 }
 
 .metric-big {
@@ -862,6 +912,7 @@ section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
+  align-items: stretch;
 }
 
 @media (max-width: 640px) {
@@ -875,6 +926,8 @@ section {
   border-radius: var(--radius);
   border: 1px dashed var(--border);
   background: rgba(255, 255, 255, 0.02);
+  display: flex;
+  flex-direction: column;
 }
 
 .compare-col.win {
@@ -901,6 +954,7 @@ section {
   list-style: none;
   font-size: 0.88rem;
   color: var(--text-muted);
+  flex: 1;
 }
 
 .compare-col li {
@@ -1109,11 +1163,135 @@ section {
 }
 
 .work-value {
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   color: var(--text);
-  margin: 0 0 0.85rem;
-  line-height: 1.55;
+  margin: 0 0 0.75rem;
+  line-height: 1.5;
   font-weight: 500;
+}
+
+/* Collapsible case details — keeps cards scannable; full narrative on demand */
+.work-expand {
+  margin: 0 0 0.85rem;
+}
+
+.work-expand-trigger {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  width: 100%;
+  min-height: 2.5rem;
+  padding: 0.5rem 0.85rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--accent);
+  background: rgba(107, 155, 255, 0.07);
+  border: 1px solid rgba(107, 155, 255, 0.18);
+  border-radius: var(--radius);
+  user-select: none;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.work-expand-trigger::-webkit-details-marker {
+  display: none;
+}
+
+.work-expand-trigger::marker {
+  content: "";
+}
+
+.work-expand-trigger::after {
+  content: "";
+  width: 0.42rem;
+  height: 0.42rem;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg);
+  transition: transform 0.22s var(--ease);
+  flex-shrink: 0;
+  margin-top: -0.12rem;
+  opacity: 0.85;
+}
+
+.work-expand[open] > .work-expand-trigger {
+  background: rgba(107, 155, 255, 0.12);
+  border-color: rgba(107, 155, 255, 0.32);
+  color: #8eb4ff;
+}
+
+.work-expand[open] > .work-expand-trigger::after {
+  transform: rotate(-135deg);
+  margin-top: 0.12rem;
+}
+
+.work-expand-trigger:hover {
+  background: rgba(107, 155, 255, 0.13);
+  border-color: rgba(107, 155, 255, 0.32);
+}
+
+.work-expand-trigger:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.work-expand-close {
+  display: none;
+}
+
+.work-expand[open] > .work-expand-trigger .work-expand-open {
+  display: none;
+}
+
+.work-expand[open] > .work-expand-trigger .work-expand-close {
+  display: inline;
+}
+
+.work-expand-body {
+  padding-top: 0.6rem;
+  animation: workExpandIn 0.22s var(--ease);
+}
+
+.work-expand-body .work-details {
+  margin-bottom: 0;
+}
+
+@keyframes workExpandIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.work-card-featured .work-expand-trigger {
+  border-color: rgba(240, 195, 92, 0.22);
+  background: rgba(240, 195, 92, 0.06);
+  color: var(--gold);
+}
+
+.work-card-featured .work-expand[open] > .work-expand-trigger,
+.work-card-featured .work-expand-trigger:hover {
+  background: rgba(240, 195, 92, 0.1);
+  border-color: rgba(240, 195, 92, 0.35);
+}
+
+.work-card-ai .work-expand-trigger {
+  border-color: rgba(69, 224, 160, 0.22);
+  background: rgba(69, 224, 160, 0.06);
+  color: var(--ai);
+}
+
+.work-card-ai .work-expand[open] > .work-expand-trigger,
+.work-card-ai .work-expand-trigger:hover {
+  background: rgba(69, 224, 160, 0.1);
+  border-color: rgba(69, 224, 160, 0.35);
 }
 
 .work-value strong {
@@ -1615,6 +1793,13 @@ section {
 
 .contact-box .section-head {
   margin-bottom: 1rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-box .section-intro {
+  max-width: 36rem;
 }
 
 .contact-box .contact-business {
@@ -1916,6 +2101,10 @@ section {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  html.i18n-ready body {
+    transition: none;
+  }
+
   * {
     transition: none !important;
     animation: none !important;

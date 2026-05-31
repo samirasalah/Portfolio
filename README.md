@@ -30,7 +30,9 @@ This clones `samirasalah.github.io`, syncs this folder, commits, and pushes to `
 | `css/style.css` | Layout & theme |
 | `js/i18n.js` | UI translations (EN/FR/DE) |
 | `js/projects-i18n.js` | Project card translations |
-| `assets/Samira-Salah-CV.pdf` | Downloadable CV |
+| `assets/Samira-Salah-CV.pdf` | Downloadable CV (generated from `assets/cv.html`) |
+| `assets/cv.html` | Source CV for edits / print to PDF |
+| `scripts/generate-cv-pdf.sh` | Regenerate PDF via Chrome headless (optional) |
 | `images/samira-salah.jpeg` | Profile photo |
 | `robots.txt` / `sitemap.xml` | SEO |
 | `scripts/wire-i18n.py` | Helper to wire new project cards |
