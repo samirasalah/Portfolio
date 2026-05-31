@@ -55,12 +55,12 @@
    */
   const TAGLINE = {
     en: {
-      fr: "Production mobile for France & EU — consumer, public sector, video & real-time",
-      default: "Production mobile for Germany & EU — consumer, public sector, video & real-time",
+      fr: "Enterprise, public sector & media-like real-time — France & EU",
+      default: "Enterprise, public sector & media-like real-time — Germany & EU",
     },
     fr: {
-      fr: "Apps mobiles en production pour la France & l'UE — grand public, service public, vidéo & temps réel",
-      default: "Apps mobiles en production pour l'Allemagne & l'UE — grand public, service public, vidéo & temps réel",
+      fr: "Entreprise, secteur public & expériences type média — France & UE",
+      default: "Entreprise, secteur public & expériences type média — Allemagne & UE",
     },
     de: {
       fr: "Mobile Apps in Production für Frankreich & EU — Consumer, öffentlicher Dienst, Video & Echtzeit",

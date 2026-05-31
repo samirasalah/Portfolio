@@ -302,7 +302,7 @@ h2 {
 
 /* Profile panel */
 .profile-panel {
-  padding: 2.8mm 3mm 2.6mm 3.2mm;
+  padding: 2.4mm 3mm 2.2mm 3.2mm;
   background: linear-gradient(135deg, var(--accent-soft) 0%, #f8fafc 100%);
   border: 1px solid #bfdbfe;
   border-left: 3px solid var(--accent);
@@ -316,6 +316,36 @@ h2 {
   font-size: 8.5pt;
   line-height: 1.48;
   color: var(--ink-soft);
+}
+
+.profile-hook {
+  margin: 0 0 1.6mm;
+  font-size: 8.35pt;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.4;
+}
+
+.senior-summary {
+  margin: 0;
+  padding: 0 0 0 3.8mm;
+  list-style: disc;
+  font-size: 8pt;
+  line-height: 1.4;
+  color: var(--ink-soft);
+}
+
+.senior-summary li {
+  margin-bottom: 0.65mm;
+}
+
+.senior-summary li:last-child {
+  margin-bottom: 0;
+}
+
+.senior-summary strong {
+  color: var(--accent);
+  font-weight: 700;
 }
 
 .profile-panel .lead strong {
