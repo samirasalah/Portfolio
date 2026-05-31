@@ -13,8 +13,7 @@
         '<strong>Export PDF</strong> — Chrome · <kbd>⌘</kbd>+<kbd>P</kbd> → <em>Save as PDF</em> · A4 · Spacing preview: <code>?preview=print</code>',
       langLabel: "CV language",
       title: "Senior Freelance Android & Mobile Engineer · Video & public apps",
-      badgeTitle:
-        'Freelance senior · missions in <span data-geo-missions data-geo-missions-html="true"><strong>Germany</strong></span>',
+      badgeTitle: "Senior freelance · available",
       badgeBiz: "HB IT Services · EUR invoicing",
       m1: "8+ years",
       m1s: "Senior mobile delivery",
@@ -161,8 +160,7 @@
         '<strong>Exporter en PDF</strong> — Chrome · <kbd>⌘</kbd>+<kbd>P</kbd> → <em>Enregistrer au format PDF</em> · A4 · Prévisualiser l\'espacement : <code>?preview=print</code>',
       langLabel: "Langue du CV",
       title: "Ingénieure mobile senior freelance · Android & Flutter · Vidéo & grand public",
-      badgeTitle:
-        'Freelance senior · missions en <span data-geo-missions data-geo-missions-html="true"><strong>Allemagne</strong></span>',
+      badgeTitle: "Freelance senior · disponible",
       badgeBiz: "HB IT Services · facturation EUR",
       m1: "8+ ans",
       m1s: "Mobile senior",
@@ -309,8 +307,7 @@
         '<strong>PDF exportieren</strong> — Chrome · <kbd>⌘</kbd>+<kbd>P</kbd> → <em>Als PDF speichern</em> · A4',
       langLabel: "Sprache des Lebenslaufs",
       title: "Senior Freelance Android & Mobile Engineer · Video & Public Apps",
-      badgeTitle:
-        'Freelance senior · Aufträge in <span data-geo-missions data-geo-missions-html="true"><strong>Deutschland</strong></span>',
+      badgeTitle: "Senior-Freelance · verfügbar",
       badgeBiz: "HB IT Services · EUR-Abrechnung",
       m1: "8+ Jahre",
       m1s: "Senior Mobile Delivery",
