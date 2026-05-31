@@ -12,7 +12,7 @@ window.portfolioProjects = {
         'Plateforme mobile B2B mondiale <strong>mySchneider</strong> — catalogue Schneider, services clients et outils partenaires dans plus de 100 pays.',
       c: "Faire évoluer une app globale avec des mises à jour MAP, des intégrations clients et de nombreuses parties prenantes — sans ralentir les mises en production.",
       d: "Direction de l'équipe Android ; pilotage des modules d'architecture, revues de code, hygiène des dépendances et releases production → Play Store.",
-      i: "Livraisons Play Store prévisibles pour une application Schneider utilisée à l'échelle mondiale.",
+      i: "Livraisons Play Store prévisibles pour une application Schneider utilisée dans <strong>100+ pays</strong>.",
     },
     de: {
       domain: "Enterprise · B2B",
@@ -21,7 +21,7 @@ window.portfolioProjects = {
         'Globale B2B-Mobile-Plattform <strong>mySchneider</strong> — Schneider-Katalog, Kundenservices und Partner-Tools in über 100 Ländern.',
       c: "Globale App mit MAP-Updates und Kundenintegrationen weiterentwickeln — ohne Production-Releases zu verlangsamen.",
       d: "Android-Team geleitet; Architekturmodule, Code-Reviews, Dependency-Hygiene und Prod→Play-Store-Releases verantwortet.",
-      i: "Planbare Play-Store-Releases für eine global genutzte Schneider-App.",
+      i: "Planbare Play-Store-Releases für eine global genutzte Schneider-App in <strong>100+ Ländern</strong>.",
     },
   },
   maskan: {
@@ -32,7 +32,7 @@ window.portfolioProjects = {
         'Application officielle FTA <strong>Maskan</strong> — remboursements TVA mobiles pour les nationaux EAU, dépôt de justificatifs et services citoyens.',
       c: "Produit public greenfield : règles FTA, données citoyens sécurisées, authentification UAE — et capture des justificatifs sans ressaisie manuelle.",
       d: "Architecture modulaire, parcours remboursement, authentification App-to-App et App-to-Web, Google Wallet, capture <strong>OCR</strong> ; ownership Play Store. <strong>Cursor</strong> et <strong>Gemini</strong> pour accélérer implémentation, refactors et intégrations — sous contrôle architecture senior.",
-      i: "Justificatifs déposés plus vite ; greenfield livré sur un cycle plus court, sans raccourcis architecture.",
+      i: "Justificatifs déposés plus vite ; service national publié sur Play Store et App Gallery.",
     },
     de: {
       domain: "Behörden · VAE · FTA",
@@ -41,7 +41,7 @@ window.portfolioProjects = {
         'Offizielle FTA-App <strong>Maskan</strong> — mobile MwSt.-Erstattung für VAE-Staatsangehörige, Belegübermittlung und Bürger-Services.',
       c: "Greenfield-Behördenprodukt: FTA-Regeln, sichere Bürgerdaten, UAE-Auth — und Belegerfassung ohne manuelle Eingabe.",
       d: "Modulare Basisarchitektur, Erstattungsflows, App-to-App- und App-to-Web-Auth, Google Wallet, <strong>OCR</strong>-Erfassung; Play-Store-Ownership. <strong>Cursor</strong> und <strong>Gemini</strong> für schnellere Umsetzung, Refactors und Integration — unter Senior-Architekturkontrolle.",
-      i: "Schnellere Belegübermittlung; Greenfield auf kürzerem Zyklus ohne Architektur-Abkürzungen.",
+      i: "Schnellere Belegübermittlung; nationaler Bürger-Service auf Play Store und App Gallery.",
     },
   },
   chamber: {

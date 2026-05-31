@@ -583,6 +583,21 @@ a.nav-status:hover {
   font-weight: 600;
 }
 
+.hero-mission {
+  margin: 0.85rem 0 0;
+  padding-left: 1rem;
+  border-left: 3px solid var(--accent);
+  font-size: 1.02rem;
+  line-height: 1.55;
+  color: var(--text-muted);
+  max-width: 38rem;
+}
+
+.hero-mission strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
 .hero-lead {
   margin: 0;
   font-size: 0.98rem;
@@ -833,6 +848,103 @@ section {
 
 .section-intro a:hover {
   color: #8eb4ff;
+}
+
+/* Highlights, differentiators & media */
+.section-highlights {
+  background: linear-gradient(180deg, rgba(91, 141, 255, 0.04), transparent);
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.achievement-card {
+  padding: 1.2rem 1.25rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--text-muted);
+  transition: transform 0.25s var(--ease), border-color 0.25s;
+}
+
+.achievement-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--border-strong);
+}
+
+.achievement-card strong {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: var(--text);
+  font-size: 0.92rem;
+}
+
+.section-why {
+  padding-top: 0;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.why-card {
+  padding: 1.15rem 1.25rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  font-size: 0.88rem;
+  line-height: 1.48;
+  color: var(--text-muted);
+}
+
+.why-card strong {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: var(--accent);
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+}
+
+.section-media {
+  background: linear-gradient(180deg, transparent, rgba(91, 141, 255, 0.03));
+}
+
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.media-card {
+  padding: 1.2rem 1.25rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius-lg);
+}
+
+.media-card h3 {
+  margin: 0 0 0.45rem;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.media-card p {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.45;
+  color: var(--text-muted);
 }
 
 /* AI section */
