@@ -820,20 +820,43 @@
     });
   }
 
-  function init() {
+  async function init() {
     storeOriginals();
     initSwitcher();
-    const saved = localStorage.getItem(STORAGE_KEY);
-    const urlLang = new URLSearchParams(window.location.search).get("lang");
-    const browser = (navigator.language || "en").slice(0, 2).toLowerCase();
-    const initial = LANGS.includes(urlLang)
-      ? urlLang
-      : LANGS.includes(saved)
-        ? saved
-        : LANGS.includes(browser)
-          ? browser
-          : "en";
+    const initial = await resolveInitialLang();
     applyLang(initial);
+  }
+
+  function hasStoredLang() {
+    try {
+      const saved = localStorage.getItem(STORAGE_KEY);
+      return LANGS.includes(saved);
+    } catch (_) {
+      return false;
+    }
+  }
+
+  async function resolveInitialLang() {
+    const params = new URLSearchParams(window.location.search);
+    const urlLang = params.get("lang");
+    if (LANGS.includes(urlLang)) return urlLang;
+
+    if (hasStoredLang()) return localStorage.getItem(STORAGE_KEY);
+
+    if (params.get("geo")?.toLowerCase() === "fr") return "fr";
+
+    let geoData = window.consultantGeo?.getGeoOverride?.() || null;
+    if (!geoData && window.consultantGeo?.applyGeoLocation) {
+      try {
+        geoData = await window.consultantGeo.applyGeoLocation();
+      } catch (_) { /* ignore */ }
+    }
+
+    if (geoData?.country_code === "FR") return "fr";
+
+    const browser = (navigator.language || "en").slice(0, 2).toLowerCase();
+    if (LANGS.includes(browser)) return browser;
+    return "en";
   }
 
   if (document.readyState === "loading") {

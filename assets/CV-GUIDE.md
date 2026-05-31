@@ -189,6 +189,32 @@ IP via `ipapi.co` (cache session 6 h, fallback **DE** si API indisponible).
 
 La langue d’interface (EN / FR / DE via `cv-i18n.js`) choisit **la traduction** ; l’IP choisit **France vs Allemagne** dans cette traduction.
 
+### Override de test (`?geo=`)
+
+| URL | Effet |
+|-----|--------|
+| `?geo=fr` | Variante **France** (Rambouillet, France & UE, tagline France…) |
+| `?geo=de` | Variante **Allemagne** (Bergneustadt, Allemagne & UE…) |
+
+Priorité : **`?geo=`** > cache session > ipapi.co > fallback DE.  
+L’override **n’est pas mis en cache** — retirer le paramètre pour revenir à l’IP réelle.
+
+Exemples :
+- CV France : `assets/cv.html?lang=fr&geo=fr&preview=print`
+- CV Allemagne (UI FR) : `assets/cv.html?lang=fr&geo=de&preview=print`
+- Portfolio : `index.html?geo=fr` (ou IP France → **français par défaut**)
+
+### Langue par défaut (portfolio + CV)
+
+Sans `?lang=` ni choix mémorisé (`localStorage` / `portfolio-lang`) :
+
+| Geo | Langue initiale |
+|-----|-----------------|
+| IP France ou `?geo=fr` | **Français** |
+| Autre | Langue du navigateur, sinon anglais |
+
+Un choix explicite (`?lang=en`, sélecteur EN/FR/DE) **prime** sur la geo.
+
 ### Attributs HTML
 
 | Attribut | Contenu |

@@ -57,6 +57,20 @@
 
   let lastData = null;
 
+  /** Dev/test override: ?geo=fr | ?geo=de (skips ipapi + session cache). */
+  function getGeoOverride() {
+    const geo = new URLSearchParams(window.location.search).get("geo");
+    if (!geo) return null;
+    const code = geo.toLowerCase();
+    if (code === "fr") return { country_code: "FR" };
+    if (code === "de" || code === "default") return { country_code: "DE" };
+    return null;
+  }
+
+  function isGeoOverridden() {
+    return getGeoOverride() !== null;
+  }
+
   function getLang() {
     const lang = (document.documentElement.lang || "en").slice(0, 2).toLowerCase();
     return LOCATIONS[lang] ? lang : "en";
@@ -105,6 +119,9 @@
   }
 
   async function fetchGeo() {
+    const override = getGeoOverride();
+    if (override) return override;
+
     const cached = readCache();
     if (cached) return cached;
 
@@ -159,12 +176,14 @@
   }
 
   function refreshGeoLabels() {
-    applyToDom(lastData || FALLBACK);
+    applyToDom(getGeoOverride() || lastData || FALLBACK);
   }
 
   window.consultantGeo = {
     applyGeoLocation,
     refreshGeoLabels,
+    getGeoOverride,
+    isGeoOverridden,
     formatLocation,
     formatMissions,
     formatScope,

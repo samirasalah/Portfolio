@@ -473,6 +473,8 @@
         if (data && data.country_code === "FR") return "fr";
       }
     } catch (_) { /* ignore */ }
+    const geoParam = params.get("geo");
+    if (geoParam && geoParam.toLowerCase() === "fr") return "fr";
     const htmlLang = document.documentElement.lang;
     if (htmlLang && LANGS.includes(htmlLang)) return htmlLang;
     return "en";
@@ -503,8 +505,28 @@
   }
 
   document.addEventListener("DOMContentLoaded", () => {
-    applyLang(getLang());
+    bootstrap();
   });
+
+  async function bootstrap() {
+    const params = new URLSearchParams(window.location.search);
+    const urlLang = params.get("lang");
+    let saved = null;
+    try {
+      saved = localStorage.getItem(PORTFOLIO_LANG_KEY);
+    } catch (_) { /* ignore */ }
+
+    const hasExplicitLang =
+      (urlLang && LANGS.includes(urlLang)) || (saved && LANGS.includes(saved));
+
+    if (!hasExplicitLang && window.consultantGeo?.applyGeoLocation) {
+      try {
+        await window.consultantGeo.applyGeoLocation();
+      } catch (_) { /* ignore */ }
+    }
+
+    applyLang(getLang());
+  }
 
   window.cvI18n = { applyLang, T, getLang };
 })();
