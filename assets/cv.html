@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
   <title>Samira Salah — CV</title>
   <link rel="stylesheet" href="cv.css">
   <link rel="alternate" hreflang="en" href="cv.html">
@@ -333,29 +336,41 @@
     </section>
 
   </article>
-  <script src="js/geo-location.js?v=7"></script>
-  <script src="js/cv-i18n.js?v=7"></script>
-  <script src="js/cv-print-check.js?v=7"></script>
   <script>
-    (function () {
-      var LEGACY = [
-        [/Ingénieure mobile senior freelance/g, "Développeuse mobile senior freelance"],
-        [/Ingénieure mobile senior ·/g, "Développeuse mobile senior freelance —"],
-        [/Ingénieure mobile senior/g, "Développeuse mobile senior"],
-      ];
-      function fixLegacy(el) {
-        if (!el || !el.innerHTML) return;
-        var html = el.innerHTML;
-        var next = html;
-        LEGACY.forEach(function (pair) { next = next.replace(pair[0], pair[1]); });
-        if (next !== html) el.innerHTML = next;
-      }
-      function run() {
-        document.querySelectorAll('[data-cv-i18n="profileText"], .cv-title, .cv-header-role').forEach(fixLegacy);
-      }
-      document.addEventListener("cv-i18n-applied", run);
-      if (document.documentElement.classList.contains("cv-i18n-ready")) run();
-    })();
+    window.__CV_COPY = {
+      fr: {
+        title: "Développeuse mobile senior freelance · Android & Flutter · Vidéo & grand public",
+        profileText:
+          "Développeuse mobile senior freelance — <strong>8+ ans</strong> de delivery <strong>Android & Flutter</strong> en production (grand public, enterprise, secteur public). Expertise : <strong>architecture mobile</strong>, <strong>temps réel</strong> (Twilio Video, VoIP, WebSocket) et <strong>industrialisation store</strong> (CI/CD → Play Store / App Store). Référence récente : <strong>lead Android Schneider Electric</strong> (mySchneider, 100+ pays). Contrats & facturation EUR via HB IT Services.",
+      },
+      en: {
+        title: "Senior Freelance Android & Mobile Developer · Video & public apps",
+        profileText:
+          "Senior freelance mobile developer — <strong>8+ years</strong> delivering production <strong>Android & Flutter</strong> for high-traffic <strong>consumer, enterprise, and public-sector</strong> products. Core strengths: <strong>mobile architecture</strong>, <strong>real-time systems</strong> (Twilio Video, VoIP, WebSocket), and <strong>store-grade release</strong> (CI/CD → Play Store / App Store). Recent France engagement: <strong>Android lead, Schneider Electric</strong> (mySchneider, 100+ countries). Contracts & EUR invoicing via HB IT Services.",
+      },
+      de: {
+        title: "Senior Mobile Developer · Android & Flutter · Video & Public Apps",
+        profileText:
+          "Senior Mobile Developer — <strong>8+ Jahre</strong> Production-Delivery für <strong>Android & Flutter</strong> (Consumer, Enterprise, Public Service). Schwerpunkte: <strong>Mobile-Architektur</strong>, <strong>Echtzeit</strong> (Twilio Video, VoIP, WebSocket) und <strong>Store-Releases</strong> (CI/CD → Play Store / App Store). Aktuelle Frankreich-Referenz: <strong>Android Lead, Schneider Electric</strong> (mySchneider, 100+ Länder). Verträge & EUR-Abrechnung über HB IT Services.",
+      },
+    };
+    window.__CV_applyCopy = function () {
+      var lang = (document.documentElement.lang || "fr").slice(0, 2);
+      var copy = window.__CV_COPY[lang];
+      if (!copy) return;
+      document.querySelectorAll('[data-cv-i18n="profileText"]').forEach(function (el) {
+        if (copy.profileText) el.innerHTML = copy.profileText;
+      });
+      document.querySelectorAll('[data-cv-i18n="title"], .cv-title, .cv-header-role').forEach(function (el) {
+        if (copy.title) el.textContent = copy.title;
+      });
+    };
+  </script>
+  <script src="js/geo-location.js?v=8"></script>
+  <script src="js/cv-i18n.v8.js"></script>
+  <script src="js/cv-print-check.js?v=8"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", window.__CV_applyCopy);
   </script>
 </body>
 </html>

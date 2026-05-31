@@ -493,7 +493,9 @@
 
   function applyLang(lang) {
     if (!LANGS.includes(lang)) lang = "en";
-    const t = T[lang];
+    const t = { ...T[lang] };
+    const overrides = window.__CV_COPY && window.__CV_COPY[lang];
+    if (overrides) Object.assign(t, overrides);
     document.documentElement.lang = lang;
     document.title = t.metaTitle;
 
@@ -512,6 +514,7 @@
     document.dispatchEvent(new CustomEvent("cv-i18n-applied"));
 
     if (window.consultantGeo) window.consultantGeo.refreshGeoLabels();
+    if (typeof window.__CV_applyCopy === "function") window.__CV_applyCopy();
   }
 
   document.addEventListener("DOMContentLoaded", () => {
