@@ -1053,8 +1053,8 @@ h2 {
 }
 
 .cv-print-compact .cv-sheet:first-of-type .project-card--compact {
-  margin-bottom: 1.4mm;
-  padding: 2.2mm 2mm 2mm 2.8mm;
+  margin-bottom: 1.1mm;
+  padding: 2mm 2mm 1.8mm 2.6mm;
 }
 
 .cv-print-compact .cv-sheet:first-of-type .project-card--compact .project-head {
@@ -1072,20 +1072,37 @@ h2 {
   }
 
 .cv-print-compact .cv-sheet:first-of-type .project-facts dd {
-    font-size: 7.25pt;
-    line-height: 1.32;
+    font-size: 7pt;
+    line-height: 1.28;
   }
 
 .cv-print-compact .cv-sheet:first-of-type .project-card--compact .project-facts > div:last-child {
-    display: none;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0 1.2mm;
+    align-items: baseline;
+    margin-bottom: 0.45mm;
+  }
+
+.cv-print-compact .cv-sheet:first-of-type .project-card--compact .project-facts > div:last-child dt {
+    margin-bottom: 0;
   }
 
 .cv-print-compact .cv-sheet:first-of-type .project-card--compact .project-tags {
-    display: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5mm 0.45mm;
+    margin-top: 0.45mm;
+  }
+
+.cv-print-compact .cv-sheet:first-of-type .project-card--compact .project-tags li {
+    font-size: 5.75pt;
+    padding: 0.35mm 0.85mm;
+    line-height: 1.15;
   }
 
 .cv-print-compact .cv-sheet:first-of-type .cv-aside .cv-block--skills {
-    row-gap: 1.2mm;
+    row-gap: 0.9mm;
     margin-bottom: 0;
   }
 
@@ -1138,9 +1155,9 @@ h2 {
   }
 
 .cv-print-compact .cv-aside .skill-tags li {
-    font-size: 6pt;
-    padding: 0.45mm 1.1mm;
-    line-height: 1.2;
+    font-size: 5.85pt;
+    padding: 0.35mm 0.95mm;
+    line-height: 1.15;
   }
 
 .cv-print-compact .cv-aside .lang-list {
@@ -1240,12 +1257,19 @@ h2 {
 
 .cv-print-compact .cv-sheet-last .project-card .project-facts > div:last-child,
 .cv-print-compact .cv-sheet-last .project-card--compact .project-facts > div:last-child {
-    display: none;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0 1.2mm;
+    align-items: baseline;
+    margin-bottom: 0.4mm;
   }
 
 .cv-print-compact .cv-sheet-last .project-card .project-tags,
 .cv-print-compact .cv-sheet-last .project-card--compact .project-tags {
-    display: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45mm;
+    margin-top: 0.4mm;
   }
 
 .cv-print-compact .cv-sheet-last .project-card .project-facts div,
@@ -1300,11 +1324,24 @@ h2 {
   }
 
 .cv-print-compact .cv-sheet-last .project-mini p:last-of-type {
-    display: none;
+    display: block;
+    font-size: 6.15pt;
+    line-height: 1.26;
+    margin-top: 0.2mm;
   }
 
 .cv-print-compact .cv-sheet-last .project-mini .project-tags {
-    display: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4mm;
+    margin-top: 0.35mm;
+    padding-top: 0;
+  }
+
+.cv-print-compact .cv-sheet-last .project-mini .project-tags li {
+    font-size: 5.5pt;
+    padding: 0.3mm 0.75mm;
+    line-height: 1.1;
   }
 
 .cv-print-compact .cv-sheet-last .cv-block:first-of-type {
@@ -1347,6 +1384,15 @@ h2 {
     width: var(--page-w);
     margin: 0;
     padding: 0;
+    opacity: 1 !important;
+  }
+
+  .cv-aside .cv-block--skills,
+  .cv-aside .cv-block--skills .skill-group,
+  .cv-aside .skill-tags,
+  .project-facts,
+  .project-tags {
+    visibility: visible !important;
   }
 
   body { background: #fff; }
