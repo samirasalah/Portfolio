@@ -1387,10 +1387,46 @@ h2 {
     opacity: 1 !important;
   }
 
+  /* Structural parity — same content as ?preview=print even if JS is slow */
+  .cv-sheet {
+    break-after: page;
+    page-break-after: always;
+  }
+
+  .cv-sheet-last,
+  .cv-sheet:last-child {
+    break-after: auto;
+    page-break-after: auto;
+  }
+
+  .cv-sheet-last .project-grid {
+    grid-template-columns: 1fr 1fr 1fr !important;
+  }
+
+  .project-card--compact .project-facts > div,
+  .project-card--compact .project-facts > div:last-child {
+    display: grid !important;
+    visibility: visible !important;
+  }
+
+  .project-card--compact .project-tags,
+  .project-mini .project-tags {
+    display: flex !important;
+    visibility: visible !important;
+  }
+
+  .project-mini p:last-of-type {
+    display: block !important;
+    visibility: visible !important;
+  }
+
   .cv-aside .cv-block--skills,
   .cv-aside .cv-block--skills .skill-group,
   .cv-aside .skill-tags,
+  .cv-aside .skill-tags li,
   .project-facts,
+  .project-facts dt,
+  .project-facts dd,
   .project-tags {
     visibility: visible !important;
   }
