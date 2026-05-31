@@ -3,6 +3,19 @@
  * France → Rambouillet, France · otherwise → Bergneustadt, Germany
  */
 (function () {
+  /** Fix malformed URLs like ?lang=fr?geo=fr → ?lang=fr&geo=fr */
+  (function normalizeQueryString() {
+    try {
+      const { search, pathname, hash } = window.location;
+      const q = search.indexOf("?");
+      if (q === -1) return;
+      const rest = search.slice(q + 1);
+      if (!rest.includes("?")) return;
+      const fixed = "?" + rest.replace(/\?/g, "&");
+      window.history.replaceState(null, "", pathname + fixed + hash);
+    } catch (_) { /* ignore */ }
+  })();
+
   const CACHE_KEY = "consultant-geo-v2";
   const CACHE_TTL = 6 * 60 * 60 * 1000;
   const FALLBACK = { country_code: "DE" };
@@ -58,8 +71,20 @@
   let lastData = null;
 
   /** Dev/test override: ?geo=fr | ?geo=de (skips ipapi + session cache). */
+  function readGeoParam() {
+    const params = new URLSearchParams(window.location.search);
+    const geo = params.get("geo");
+    if (geo) return geo;
+    const lang = params.get("lang");
+    if (lang && lang.includes("?geo=")) {
+      const match = lang.match(/\?geo=([a-z]+)/i);
+      if (match) return match[1];
+    }
+    return null;
+  }
+
   function getGeoOverride() {
-    const geo = new URLSearchParams(window.location.search).get("geo");
+    const geo = readGeoParam();
     if (!geo) return null;
     const code = geo.toLowerCase();
     if (code === "fr") return { country_code: "FR" };

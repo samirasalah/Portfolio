@@ -199,6 +199,10 @@ La langue d’interface (EN / FR / DE via `cv-i18n.js`) choisit **la traduction*
 Priorité : **`?geo=`** > cache session > ipapi.co > fallback DE.  
 L’override **n’est pas mis en cache** — retirer le paramètre pour revenir à l’IP réelle.
 
+**Syntaxe URL** — séparer les paramètres avec **`&`**, pas un second `?` :
+- ✅ `?lang=fr&geo=fr`
+- ❌ `?lang=fr?geo=fr` (geo ignoré → fallback DE)
+
 Exemples :
 - CV France : `assets/cv.html?lang=fr&geo=fr&preview=print`
 - CV Allemagne (UI FR) : `assets/cv.html?lang=fr&geo=de&preview=print`
