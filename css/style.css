@@ -2114,7 +2114,8 @@ section {
   }
 
   .nav-menu-cta {
-    display: none;
+    padding: 0.45rem 0.7rem;
+    font-size: 0.75rem;
   }
 
   body.nav-open {
