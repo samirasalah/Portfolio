@@ -33,7 +33,7 @@
       hero: {
         eyebrow:
           'Senior mobile freelance · <span data-geo-scope>Germany & EU · remote or on-site</span>',
-        trade: 'Senior <strong>freelance</strong> — <strong>HB IT Services</strong>',
+        trade: 'Freelance <strong>senior</strong> · available — <strong>HB IT Services</strong>',
         title: 'Senior Android & Mobile Engineer — <span class="accent">public sector</span>, enterprise & <span class="accent">real-time</span>',
         lead:
           'One <strong>senior owner</strong> for Kotlin, Jetpack Compose, and Flutter — from <strong>Schneider Electric (France)</strong> and <strong>regulated healthcare</strong> to <strong>UAE government programs</strong> and <strong>production VoIP</strong>. Clean architecture, store releases, and reliable sessions on real networks.',
@@ -231,7 +231,7 @@
       hero: {
         eyebrow:
           'Mobile senior freelance · <span data-geo-scope>Allemagne & UE · remote ou sur site</span>',
-        trade: 'Freelance <strong>senior</strong> — <strong>HB IT Services</strong>',
+        trade: 'Freelance <strong>senior</strong> · disponible — <strong>HB IT Services</strong>',
         title: 'Ingénieure mobile senior — <span class="accent">secteur public</span>, entreprise & <span class="accent">temps réel</span>',
         lead:
           'Un seul <strong>interlocuteur senior</strong> en Kotlin, Jetpack Compose et Flutter — de <strong>Schneider Electric (France)</strong> et la <strong>santé réglementée</strong> aux <strong>programmes gouvernementaux EAU</strong> et la <strong>VoIP en production</strong>. Architecture propre, releases stores et fiabilité sur réseaux réels.',
@@ -429,7 +429,7 @@
       hero: {
         eyebrow:
           'Senior Mobile Freelance · <span data-geo-scope>Deutschland & EU · remote oder vor Ort</span>',
-        trade: 'Senior-<strong>Freelance</strong> — <strong>HB IT Services</strong>',
+        trade: 'Senior-<strong>Freelance</strong> · verfügbar — <strong>HB IT Services</strong>',
         title: 'Senior Android- & Mobile-Ingenieurin — <span class="accent">öffentlicher Sektor</span>, Enterprise & <span class="accent">Echtzeit</span>',
         lead:
           'Eine <strong>senior Ansprechpartnerin</strong> für Kotlin, Jetpack Compose und Flutter — von <strong>Schneider Electric (Frankreich)</strong> und <strong>reguliertem Healthcare</strong> bis <strong>Regierungsprogrammen in den VAE</strong> und <strong>Produktions-VoIP</strong>. Saubere Architektur, Store-Releases und Zuverlässigkeit in echten Netzen.',

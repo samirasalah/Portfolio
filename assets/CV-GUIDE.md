@@ -220,10 +220,10 @@ Un choix explicite (`?lang=en`, sélecteur EN/FR/DE) **prime** sur la geo.
 | Attribut | Contenu |
 |----------|---------|
 | `[data-geo-tagline]` | Sous-titre header (`.cv-tagline`) — **source de vérité geo**, pas `cv-i18n` |
-| `[data-geo-scope]` | Zone d’intervention · « France & UE · remote… » / « Allemagne & UE · … » |
+| `[data-geo-scope]` | Ligne badge « France & UE · remote… » / « Allemagne & UE · … » |
 | `[data-geo-location]` | Ville (Rambouillet si IP FR, sinon Bergneustadt) |
 
-Le badge **« Freelance senior · disponible »** est volontairement **fixe** (statut). La geo ne dit pas « missions en France » — tu interviens **France & UE** ou **Allemagne & UE** (remote ou sur site), pas uniquement dans un pays.
+Badge titre CV : `Freelance senior · disponible` (i18n statique, **sans** geo).
 
 Refresh après changement de langue : `consultantGeo.refreshGeoLabels()` (appelé par `cvI18n.applyLang`).
 
