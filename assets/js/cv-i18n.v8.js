@@ -118,10 +118,10 @@
         },
         gesundheit: {
           sector: "Healthcare · Germany",
-          meta: "Flutter tech lead · Play Store",
+          meta: "Flutter tech lead · Play Store & App Store",
           role: "Flutter tech lead",
           intro: "Live video care and translation for patients and care teams under German healthcare regulation (GDPR).",
-          roleText: "Owned Flutter delivery for Doctor and Translatly — architecture, features and end-to-end store submissions.",
+          roleText: "Owned Flutter delivery for Doctor and Translatly — architecture, features and end-to-end Play Store and App Store submissions.",
           impact: "Two live healthcare apps — low-latency mobile video comparable to media streaming constraints.",
         },
         runnrz: {
@@ -281,10 +281,10 @@
         },
         gesundheit: {
           sector: "Santé · Allemagne",
-          meta: "Responsable technique Flutter · Play Store",
+          meta: "Responsable technique Flutter · Play Store et App Store",
           role: "Responsable technique Flutter",
           intro: "Téléconsultation vidéo et traduction live pour patients et soignants (Allemagne, RGPD).",
-          roleText: "Pilotage Flutter des apps Doctor et Translatly — architecture, features et soumissions store de bout en bout.",
+          roleText: "Pilotage Flutter des apps Doctor et Translatly — architecture, features et soumissions Play Store et App Store de bout en bout.",
           impact: "Deux apps santé en production — vidéo mobile à faible latence, proche des contraintes produits média.",
         },
         runnrz: {
@@ -441,7 +441,7 @@
         },
         gesundheit: {
           sector: "Healthcare · Deutschland",
-          meta: "Lead Flutter · Play Store",
+          meta: "Lead Flutter · Play Store & App Store",
           intro: "Deutsche Healthcare-Plattform — Doctor (Twilio-Videokonsultation) und Translatly (Live-Übersetzung) für Patienten und Pflegeteams.",
           delivered: "Flutter Tech Lead für beide Apps; Architektur und Features; End-to-End-Einreichungen Play Store und App Store.",
           impact: "Zwei Live-Apps — Mobile-Video unter Healthcare-Regulatorik.",
