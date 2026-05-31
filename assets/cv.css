@@ -644,6 +644,13 @@ h2 {
   line-height: 1.38;
 }
 
+.project-mini-lead {
+  color: var(--ink-soft);
+  font-size: 6.85pt;
+  line-height: 1.32;
+  margin-bottom: 0.75mm !important;
+}
+
 .project-mini p strong {
   font-size: 6.5pt;
   font-weight: 700;
@@ -852,11 +859,32 @@ h2 {
   }
 
   .cv-sheet-last .project-grid {
-    gap: 2mm;
+    gap: 1.5mm;
   }
 
   .cv-sheet-last .project-mini {
-    padding: 2mm;
+    padding: 1.75mm;
+  }
+
+  .cv-sheet-last .project-mini p {
+    font-size: 6.75pt;
+    line-height: 1.32;
+    margin-bottom: 0.75mm;
+  }
+
+  .cv-sheet-last .project-mini-lead {
+    font-size: 6.5pt;
+    line-height: 1.28;
+    margin-bottom: 0.5mm !important;
+  }
+
+  .cv-sheet-last .project-mini .project-tags {
+    margin-top: 0.75mm;
+  }
+
+  .cv-sheet-last .project-mini .project-tags li {
+    font-size: 6.25pt;
+    padding: 0.4mm 1mm;
   }
 
   .cv-sheet-last .cv-footer {
@@ -1038,11 +1066,32 @@ html.cv-print-preview .cv-sheet-last .project-card--compact {
 }
 
 html.cv-print-preview .cv-sheet-last .project-grid {
-  gap: 2mm;
+  gap: 1.5mm;
 }
 
 html.cv-print-preview .cv-sheet-last .project-mini {
-  padding: 2mm;
+  padding: 1.75mm;
+}
+
+html.cv-print-preview .cv-sheet-last .project-mini p {
+  font-size: 6.75pt;
+  line-height: 1.32;
+  margin-bottom: 0.75mm;
+}
+
+html.cv-print-preview .cv-sheet-last .project-mini-lead {
+  font-size: 6.5pt;
+  line-height: 1.28;
+  margin-bottom: 0.5mm !important;
+}
+
+html.cv-print-preview .cv-sheet-last .project-mini .project-tags {
+  margin-top: 0.75mm;
+}
+
+html.cv-print-preview .cv-sheet-last .project-mini .project-tags li {
+  font-size: 6.25pt;
+  padding: 0.4mm 1mm;
 }
 
 html.cv-print-preview .cv-sheet-last .cv-footer {

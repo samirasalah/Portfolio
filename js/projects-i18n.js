@@ -1,6 +1,7 @@
 /**
  * FR/DE project copy — loaded before i18n.js
- * Narrative fields (value, c, d, i) stay outcome-focused; stack lives in work-skills only.
+ * value = what the product is (general idea). c = challenge. d = tasks delivered. i = impact.
+ * Stack lives in work-skills only (not in value/d).
  */
 window.portfolioProjects = {
   myschneider: {
@@ -8,7 +9,7 @@ window.portfolioProjects = {
       domain: "Enterprise · B2B",
       role: "Responsable équipe Android · Schneider Electric · France",
       value:
-        'Application Android B2B mondiale <strong>mySchneider</strong> — intégrations clients, pipelines de release et livraison Play Store.',
+        'Plateforme mobile B2B mondiale <strong>mySchneider</strong> — catalogue Schneider, services clients et outils partenaires dans plus de 100 pays.',
       c: "Faire évoluer une app globale avec des mises à jour MAP, des intégrations clients et de nombreuses parties prenantes — sans ralentir les mises en production.",
       d: "Direction de l'équipe Android ; pilotage des modules d'architecture, revues de code, hygiène des dépendances et releases production → Play Store.",
       i: "Livraisons Play Store prévisibles pour une application Schneider utilisée à l'échelle mondiale.",
@@ -17,7 +18,7 @@ window.portfolioProjects = {
       domain: "Enterprise · B2B",
       role: "Android Team Leader · Schneider Electric · France",
       value:
-        'Globale B2B-Android-App <strong>mySchneider</strong> — Kundenintegrationen, Release-Pipelines und Play-Store-Delivery.',
+        'Globale B2B-Mobile-Plattform <strong>mySchneider</strong> — Schneider-Katalog, Kundenservices und Partner-Tools in über 100 Ländern.',
       c: "Globale App mit MAP-Updates und Kundenintegrationen weiterentwickeln — ohne Production-Releases zu verlangsamen.",
       d: "Android-Team geleitet; Architekturmodule, Code-Reviews, Dependency-Hygiene und Prod→Play-Store-Releases verantwortet.",
       i: "Planbare Play-Store-Releases für eine global genutzte Schneider-App.",
@@ -28,7 +29,7 @@ window.portfolioProjects = {
       domain: "Gouvernement · EAU · FTA",
       role: "Technical Leader · Android",
       value:
-        'Application FTA <strong>Maskan</strong> — remboursements TVA pour les nationaux EAU. <strong>OCR</strong> in-app, architecture et Play Store — delivery accélérée avec <strong>Cursor</strong> et <strong>Gemini</strong>.',
+        'Application officielle FTA <strong>Maskan</strong> — remboursements TVA mobiles pour les nationaux EAU, dépôt de justificatifs et services citoyens.',
       c: "Produit public greenfield : règles FTA, données citoyens sécurisées, authentification UAE — et capture des justificatifs sans ressaisie manuelle.",
       d: "Architecture modulaire, parcours remboursement, authentification App-to-App et App-to-Web, Google Wallet, capture <strong>OCR</strong> ; ownership Play Store. <strong>Cursor</strong> et <strong>Gemini</strong> pour accélérer implémentation, refactors et intégrations — sous contrôle architecture senior.",
       i: "Justificatifs déposés plus vite ; greenfield livré sur un cycle plus court, sans raccourcis architecture.",
@@ -37,7 +38,7 @@ window.portfolioProjects = {
       domain: "Behörden · VAE · FTA",
       role: "Technical Leader · Android",
       value:
-        'FTA-App <strong>Maskan</strong> — MwSt.-Erstattung für VAE-Staatsangehörige. <strong>OCR</strong> im Produkt, Architektur und Play Store — beschleunigte Delivery mit <strong>Cursor</strong> und <strong>Gemini</strong>.',
+        'Offizielle FTA-App <strong>Maskan</strong> — mobile MwSt.-Erstattung für VAE-Staatsangehörige, Belegübermittlung und Bürger-Services.',
       c: "Greenfield-Behördenprodukt: FTA-Regeln, sichere Bürgerdaten, UAE-Auth — und Belegerfassung ohne manuelle Eingabe.",
       d: "Modulare Basisarchitektur, Erstattungsflows, App-to-App- und App-to-Web-Auth, Google Wallet, <strong>OCR</strong>-Erfassung; Play-Store-Ownership. <strong>Cursor</strong> und <strong>Gemini</strong> für schnellere Umsetzung, Refactors und Integration — unter Senior-Architekturkontrolle.",
       i: "Schnellere Belegübermittlung; Greenfield auf kürzerem Zyklus ohne Architektur-Abkürzungen.",
@@ -48,26 +49,26 @@ window.portfolioProjects = {
       domain: "Gouvernement · EAU",
       role: "Software Team Lead Android · Proxym Middle East",
       value:
-        'Application officielle <strong>Dubai Chambers</strong> — extraction <strong>OpenAI</strong> in-app, releases dual-store ; delivery accélérée avec <strong>Cursor</strong> et <strong>Gemini</strong>.',
-      c: "Extraire des données structurées depuis des documents commerciaux — tout en étendant l'app vers Huawei sans dupliquer le produit ni casser le build Google.",
-      d: "Intégration <strong>OpenAI</strong> pour l'extraction structurée depuis les documents uploadés ; migration GMS→HMS ; ownership Play Store et App Gallery. <strong>Cursor</strong> et <strong>Gemini</strong> pour accélérer features, migration HMS et refactors — revus et durcis pour la production.",
-      i: "Traitement documentaire plus fiable et cycles de delivery plus courts sur une codebase gouvernementale en production — Google Play et App Gallery.",
+        'Application officielle <strong>Dubai Chambers</strong> — accès mobile aux services chambre de commerce pour entreprises et entrepreneurs aux EAU.',
+      c: "Faire évoluer une app gouvernementale en production avec traitement documentaire IA et un second canal store — sans dupliquer le produit ni casser les releases.",
+      d: "<strong>Team lead</strong> Android ; intégration continue de fonctionnalités sur la codebase production ; logique <strong>OCR et extraction OpenAI</strong> sur documents commerciaux ; <strong>pilotage du processus de release</strong> Play Store et App Gallery ; migration GMS→HMS sur codebase partagée. <strong>Cursor</strong> et <strong>Gemini</strong> pour accélérer la delivery — revus et durcis pour la production.",
+      i: "Traitement documentaire plus fiable et cycles de release prévisibles sur une codebase gouvernementale en production — Google Play et App Gallery.",
     },
     de: {
       domain: "Behörden · VAE",
       role: "Software Team Lead Android · Proxym Middle East",
       value:
-        'Offizielle <strong>Dubai Chambers</strong>-App — <strong>OpenAI</strong>-Extraktion im Produkt, Dual-Store-Releases — beschleunigte Delivery mit <strong>Cursor</strong> und <strong>Gemini</strong>.',
-      c: "Strukturierte Daten aus Handelsdokumenten zuverlässig extrahieren — und die Live-App auf Huawei erweitern, ohne das Google-Build zu brechen.",
-      d: "<strong>OpenAI</strong>-Integration für strukturierte Datenextraktion; GMS→HMS-Migration; Dual-Store-Ownership. <strong>Cursor</strong> und <strong>Gemini</strong> für schnellere Features, HMS-Migration und Refactors — geprüft und produktionsreif.",
-      i: "Genauere Dokumentenverarbeitung und kürzere Delivery-Zyklen auf einer Live-Behörden-Codebase — Play Store und App Gallery.",
+        'Offizielle <strong>Dubai Chambers</strong>-App — mobiler Zugang zu Handelskammer-Services für Unternehmen und Gründer in den VAE.',
+      c: "Live-Behörden-App um KI-Dokumentenverarbeitung und einen zweiten Store-Kanal erweitern — ohne Produktduplikation oder gebrochene Production-Releases.",
+      d: "<strong>Team Lead</strong> Android; fortlaufende Feature-Integration auf der Production-Codebase; <strong>OCR- und OpenAI-Extraktionslogik</strong> für Handelsdokumente; <strong>Release-Prozess-Ownership</strong> Play Store und App Gallery; GMS→HMS-Migration auf gemeinsamer Codebasis. <strong>Cursor</strong> und <strong>Gemini</strong> zur Delivery-Beschleunigung — geprüft und produktionsreif.",
+      i: "Genauere Dokumentenverarbeitung und planbare Release-Zyklen auf einer Live-Behörden-Codebase — Play Store und App Gallery.",
     },
   },
   culture: {
     fr: {
       domain: "Gouvernement · EAU",
       value:
-        'Extension des <strong>services mobiles Dubai Culture</strong> — programmes culturels, institutions et offres pour les résidents.',
+        'Application mobile <strong>Dubai Culture</strong> — programmes culturels, institutions et services pour les résidents et partenaires.',
       c: "Livrer sur une codebase en production avec exigences qualité strictes et releases backend coordonnées.",
       d: "Fonctionnalités Android et intégrations API, en coordination produit, backend et QA.",
       i: "Davantage de services culturels accessibles sur mobile pour les résidents et partenaires de Dubaï.",
@@ -75,7 +76,7 @@ window.portfolioProjects = {
     de: {
       domain: "Behörden · VAE",
       value:
-        'Erweiterung der <strong>mobilen Dubai-Culture-Services</strong> — Kulturprogramme, Institutionen und Angebote für Bewohner.',
+        'Mobile <strong>Dubai-Culture</strong>-App — Kulturprogramme, Institutionen und Services für Bewohner und Partner.',
       c: "Delivery auf Live-Codebase mit hohen Qualitätsanforderungen und koordinierten Backend-Releases.",
       d: "Android-Features und API-Integration, abgestimmt mit Produkt, Backend und QA.",
       i: "Mehr Kulturservices mobil erreichbar für Bewohner und Partner in Dubai.",
@@ -85,17 +86,17 @@ window.portfolioProjects = {
     fr: {
       domain: "Gouvernement · EAU · Police",
       value:
-        'Application patrouille <strong>Dubai Police Dispatcher</strong> — dispatch cartographique et alertes instantanées sur plaques signalées, lues à voix haute.',
-      c: "Relier le MDVR du véhicule sur le réseau local et prévenir l'agent mains libres dès qu'une plaque blacklistée est détectée — sans perturber la navigation.",
-      d: "Module de communication MDVR en réseau local, détection de plaques blacklistées avec alerte vocale immédiate, et lecture audio des messages dispatch et du guidage navigation.",
+        'Application patrouille officielle <strong>Dubai Police Dispatcher</strong> — dispatch cartographique pour agents de terrain, connectivité backend live et intégrations embarquées pour opérations temps réel.',
+      c: "Maintenir les agents informés en temps réel — intégrations véhicule, navigation cartographique et alertes mains libres sur une codebase police en production, sans perturber le terrain.",
+      d: "Migration Kotlin Android Extensions vers <strong>ViewBinding</strong> ; <strong>service d'écoute backend</strong> pour alarmes persistantes ; migration <strong>Esri → HERE Maps</strong> ; intégration du module <strong>détection de plaques</strong> ; communication MDVR réseau local ; alertes vocales et lecture audio des consignes dispatch.",
       i: "L'agent est informé instantanément des plaques signalées et des consignes — les yeux sur la route, pas sur l'écran.",
     },
     de: {
       domain: "Behörden · VAE · Polizei",
       value:
-        '<strong>Dubai Police Dispatcher</strong> — Streifen- und Dispatch-App mit Kartenführung und sofortigen Sprachwarnungen bei markierten Kennzeichen.',
-      c: "Fahrzeug-MDVR im lokalen Netz anbinden und Einsatzkräfte freihändig warnen, sobald ein Blacklist-Kennzeichen erkannt wird — ohne Navigation zu stören.",
-      d: "MDVR-Socket-Modul im lokalen Netz, Blacklist-Erkennung mit sofortiger Sprachwarnung, und Audio für Dispatch-Nachrichten sowie Navigationsansagen.",
+        'Offizielle Streifen-App <strong>Dubai Police Dispatcher</strong> — kartenbasiertes Dispatch für Einsatzkräfte, Live-Backend-Anbindung und Fahrzeug-Integrationen für Echtzeit-Einsätze.',
+      c: "Einsatzkräfte in Echtzeit informiert halten — Fahrzeug-Integrationen, Karten-Navigation und freihändige Alerts auf einer produktiven Polizei-Codebase, ohne den Feldeinsatz zu stören.",
+      d: "Migration von Kotlin Android Extensions zu <strong>ViewBinding</strong>; <strong>Backend-Alarm-Listener-Service</strong> für persistente Backend-Benachrichtigungen; Migration <strong>Esri → HERE Maps</strong>; Integration des <strong>Kennzeichen-Erkennungs</strong>-Moduls; MDVR-Kommunikation im lokalen Netz; Sprachwarnungen und Audio für Dispatch-Nachrichten.",
       i: "Sofortige Warnung bei markierten Kennzeichen und Einsatzmeldungen — Augen auf der Straße, nicht auf dem Display.",
     },
   },
@@ -124,7 +125,7 @@ window.portfolioProjects = {
       value:
         'Coaching connecté pour coureurs et marcheurs — biomécanique en direct et guidage vocal pendant l\'effort.',
       c: "Maintenir des flux capteurs Bluetooth fiables pendant une migration cloud, tout en ajoutant un coaching vocal en temps réel.",
-      d: "Lead Android sur deux apps compagnons ; coaching audio parlant à partir des données semelles pour améliorer la qualité du mouvement.",
+      d: "Lead Android sur deux apps compagnons ; migration cloud AWS Amplify ; workflow strings <strong>Crowdin</strong> ; coaching vocal à partir des données semelles ; flux capteurs BLE fiables.",
       i: "Retour forme pendant la course ou la marche — sans s'arrêter pour lire l'écran ; base utilisateurs préservée pendant la migration.",
     },
     de: {
@@ -133,7 +134,7 @@ window.portfolioProjects = {
       value:
         'Connected Coaching für Läufer und Walker — Live-Biomechanik und Sprachguidance während der Aktivität.',
       c: "Zuverlässige Sensor-Bluetooth-Streams während Cloud-Migration — plus Echtzeit-Sprachcoaching.",
-      d: "Android-Lead für zwei Companion-Apps; gesprochenes Coaching aus Einlegesohlen-Daten zur besseren Bewegungsqualität.",
+      d: "Android-Lead für zwei Companion-Apps; AWS-Amplify-Cloud-Migration; <strong>Crowdin</strong>-String-Workflow; Sprachcoaching aus Einlegesohlen-Daten; zuverlässige BLE-Sensor-Streams.",
       i: "Form-Feedback beim Laufen und Gehen — ohne Blick auf den Bildschirm; Nutzerbasis durch Migration gehalten.",
     },
   },
@@ -142,7 +143,7 @@ window.portfolioProjects = {
       domain: "Mobilité · Fitness · France",
       role: "Développeuse Android · Runnrz · France",
       value:
-        'App fitness française — portage iOS → Android, activités marche, course et vélo avec un niveau qualité renforcé.',
+        'App fitness française établie — marche, course et vélo, suivi multi-activité pour le grand public.',
       c: "Atteindre la parité Android, ajouter de nouveaux modes d'activité et améliorer stabilité et UX.",
       d: "Migration complète iOS→Android ; activités marche, course et vélo avec suivi cartographique live ; passe qualité selon les standards équipe.",
       i: "App Android en production sur le marché français — suivi multi-activité et codebase maintenable après le port.",
@@ -151,7 +152,7 @@ window.portfolioProjects = {
       domain: "Mobilität · Fitness · Frankreich",
       role: "Android-Entwicklerin · Runnrz · Frankreich",
       value:
-        'Französische Fitness-App — iOS→Android-Port, Walk-, Run- und Cycling-Modi mit höherer Qualitätslatte.',
+        'Etablierte französische Fitness-App — Walk, Run und Cycling, Multi-Aktivitäts-Tracking für den Massenmarkt.',
       c: "Android-Parität, neue Aktivitätsmodi und bessere Stabilität sowie UX.",
       d: "Vollständige iOS→Android-Migration; Walk, Run und Cycling mit Live-Map-Tracking; Qualitätspass nach Team-Standards.",
       i: "Produktions-Android-App für den französischen Markt — Multi-Aktivitäts-Tracking und wartbare Codebase nach dem Port.",
@@ -202,7 +203,7 @@ window.portfolioProjects = {
       domain: "Santé · DE",
       role: "Tech Lead & Flutter · CodeCooperation GmbH · Allemagne",
       value:
-        'Plateforme <strong>Gesundheitspersonal</strong> — apps <strong>Doctor</strong> (téléconsultation vidéo) et <strong>Translatly</strong> (traduction live). Tech lead Flutter, releases store.',
+        'Plateforme <strong>Gesundheitspersonal</strong> — apps <strong>Doctor</strong> (téléconsultation vidéo) et <strong>Translatly</strong> (traduction live) pour patients et équipes soignantes en Allemagne.',
       c: "Vidéo et traduction à faible latence sur un marché santé régulé (RGPD) — deux apps, deux stores.",
       d: "Pilotage Flutter des deux apps ; architecture, fonctionnalités et soumissions Play Store et App Store de bout en bout.",
       i: 'Deux apps santé en production — téléconsultation et traduction live pour patients et équipes soignantes en Allemagne.',
@@ -211,7 +212,7 @@ window.portfolioProjects = {
       domain: "Healthcare · DE",
       role: "Tech Lead & Flutter · CodeCooperation GmbH · Deutschland",
       value:
-        'Plattform <strong>Gesundheitspersonal</strong> — Apps <strong>Doctor</strong> (Videoversorgung) und <strong>Translatly</strong> (Live-Übersetzung). Flutter Tech Lead, Store-Releases.',
+        'Plattform <strong>Gesundheitspersonal</strong> — Apps <strong>Doctor</strong> (Videoversorgung) und <strong>Translatly</strong> (Live-Übersetzung) für Patienten und Pflegeteams in Deutschland.',
       c: "Low-Latency-Video und Übersetzung in reguliertem Gesundheitsmarkt (DSGVO) — zwei Apps, zwei Stores.",
       d: "Flutter-Delivery beider Apps; Architektur, Features und End-to-End-Einreichungen Play Store und App Store.",
       i: "Zwei Live-Gesundheits-Apps — Videobetreuung und Live-Übersetzung für Patienten und Pflegeteams in Deutschland.",
@@ -224,7 +225,7 @@ window.portfolioProjects = {
       value:
         'Marketplace française pour chineurs, revendeurs et designers — brocante, antiquités et aménagement intérieur.',
       c: "Parcours acheteur / vendeur fluides et expérience Android soignée pour une audience brocante en France.",
-      d: "Développement Android de bout en bout pour la plateforme Côté Puces.",
+      d: "App Android de bout en bout — parcours acheteur / vendeur, intégration API Retrofit, release Play Store.",
       i: "Canal mobile live pour la communauté brocante et antiquités en France.",
     },
     de: {
@@ -233,7 +234,7 @@ window.portfolioProjects = {
       value:
         'Französischer Marktplatz für Schnäppchenjäger, Händler und Designer — Brocante, Antiquitäten und Einrichtung.',
       c: "Flüssige Käufer-/Verkäufer-Flows und polierte Android-Experience für die französische Brocante-Zielgruppe.",
-      d: "End-to-End-Android-Entwicklung für die Côté-Puces-Plattform.",
+      d: "End-to-End-Android-App — Käufer-/Verkäufer-Flows, Retrofit-API-Integration, Play-Store-Release.",
       i: "Live-Mobile-Kanal für Frankreichs Brocante- und Antiquitäten-Community.",
     },
   },
