@@ -52,7 +52,7 @@
           "One accountable senior engineer: scoping, architecture, implementation, release ownership, and handover. AI accelerates routine work — quality and architecture stay under senior control.",
         panelB1: "End-to-end delivery — architecture through Play Store, App Store & App Gallery",
         panelB2: "Regulated environments — public sector, B2B, and healthcare",
-        panelB3: "France & EU track record — Schneider, Gesundheitspersonal, Comunik (freelance)",
+        panelB3: "France: Schneider, Runnrz, Digitsole, Côté Puces · EU: Gesundheitspersonal (DE), Comunik",
         panelCta: "View case studies →",
       },
       ai: {
@@ -249,7 +249,7 @@
           "Une ingénieure senior responsable de bout en bout : cadrage, architecture, implémentation, releases et passation. L'IA accélère le routinier — la qualité et l'architecture restent sous contrôle senior.",
         panelB1: "Delivery de bout en bout — architecture jusqu'au Play Store, App Store et App Gallery",
         panelB2: "Environnements réglementés — secteur public, B2B et santé",
-        panelB3: "Références France & UE — Schneider, Gesundheitspersonal, Comunik (freelance)",
+        panelB3: "France : Schneider, Runnrz, Digitsole, Côté Puces · UE : Gesundheitspersonal (DE), Comunik",
         panelCta: "Voir les études de cas →",
       },
       ai: {
@@ -446,7 +446,7 @@
           "Eine verantwortliche Senior-Ingenieurin End-to-End: Scoping, Architektur, Umsetzung, Release-Ownership und Übergabe. KI beschleunigt Routine — Qualität und Architektur bleiben in Senior-Verantwortung.",
         panelB1: "End-to-End-Delivery — Architektur bis Play Store, App Store & App Gallery",
         panelB2: "Regulierte Umgebungen — öffentlicher Sektor, B2B und Healthcare",
-        panelB3: "Referenzen Frankreich & EU — Schneider, Gesundheitspersonal, Comunik (Freelance)",
+        panelB3: "Frankreich: Schneider, Runnrz, Digitsole, Côté Puces · EU: Gesundheitspersonal (DE), Comunik",
         panelCta: "Fallstudien ansehen →",
       },
       ai: {

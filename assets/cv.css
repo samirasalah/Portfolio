@@ -331,6 +331,12 @@ h2 {
   line-height: 1.35;
 }
 
+.cv-eu-strip .cv-france-strip-label {
+  color: #0f766e;
+  background: #ecfdf5;
+  border-color: #99f6e4;
+}
+
 /* Offer grid */
 .offer-grid {
   display: grid;
