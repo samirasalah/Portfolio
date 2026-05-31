@@ -174,6 +174,15 @@ API console : `cvI18n.applyLang('fr')`.
 - **Côté Puces** : absent de `m3s` uniquement ; peut rester ailleurs.
 - **Freelance** : HB IT Services, facturation EUR.
 
+### Titres professionnels (diplôme)
+
+Samira détient une **Licence** (ISET Sousse), pas un titre d’ingénieur·e. Utiliser :
+- **FR** : *Développeuse mobile senior freelance* — éviter *Ingénieure*
+- **EN** : *Senior Mobile Developer* — éviter *Engineer* si cohérence stricte avec le diplôme
+- **DE** : *Senior Mobile-Entwicklerin* — éviter *Ingenieurin*
+
+La section **Formation** (`eduLine`) reste la source de vérité pour le diplôme.
+
 ---
 
 ## Géolocalisation (`geo-location.js`)

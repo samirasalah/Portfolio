@@ -12,7 +12,7 @@
       exportHint:
         '<strong>Export PDF</strong> — Chrome · <kbd>⌘</kbd>+<kbd>P</kbd> → <em>Save as PDF</em> · A4 · Spacing preview: <code>?preview=print</code>',
       langLabel: "CV language",
-      title: "Senior Freelance Android & Mobile Engineer · Video & public apps",
+      title: "Senior Freelance Android & Mobile Developer · Video & public apps",
       badgeTitle: "Freelance senior · available",
       badgeBiz: "HB IT Services · EUR invoicing",
       m1: "8+ years",
@@ -29,7 +29,7 @@
       refsLiveClients: "Gesundheitspersonal (DE) · Comunik Phone (TN) · Digitsole (FR)",
       profile: "Profile",
       profileText:
-        'Senior freelance mobile engineer — <strong>8+ years</strong> delivering production <strong>Android & Flutter</strong> for high-traffic <strong>consumer, enterprise, and public-sector</strong> products. Core strengths: <strong>mobile architecture</strong>, <strong>real-time systems</strong> (Twilio Video, VoIP, WebSocket), and <strong>store-grade release</strong> (CI/CD → Play Store / App Store). Recent France engagement: <strong>Android lead, Schneider Electric</strong> (mySchneider, 100+ countries). Contracts & EUR invoicing via HB IT Services.',
+        'Senior freelance mobile developer — <strong>8+ years</strong> delivering production <strong>Android & Flutter</strong> for high-traffic <strong>consumer, enterprise, and public-sector</strong> products. Core strengths: <strong>mobile architecture</strong>, <strong>real-time systems</strong> (Twilio Video, VoIP, WebSocket), and <strong>store-grade release</strong> (CI/CD → Play Store / App Store). Recent France engagement: <strong>Android lead, Schneider Electric</strong> (mySchneider, 100+ countries). Contracts & EUR invoicing via HB IT Services.',
       offerTitle: "Expertise",
       offer1t: "Mobile architecture & delivery",
       offer1b: "Kotlin · Jetpack Compose · Flutter · MVVM · Clean Architecture · modularisation at scale",
@@ -159,7 +159,7 @@
       exportHint:
         '<strong>Exporter en PDF</strong> — Chrome · <kbd>⌘</kbd>+<kbd>P</kbd> → <em>Enregistrer au format PDF</em> · A4 · Prévisualiser l\'espacement : <code>?preview=print</code>',
       langLabel: "Langue du CV",
-      title: "Ingénieure mobile senior freelance · Android & Flutter · Vidéo & grand public",
+      title: "Développeuse mobile senior freelance · Android & Flutter · Vidéo & grand public",
       badgeTitle: "Freelance senior · disponible",
       badgeBiz: "HB IT Services · facturation EUR",
       m1: "8+ ans",
@@ -176,7 +176,7 @@
       refsLiveClients: "Gesundheitspersonal (DE) · Comunik Phone (TN) · Digitsole (FR)",
       profile: "Profil",
       profileText:
-        'Ingénieure mobile senior freelance — <strong>8+ ans</strong> de delivery <strong>Android & Flutter</strong> en production (grand public, enterprise, secteur public). Expertise : <strong>architecture mobile</strong>, <strong>temps réel</strong> (Twilio Video, VoIP, WebSocket) et <strong>industrialisation store</strong> (CI/CD → Play Store / App Store). Référence récente : <strong>lead Android Schneider Electric</strong> (mySchneider, 100+ pays). Contrats & facturation EUR via HB IT Services.',
+        'Développeuse mobile senior freelance — <strong>8+ ans</strong> de delivery <strong>Android & Flutter</strong> en production (grand public, enterprise, secteur public). Expertise : <strong>architecture mobile</strong>, <strong>temps réel</strong> (Twilio Video, VoIP, WebSocket) et <strong>industrialisation store</strong> (CI/CD → Play Store / App Store). Référence récente : <strong>lead Android Schneider Electric</strong> (mySchneider, 100+ pays). Contrats & facturation EUR via HB IT Services.',
       offerTitle: "Expertise",
       offer1t: "Architecture & delivery mobile",
       offer1b: "Kotlin · Jetpack Compose · Flutter · MVVM · Clean Architecture · modularisation à l'échelle",
@@ -306,7 +306,7 @@
       exportHint:
         '<strong>PDF exportieren</strong> — Chrome · <kbd>⌘</kbd>+<kbd>P</kbd> → <em>Als PDF speichern</em> · A4',
       langLabel: "Sprache des Lebenslaufs",
-      title: "Senior Freelance Android & Mobile Engineer · Video & Public Apps",
+      title: "Senior Freelance Android & Mobile Developer · Video & Public Apps",
       badgeTitle: "Freelance senior · verfügbar",
       badgeBiz: "HB IT Services · EUR-Abrechnung",
       m1: "8+ Jahre",
@@ -323,7 +323,7 @@
       refsLiveClients: "Gesundheitspersonal (DE) · Comunik Phone (TN) · Digitsole (FR)",
       profile: "Profil",
       profileText:
-        'Senior Freelance Mobile Engineer — <strong>8+ Jahre</strong> Production-Delivery für <strong>Android & Flutter</strong> (Consumer, Enterprise, Public Service). Schwerpunkte: <strong>Mobile-Architektur</strong>, <strong>Echtzeit</strong> (Twilio Video, VoIP, WebSocket) und <strong>Store-Releases</strong> (CI/CD → Play Store / App Store). Aktuelle Frankreich-Referenz: <strong>Android Lead, Schneider Electric</strong> (mySchneider, 100+ Länder). Verträge & EUR-Abrechnung über HB IT Services.',
+        'Senior Mobile Developer — <strong>8+ Jahre</strong> Production-Delivery für <strong>Android & Flutter</strong> (Consumer, Enterprise, Public Service). Schwerpunkte: <strong>Mobile-Architektur</strong>, <strong>Echtzeit</strong> (Twilio Video, VoIP, WebSocket) und <strong>Store-Releases</strong> (CI/CD → Play Store / App Store). Aktuelle Frankreich-Referenz: <strong>Android Lead, Schneider Electric</strong> (mySchneider, 100+ Länder). Verträge & EUR-Abrechnung über HB IT Services.',
       offerTitle: "Expertise",
       offer1t: "Mobile-Architektur & Delivery",
       offer1b: "Kotlin · Jetpack Compose · Flutter · MVVM · Clean Architecture · Skalierung modular",

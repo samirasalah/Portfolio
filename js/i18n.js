@@ -13,9 +13,9 @@
   const T = {
     en: {
       meta: {
-        title: "Samira Salah — Senior Freelance Android & Mobile Engineer · France & EU",
+        title: "Samira Salah — Senior Freelance Android & Mobile Developer · France & EU",
         description:
-          "Senior freelance mobile engineer — Kotlin, Compose, Flutter. AI-accelerated delivery (Cursor, Gemini). France & EU missions. Public sector, enterprise, VoIP. HB IT Services.",
+          "Senior freelance mobile developer — Kotlin, Compose, Flutter. AI-accelerated delivery (Cursor, Gemini). France & EU missions. Public sector, enterprise, VoIP. HB IT Services.",
       },
       skip: "Skip to content",
       nav: {
@@ -34,7 +34,7 @@
         eyebrow:
           'Senior mobile freelance · <span data-geo-scope>Germany & EU · remote or on-site</span>',
         trade: 'Freelance <strong>senior</strong> · available — <strong>HB IT Services</strong>',
-        title: 'Senior Android & Mobile Engineer — <span class="accent">public sector</span>, enterprise & <span class="accent">real-time</span>',
+        title: 'Senior Android & Mobile Developer — <span class="accent">public sector</span>, enterprise & <span class="accent">real-time</span>',
         lead:
           'One <strong>senior owner</strong> for Kotlin, Jetpack Compose, and Flutter — from <strong>Schneider Electric (France)</strong> and <strong>regulated healthcare</strong> to <strong>UAE government programs</strong> and <strong>production VoIP</strong>. Clean architecture, store releases, and reliable sessions on real networks.',
         proof1n: "8+",
@@ -50,7 +50,7 @@
         panelLabel: "Engagement model",
         panelTitle: "Senior ownership — <em>production-first</em>",
         panelSummary:
-          "One accountable senior engineer: scoping, architecture, implementation, release ownership, and handover. AI accelerates routine work — quality and architecture stay under senior control.",
+          "One accountable senior developer: scoping, architecture, implementation, release ownership, and handover. AI accelerates routine work — quality and architecture stay under senior control.",
         panelB1: "End-to-end delivery — architecture through Play Store, App Store & App Gallery",
         panelB2: "Regulated environments — public sector, B2B, and healthcare",
         panelB3: "France: Schneider, Runnrz, Digitsole, Côté Puces · EU: Gesundheitspersonal (DE) · TN: Comunik",
@@ -59,7 +59,7 @@
       ai: {
         label: "Delivery model",
         title: "Senior craft — AI as leverage, not a shortcut",
-        intro: "One accountable senior engineer on your mission. AI compresses routine cycles; architecture, releases, and code quality remain under my ownership.",
+        intro: "One accountable senior developer on your mission. AI compresses routine cycles; architecture, releases, and code quality remain under my ownership.",
         m1h: "Architecture first",
         m1k: "Structure",
         m1p: "Clean Architecture, modular boundaries, and DI before feature velocity — so freelance phases do not create long-term debt.",
@@ -88,7 +88,7 @@
         label: "Core expertise",
         title: "Senior delivery — from architecture to store release",
         intro:
-          "End-to-end mobile engineering for regulated and high-traffic products — public sector, enterprise, and real-time communications.",
+          "End-to-end mobile development for regulated and high-traffic products — public sector, enterprise, and real-time communications.",
         s1t: "Public & enterprise apps",
         s1d: 'Government and B2B products — architecture through <span class="store-name">Play Store</span>, <span class="store-name">App Store</span> & <span class="store-name">App Gallery</span>',
         s2t: "Real-time communications",
@@ -207,13 +207,13 @@
         bizName: "<strong>HB IT Services</strong> · Bergneustadt, Germany",
         bizNote: "Registered EU business · quotes & invoices in EUR · VAT details on request.",
       },
-      footer: "© {year} Samira Salah · HB IT Services · Senior freelance mobile engineer",
+      footer: "© {year} Samira Salah · HB IT Services · Senior freelance mobile developer",
     },
     fr: {
       meta: {
-        title: "Samira Salah — Ingénieure mobile senior freelance · France & UE",
+        title: "Samira Salah — Développeuse mobile senior freelance · France & UE",
         description:
-          "Samira Salah — Ingénieure mobile senior freelance. Android, Kotlin, Compose, Flutter. Delivery accélérée par l'IA (Cursor, Gemini). Missions France & UE.",
+          "Samira Salah — Développeuse mobile senior freelance. Android, Kotlin, Compose, Flutter. Delivery accélérée par l'IA (Cursor, Gemini). Missions France & UE.",
       },
       skip: "Aller au contenu",
       nav: {
@@ -232,7 +232,7 @@
         eyebrow:
           'Mobile senior freelance · <span data-geo-scope>Allemagne & UE · remote ou sur site</span>',
         trade: 'Freelance <strong>senior</strong> · disponible — <strong>HB IT Services</strong>',
-        title: 'Ingénieure mobile senior — <span class="accent">secteur public</span>, entreprise & <span class="accent">temps réel</span>',
+        title: 'Développeuse mobile senior — <span class="accent">secteur public</span>, entreprise & <span class="accent">temps réel</span>',
         lead:
           'Un seul <strong>interlocuteur senior</strong> en Kotlin, Jetpack Compose et Flutter — de <strong>Schneider Electric (France)</strong> et la <strong>santé réglementée</strong> aux <strong>programmes gouvernementaux EAU</strong> et la <strong>VoIP en production</strong>. Architecture propre, releases stores et fiabilité sur réseaux réels.',
         proof1n: "8+",
@@ -248,7 +248,7 @@
         panelLabel: "Modèle d'engagement",
         panelTitle: "Pilotage senior — <em>production d'abord</em>",
         panelSummary:
-          "Une ingénieure senior responsable de bout en bout : cadrage, architecture, implémentation, releases et passation. L'IA accélère le routinier — la qualité et l'architecture restent sous contrôle senior.",
+          "Une développeuse senior responsable de bout en bout : cadrage, architecture, implémentation, releases et passation. L'IA accélère le routinier — la qualité et l'architecture restent sous contrôle senior.",
         panelB1: "Delivery de bout en bout — architecture jusqu'au Play Store, App Store et App Gallery",
         panelB2: "Environnements réglementés — secteur public, B2B et santé",
         panelB3: "France : Schneider, Runnrz, Digitsole, Côté Puces · UE : Gesundheitspersonal (DE) · TN : Comunik",
@@ -286,7 +286,7 @@
         label: "Expertise clé",
         title: "Delivery senior — de l'architecture à la release store",
         intro:
-          "Ingénierie mobile de bout en bout pour produits réglementés et à fort trafic — secteur public, entreprise et communications temps réel.",
+          "Développement mobile de bout en bout pour produits réglementés et à fort trafic — secteur public, entreprise et communications temps réel.",
         s1t: "Apps secteur public & entreprise",
         s1d: 'Produits gouvernementaux et B2B — architecture jusqu\'aux stores <span class="store-name">Play Store</span>, <span class="store-name">App Store</span> & <span class="store-name">App Gallery</span>',
         s2t: "Communications temps réel",
@@ -405,13 +405,13 @@
         bizName: "<strong>HB IT Services</strong> · Bergneustadt, Allemagne",
         bizNote: "Entreprise UE enregistrée · devis et factures en EUR · TVA sur demande.",
       },
-      footer: "© {year} Samira Salah · HB IT Services · Ingénieure mobile senior freelance",
+      footer: "© {year} Samira Salah · HB IT Services · Développeuse mobile senior freelance",
     },
     de: {
       meta: {
-        title: "Samira Salah — Senior Freelance Mobile Engineer · Frankreich & EU",
+        title: "Samira Salah — Senior Freelance Mobile Developer · Frankreich & EU",
         description:
-          "Samira Salah — Senior Freelance Mobile Engineer. Android, Kotlin, Compose, Flutter. KI-gestützte Delivery (Cursor, Gemini). Aufträge in Frankreich & EU.",
+          "Samira Salah — Senior Freelance Mobile Developer. Android, Kotlin, Compose, Flutter. KI-gestützte Delivery (Cursor, Gemini). Aufträge in Frankreich & EU.",
       },
       skip: "Zum Inhalt springen",
       nav: {
@@ -430,7 +430,7 @@
         eyebrow:
           'Senior Mobile Freelance · <span data-geo-scope>Deutschland & EU · remote oder vor Ort</span>',
         trade: 'Senior-<strong>Freelance</strong> · verfügbar — <strong>HB IT Services</strong>',
-        title: 'Senior Android- & Mobile-Ingenieurin — <span class="accent">öffentlicher Sektor</span>, Enterprise & <span class="accent">Echtzeit</span>',
+        title: 'Senior Android- & Mobile-Entwicklerin — <span class="accent">öffentlicher Sektor</span>, Enterprise & <span class="accent">Echtzeit</span>',
         lead:
           'Eine <strong>senior Ansprechpartnerin</strong> für Kotlin, Jetpack Compose und Flutter — von <strong>Schneider Electric (Frankreich)</strong> und <strong>reguliertem Healthcare</strong> bis <strong>Regierungsprogrammen in den VAE</strong> und <strong>Produktions-VoIP</strong>. Saubere Architektur, Store-Releases und Zuverlässigkeit in echten Netzen.',
         proof1n: "8+",
@@ -446,7 +446,7 @@
         panelLabel: "Engagement-Modell",
         panelTitle: "Senior Ownership — <em>production-first</em>",
         panelSummary:
-          "Eine verantwortliche Senior-Ingenieurin End-to-End: Scoping, Architektur, Umsetzung, Release-Ownership und Übergabe. KI beschleunigt Routine — Qualität und Architektur bleiben in Senior-Verantwortung.",
+          "Eine verantwortliche Senior-Entwicklerin End-to-End: Scoping, Architektur, Umsetzung, Release-Ownership und Übergabe. KI beschleunigt Routine — Qualität und Architektur bleiben in Senior-Verantwortung.",
         panelB1: "End-to-End-Delivery — Architektur bis Play Store, App Store & App Gallery",
         panelB2: "Regulierte Umgebungen — öffentlicher Sektor, B2B und Healthcare",
         panelB3: "Frankreich: Schneider, Runnrz, Digitsole, Côté Puces · EU: Gesundheitspersonal (DE) · TN: Comunik",
@@ -455,7 +455,7 @@
       ai: {
         label: "Delivery-Modell",
         title: "Senior Craft — KI als Hebel, nicht als Abkürzung",
-        intro: "Eine verantwortliche Senior-Ingenieurin auf Ihrer Mission. KI komprimiert Routine-Zyklen; Architektur, Releases und Codequalität bleiben in meiner Verantwortung.",
+        intro: "Eine verantwortliche Senior-Entwicklerin auf Ihrer Mission. KI komprimiert Routine-Zyklen; Architektur, Releases und Codequalität bleiben in meiner Verantwortung.",
         m1h: "Architektur zuerst",
         m1k: "Struktur",
         m1p: "Clean Architecture, modulare Grenzen und DI vor Feature-Tempo — damit Freelance-Phasen keine langfristige Schuld erzeugen.",
@@ -484,7 +484,7 @@
         label: "Kernkompetenz",
         title: "Senior Delivery — von Architektur bis Store-Release",
         intro:
-          "Mobile Engineering End-to-End für regulierte und hoch frequentierte Produkte — öffentlicher Sektor, Enterprise und Echtzeit-Kommunikation.",
+          "Mobile-Entwicklung End-to-End für regulierte und hoch frequentierte Produkte — öffentlicher Sektor, Enterprise und Echtzeit-Kommunikation.",
         s1t: "Behörden- & Enterprise-Apps",
         s1d: 'Regierungs- und B2B-Produkte — Architektur bis <span class="store-name">Play Store</span>, <span class="store-name">App Store</span> & <span class="store-name">App Gallery</span>',
         s2t: "Echtzeit-Kommunikation",
@@ -603,7 +603,7 @@
         bizName: "<strong>HB IT Services</strong> · Bergneustadt, Deutschland",
         bizNote: "Registriertes EU-Unternehmen · Angebote & Rechnungen in EUR · USt-Details auf Anfrage.",
       },
-      footer: "© {year} Samira Salah · HB IT Services · Senior Freelance Mobile Engineer",
+      footer: "© {year} Samira Salah · HB IT Services · Senior Freelance Mobile Developer",
     },
   };
 
