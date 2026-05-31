@@ -125,7 +125,7 @@ window.portfolioProjects = {
       value:
         'Coaching connecté pour coureurs et marcheurs — biomécanique en direct et guidage vocal pendant l\'effort.',
       c: "Maintenir des flux capteurs Bluetooth fiables pendant une migration cloud, tout en ajoutant un coaching vocal en temps réel.",
-      d: "Lead Android sur deux apps compagnons ; migration cloud AWS Amplify ; workflow strings <strong>Crowdin</strong> ; coaching vocal à partir des données semelles ; flux capteurs BLE fiables.",
+      d: "Lead Android sur deux apps compagnons ; SDK <strong>Zhor-Tech ZT Core Kit</strong> (connexion BLE semelles & flux capteurs) ; migration cloud AWS Amplify ; workflow strings <strong>Crowdin</strong> ; coaching vocal temps réel.",
       i: "Retour forme pendant la course ou la marche — sans s'arrêter pour lire l'écran ; base utilisateurs préservée pendant la migration.",
     },
     de: {
@@ -134,7 +134,7 @@ window.portfolioProjects = {
       value:
         'Connected Coaching für Läufer und Walker — Live-Biomechanik und Sprachguidance während der Aktivität.',
       c: "Zuverlässige Sensor-Bluetooth-Streams während Cloud-Migration — plus Echtzeit-Sprachcoaching.",
-      d: "Android-Lead für zwei Companion-Apps; AWS-Amplify-Cloud-Migration; <strong>Crowdin</strong>-String-Workflow; Sprachcoaching aus Einlegesohlen-Daten; zuverlässige BLE-Sensor-Streams.",
+      d: "Android-Lead für zwei Companion-Apps; <strong>Zhor-Tech ZT Core Kit</strong> SDK (BLE-Verbindung Einlegesohlen & Sensor-Streams); AWS-Amplify-Cloud-Migration; <strong>Crowdin</strong>-String-Workflow; Echtzeit-Sprachcoaching.",
       i: "Form-Feedback beim Laufen und Gehen — ohne Blick auf den Bildschirm; Nutzerbasis durch Migration gehalten.",
     },
   },

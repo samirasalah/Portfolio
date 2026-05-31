@@ -13,6 +13,29 @@
     de: { fr: "Rambouillet, Frankreich", default: "Bergneustadt, Deutschland" },
   };
 
+  /** Mission region — France for FR visitors, Germany otherwise (mirrors location logic). */
+  const MISSIONS = {
+    en: { fr: "<strong>France</strong>", default: "<strong>Germany</strong>" },
+    fr: { fr: "<strong>France</strong>", default: "<strong>Allemagne</strong>" },
+    de: { fr: "<strong>Frankreich</strong>", default: "<strong>Deutschland</strong>" },
+  };
+
+  /** Badge / scope line — country label follows same IP rule as missions. */
+  const SCOPE = {
+    en: {
+      fr: "France & EU · remote or on-site",
+      default: "Germany & EU · remote or on-site",
+    },
+    fr: {
+      fr: "France & UE · remote ou sur site",
+      default: "Allemagne & UE · remote ou sur site",
+    },
+    de: {
+      fr: "Frankreich & EU · remote oder vor Ort",
+      default: "Deutschland & EU · remote oder vor Ort",
+    },
+  };
+
   let lastData = null;
 
   function getLang() {
@@ -20,10 +43,23 @@
     return LOCATIONS[lang] ? lang : "en";
   }
 
+  function countryCode(data) {
+    return (data && data.country_code ? data.country_code : "DE").toUpperCase();
+  }
+
   function formatLocation(data, lang) {
     const labels = LOCATIONS[lang] || LOCATIONS.en;
-    const cc = (data && data.country_code ? data.country_code : "DE").toUpperCase();
-    return cc === "FR" ? labels.fr : labels.default;
+    return countryCode(data) === "FR" ? labels.fr : labels.default;
+  }
+
+  function formatMissions(data, lang) {
+    const labels = MISSIONS[lang] || MISSIONS.en;
+    return countryCode(data) === "FR" ? labels.fr : labels.default;
+  }
+
+  function formatScope(data, lang) {
+    const labels = SCOPE[lang] || SCOPE.en;
+    return countryCode(data) === "FR" ? labels.fr : labels.default;
   }
 
   function readCache() {
@@ -71,6 +107,20 @@
     document.querySelectorAll("[data-geo-location]").forEach((el) => {
       el.textContent = text;
     });
+
+    const missionsHtml = formatMissions(data, lang);
+    document.querySelectorAll("[data-geo-missions]").forEach((el) => {
+      if (el.getAttribute("data-geo-missions-html") === "true") {
+        el.innerHTML = missionsHtml;
+      } else {
+        el.textContent = missionsHtml.replace(/<\/?strong>/g, "");
+      }
+    });
+
+    const scopeText = formatScope(data, lang);
+    document.querySelectorAll("[data-geo-scope]").forEach((el) => {
+      el.textContent = scopeText;
+    });
   }
 
   async function applyGeoLocation() {
@@ -83,7 +133,13 @@
     applyToDom(lastData || FALLBACK);
   }
 
-  window.consultantGeo = { applyGeoLocation, refreshGeoLabels, formatLocation };
+  window.consultantGeo = {
+    applyGeoLocation,
+    refreshGeoLabels,
+    formatLocation,
+    formatMissions,
+    formatScope,
+  };
 
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", () => {

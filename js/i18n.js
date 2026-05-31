@@ -31,8 +31,9 @@
         lang: "Language",
       },
       hero: {
-        eyebrow: "Senior mobile freelance · France & EU remote",
-        trade: 'Senior <strong>freelance</strong> · missions in <strong>France</strong> & EU — <strong>HB IT Services</strong>',
+        eyebrow:
+          'Senior mobile freelance · <span data-geo-scope>Germany & EU · remote or on-site</span>',
+        trade: 'Senior <strong>freelance</strong> · missions in <span data-geo-missions data-geo-missions-html="true"><strong>Germany</strong></span> — <strong>HB IT Services</strong>',
         title: 'Senior Android & Mobile Engineer — <span class="accent">public sector</span>, enterprise & <span class="accent">real-time</span>',
         lead:
           'One <strong>senior owner</strong> for Kotlin, Jetpack Compose, and Flutter — from <strong>Schneider Electric (France)</strong> and <strong>regulated healthcare</strong> to <strong>UAE government programs</strong> and <strong>production VoIP</strong>. Clean architecture, store releases, and reliable sessions on real networks.',
@@ -52,7 +53,7 @@
           "One accountable senior engineer: scoping, architecture, implementation, release ownership, and handover. AI accelerates routine work — quality and architecture stay under senior control.",
         panelB1: "End-to-end delivery — architecture through Play Store, App Store & App Gallery",
         panelB2: "Regulated environments — public sector, B2B, and healthcare",
-        panelB3: "France: Schneider, Runnrz, Digitsole, Côté Puces · EU: Gesundheitspersonal (DE), Comunik",
+        panelB3: "France: Schneider, Runnrz, Digitsole, Côté Puces · EU: Gesundheitspersonal (DE) · TN: Comunik",
         panelCta: "View case studies →",
       },
       ai: {
@@ -167,7 +168,7 @@
         knowlepsySum: "Senior Flutter Developer — epilepsy care module (May – Aug 2023).",
         comunikRole: "Flutter Developer · Freelance",
         comunikTime: "Sep 2023 — Feb 2024",
-        comunikLoc: "Remote · Team",
+        comunikLoc: "Remote · Tunisia",
         comunikSum: 'Flutter — <strong>Comunik Phone</strong> SIP softphone: sip_ua, WebSocket credentials, FCM, hold/transfer/conference (Sep 2023 – Feb 2024).',
         digitsoleRole: "Android Consultant · via Proxym Group",
         digitsoleTime: "Jun 2021 — Sep 2022",
@@ -228,8 +229,9 @@
         lang: "Langue",
       },
       hero: {
-        eyebrow: "Mobile senior freelance · France & télétravail UE",
-        trade: 'Freelance <strong>senior</strong> · missions en <strong>France</strong> & UE — <strong>HB IT Services</strong>',
+        eyebrow:
+          'Mobile senior freelance · <span data-geo-scope>Allemagne & UE · remote ou sur site</span>',
+        trade: 'Freelance <strong>senior</strong> · missions en <span data-geo-missions data-geo-missions-html="true"><strong>Allemagne</strong></span> — <strong>HB IT Services</strong>',
         title: 'Ingénieure mobile senior — <span class="accent">secteur public</span>, entreprise & <span class="accent">temps réel</span>',
         lead:
           'Un seul <strong>interlocuteur senior</strong> en Kotlin, Jetpack Compose et Flutter — de <strong>Schneider Electric (France)</strong> et la <strong>santé réglementée</strong> aux <strong>programmes gouvernementaux EAU</strong> et la <strong>VoIP en production</strong>. Architecture propre, releases stores et fiabilité sur réseaux réels.',
@@ -249,7 +251,7 @@
           "Une ingénieure senior responsable de bout en bout : cadrage, architecture, implémentation, releases et passation. L'IA accélère le routinier — la qualité et l'architecture restent sous contrôle senior.",
         panelB1: "Delivery de bout en bout — architecture jusqu'au Play Store, App Store et App Gallery",
         panelB2: "Environnements réglementés — secteur public, B2B et santé",
-        panelB3: "France : Schneider, Runnrz, Digitsole, Côté Puces · UE : Gesundheitspersonal (DE), Comunik",
+        panelB3: "France : Schneider, Runnrz, Digitsole, Côté Puces · UE : Gesundheitspersonal (DE) · TN : Comunik",
         panelCta: "Voir les études de cas →",
       },
       ai: {
@@ -364,7 +366,7 @@
         knowlepsySum: "Développeuse Flutter senior — module soins épilepsie (mai – août 2023).",
         comunikRole: "Développeuse Flutter · Freelance",
         comunikTime: "Sept. 2023 — Fév. 2024",
-        comunikLoc: "Remote · Équipe",
+        comunikLoc: "Remote · Tunisie",
         comunikSum: 'Flutter — softphone SIP <strong>Comunik Phone</strong> : sip_ua, credentials WebSocket, FCM, attente/transfert/conférence (sept. 2023 – fév. 2024).',
         digitsoleRole: "Consultante Android · via Proxym Group",
         digitsoleTime: "Juin 2021 — Sept. 2022",
@@ -425,8 +427,9 @@
         lang: "Sprache",
       },
       hero: {
-        eyebrow: "Senior Mobile Freelance · Frankreich & EU-Remote",
-        trade: 'Senior-<strong>Freelance</strong> · Aufträge in <strong>Frankreich</strong> & EU — <strong>HB IT Services</strong>',
+        eyebrow:
+          'Senior Mobile Freelance · <span data-geo-scope>Deutschland & EU · remote oder vor Ort</span>',
+        trade: 'Senior-<strong>Freelance</strong> · Aufträge in <span data-geo-missions data-geo-missions-html="true"><strong>Deutschland</strong></span> — <strong>HB IT Services</strong>',
         title: 'Senior Android- & Mobile-Ingenieurin — <span class="accent">öffentlicher Sektor</span>, Enterprise & <span class="accent">Echtzeit</span>',
         lead:
           'Eine <strong>senior Ansprechpartnerin</strong> für Kotlin, Jetpack Compose und Flutter — von <strong>Schneider Electric (Frankreich)</strong> und <strong>reguliertem Healthcare</strong> bis <strong>Regierungsprogrammen in den VAE</strong> und <strong>Produktions-VoIP</strong>. Saubere Architektur, Store-Releases und Zuverlässigkeit in echten Netzen.',
@@ -446,7 +449,7 @@
           "Eine verantwortliche Senior-Ingenieurin End-to-End: Scoping, Architektur, Umsetzung, Release-Ownership und Übergabe. KI beschleunigt Routine — Qualität und Architektur bleiben in Senior-Verantwortung.",
         panelB1: "End-to-End-Delivery — Architektur bis Play Store, App Store & App Gallery",
         panelB2: "Regulierte Umgebungen — öffentlicher Sektor, B2B und Healthcare",
-        panelB3: "Frankreich: Schneider, Runnrz, Digitsole, Côté Puces · EU: Gesundheitspersonal (DE), Comunik",
+        panelB3: "Frankreich: Schneider, Runnrz, Digitsole, Côté Puces · EU: Gesundheitspersonal (DE) · TN: Comunik",
         panelCta: "Fallstudien ansehen →",
       },
       ai: {
@@ -561,7 +564,7 @@
         knowlepsySum: "Senior Flutter Developer — Epilepsie-Versorgungsmodul (Mai – Aug. 2023).",
         comunikRole: "Flutter Developer · Freelance",
         comunikTime: "Sept. 2023 — Feb. 2024",
-        comunikLoc: "Remote · Team",
+        comunikLoc: "Remote · Tunesien",
         comunikSum: 'Flutter — <strong>Comunik Phone</strong> SIP-Softphone: sip_ua, WebSocket-Credentials, FCM, Halten/Transfer/Konferenz (Sept. 2023 – Feb. 2024).',
         digitsoleRole: "Android Consultant · via Proxym Group",
         digitsoleTime: "Juni 2021 — Sept. 2022",
