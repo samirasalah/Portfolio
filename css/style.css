@@ -856,6 +856,26 @@ section {
   background: linear-gradient(180deg, rgba(91, 141, 255, 0.04), transparent);
 }
 
+.section-why .section-label {
+  color: var(--ai);
+  background: var(--ai-soft);
+  border-color: rgba(69, 224, 160, 0.22);
+}
+
+.section-why .section-label::before {
+  background: var(--ai);
+}
+
+.section-media .section-label {
+  color: var(--accent);
+  background: var(--accent-soft);
+  border-color: rgba(107, 155, 255, 0.22);
+}
+
+.section-media .section-label::before {
+  background: var(--accent);
+}
+
 /* Shared card system */
 .highlight-card {
   display: flex;
