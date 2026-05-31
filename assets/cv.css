@@ -17,6 +17,8 @@
   --pad-y: 8mm;
   --page-h: 297mm;
   --page-w: 210mm;
+  --print-pad-y: 6mm;
+  --print-block-gap: 2.5mm;
 }
 
 @page {
@@ -62,6 +64,32 @@ body {
   border-radius: 3px;
 }
 .cv-export-hint em { font-style: normal; font-weight: 600; color: var(--ink); }
+
+.cv-export-hint code {
+  padding: 0 4px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 7.75pt;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 3px;
+}
+
+.cv-export-hint--warn {
+  border-color: #fbbf24;
+  background: #fffbeb;
+}
+
+.cv-export-hint-warn {
+  display: block;
+  margin-top: 6px;
+  font-size: 8pt;
+  font-weight: 600;
+  color: #b45309;
+}
+
+@media print {
+  .cv-export-hint-warn { display: none !important; }
+}
 
 /* Document */
 .cv {
@@ -262,6 +290,80 @@ h2 {
 
 .lead strong { color: var(--ink); font-weight: 600; }
 
+.offer-list {
+  margin: 2mm 0 0;
+  padding: 0 0 0 4mm;
+  font-size: 8.25pt;
+  line-height: 1.45;
+}
+
+.offer-list li { margin-bottom: 1mm; }
+.offer-list li:last-child { margin-bottom: 0; }
+.offer-list strong { color: var(--ink); font-weight: 600; }
+
+/* France references strip */
+.cv-france-strip {
+  display: flex;
+  align-items: center;
+  gap: 3mm;
+  padding: 2mm var(--pad-x);
+  background: #fff;
+  border-bottom: 1px solid var(--line);
+}
+
+.cv-france-strip-label {
+  flex-shrink: 0;
+  font-size: 6.25pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  padding: 0.8mm 1.8mm;
+  background: var(--accent-soft);
+  border: 1px solid #bfdbfe;
+  border-radius: 3px;
+}
+
+.cv-france-strip-clients {
+  font-size: 7.5pt;
+  font-weight: 500;
+  color: var(--ink);
+  line-height: 1.35;
+}
+
+/* Offer grid */
+.offer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5mm;
+}
+
+.offer-card {
+  padding: 2mm 2.5mm;
+  background: var(--aside);
+  border: 1px solid var(--line);
+  border-left: 2px solid var(--accent-mid);
+  border-radius: 3px;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.offer-card strong {
+  display: block;
+  font-size: 7pt;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 0.6mm;
+  line-height: 1.2;
+}
+
+.offer-card span {
+  display: block;
+  font-size: 7.25pt;
+  line-height: 1.38;
+  color: var(--ink-soft);
+}
+
 /* Skills — valorized */
 .skill-group { margin-bottom: 3mm; }
 .skill-group:last-child { margin-bottom: 0; }
@@ -299,6 +401,18 @@ h2 {
   color: var(--accent);
 }
 
+.skill-group--primary h3 { color: var(--accent); }
+
+.lang-list li.lang-list--primary {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.lang-list li.lang-list--primary em {
+  color: var(--accent-mid);
+  font-weight: 600;
+}
+
 /* Languages & education */
 .lang-list { list-style: none; margin: 0; padding: 0; }
 
@@ -330,6 +444,12 @@ h2 {
 }
 
 .role:last-child { border-bottom: 0; }
+
+.role--highlight {
+  padding-left: 2.5mm;
+  border-left: 2px solid var(--accent-mid);
+  background: linear-gradient(90deg, var(--accent-soft) 0%, transparent 100%);
+}
 
 .role-head {
   display: flex;
@@ -402,6 +522,11 @@ h2 {
 }
 
 .project-card--compact .project-facts {
+  margin-bottom: 1mm;
+}
+
+.project-card--compact .project-tags {
+  margin-top: 0.5mm;
   margin-bottom: 0;
 }
 
@@ -561,17 +686,31 @@ h2 {
 
 /* Print */
 @media print {
+  :root {
+    --pad-y: var(--print-pad-y);
+  }
+
+  html, body {
+    width: var(--page-w);
+    margin: 0;
+    padding: 0;
+  }
+
   body { background: #fff; }
 
   .cv-export-hint { display: none !important; }
 
   .cv {
-    width: auto;
+    width: var(--page-w);
+    max-width: var(--page-w);
     margin: 0;
     box-shadow: none;
   }
 
   .cv-sheet {
+    width: var(--page-w);
+    max-width: var(--page-w);
+    box-sizing: border-box;
     break-after: page;
     page-break-after: always;
   }
@@ -580,13 +719,158 @@ h2 {
   .cv-sheet:last-child {
     break-after: auto;
     page-break-after: auto;
+    min-height: var(--page-h);
+    display: flex;
+    flex-direction: column;
   }
 
   .cv-sheet + .cv-sheet { border-top: none; }
 
+  /* ── Page 1: tighter vertical rhythm ── */
+  .cv-sheet:first-of-type .cv-header {
+    padding: 5.5mm var(--pad-x) 4mm;
+  }
+
+  .cv-sheet:first-of-type .cv-header-main {
+    margin-bottom: 2mm;
+  }
+
+  .cv-sheet:first-of-type .cv-identity h1 {
+    font-size: 18pt;
+  }
+
+  .cv-sheet:first-of-type .cv-title {
+    font-size: 9.25pt;
+  }
+
+  .cv-sheet:first-of-type .cv-tagline {
+    font-size: 7.5pt;
+    line-height: 1.35;
+  }
+
+  .cv-sheet:first-of-type .metric {
+    padding: 1.8mm 1.5mm;
+  }
+
+  .cv-sheet:first-of-type .cv-france-strip {
+    padding: 1.5mm var(--pad-x);
+  }
+
+  .cv-sheet:first-of-type .cv-body {
+    align-items: stretch;
+  }
+
+  .cv-sheet:first-of-type .cv-main,
+  .cv-sheet:first-of-type .cv-aside {
+    padding-top: var(--print-pad-y);
+    padding-bottom: var(--print-pad-y);
+  }
+
+  .cv-sheet:first-of-type .cv-aside {
+    min-height: 100%;
+  }
+
+  .cv-sheet:first-of-type .cv-block {
+    margin-bottom: var(--print-block-gap);
+  }
+
+  .cv-sheet:first-of-type h2 {
+    margin-bottom: 1.8mm;
+  }
+
+  .cv-sheet:first-of-type .lead {
+    font-size: 8.25pt;
+    line-height: 1.42;
+  }
+
+  .cv-sheet:first-of-type .offer-grid {
+    gap: 1.2mm;
+  }
+
+  .cv-sheet:first-of-type .offer-card {
+    padding: 1.6mm 2mm;
+  }
+
+  .cv-sheet:first-of-type .offer-card span {
+    font-size: 7pt;
+    line-height: 1.32;
+  }
+
+  .cv-sheet:first-of-type .project-card--compact {
+    margin-bottom: 1.5mm;
+    padding: 2mm 2.5mm;
+  }
+
+  .cv-sheet:first-of-type .project-intro {
+    margin-bottom: 1.2mm;
+    font-size: 7.75pt;
+    line-height: 1.38;
+  }
+
+  .cv-sheet:first-of-type .project-facts dd {
+    font-size: 7.5pt;
+    line-height: 1.35;
+  }
+
+  .cv-sheet:first-of-type .project-card--compact .project-tags {
+    display: none;
+  }
+
+  .cv-sheet:first-of-type .role {
+    padding: 1.8mm 0;
+  }
+
+  .cv-sheet:first-of-type .skill-group {
+    margin-bottom: 2mm;
+  }
+
+  /* ── Page 2: fill sheet, footer pinned ── */
+  .cv-sheet-last .cv-header--compact {
+    padding: 3.5mm var(--pad-x) 2.5mm;
+  }
+
+  .cv-sheet-last .cv-block:first-of-type {
+    padding-top: var(--print-pad-y);
+  }
+
+  .cv-sheet-last .cv-block {
+    margin-bottom: var(--print-block-gap);
+  }
+
+  .cv-sheet-last .cv-block--compact {
+    margin-bottom: 2mm;
+  }
+
+  .cv-sheet-last .project-card {
+    margin-bottom: 2mm;
+    padding: 2.5mm 3mm;
+  }
+
+  .cv-sheet-last .project-card--compact {
+    margin-bottom: 1.5mm;
+    padding: 2mm 2.5mm;
+  }
+
+  .cv-sheet-last .project-grid {
+    gap: 2mm;
+  }
+
+  .cv-sheet-last .project-mini {
+    padding: 2mm;
+  }
+
+  .cv-sheet-last .cv-footer {
+    margin-top: auto;
+    padding-top: 2.5mm;
+    padding-bottom: var(--print-pad-y);
+  }
+
   .cv-header,
   .cv-metrics,
+  .cv-france-strip,
   .cv-aside,
+  .offer-card,
+  .role--highlight,
   .project-card,
   .skill-tags li {
     -webkit-print-color-adjust: exact;
@@ -599,6 +883,172 @@ h2 {
   .cv-header-name {
     font-family: Georgia, "Times New Roman", serif;
   }
+}
+
+/* Screen preview matching print spacing — add ?preview=print to URL */
+html.cv-print-preview {
+  --pad-y: var(--print-pad-y);
+  background: #fff;
+}
+
+html.cv-print-preview body {
+  background: #fff;
+}
+
+html.cv-print-preview .cv {
+  width: var(--page-w);
+  margin: 12px auto;
+  box-shadow: 0 8px 30px rgba(15, 23, 42, 0.12);
+}
+
+html.cv-print-preview .cv-export-hint {
+  max-width: var(--page-w);
+}
+
+html.cv-print-preview .cv-sheet {
+  width: var(--page-w);
+  max-width: var(--page-w);
+  outline: 1px dashed #cbd5e1;
+  outline-offset: 2px;
+}
+
+html.cv-print-preview .cv-sheet:first-of-type .cv-header {
+  padding: 5.5mm var(--pad-x) 4mm;
+}
+
+html.cv-print-preview .cv-sheet:first-of-type .cv-header-main {
+  margin-bottom: 2mm;
+}
+
+html.cv-print-preview .cv-sheet:first-of-type .cv-identity h1 {
+  font-size: 18pt;
+}
+
+html.cv-print-preview .cv-sheet:first-of-type .cv-title {
+  font-size: 9.25pt;
+}
+
+html.cv-print-preview .cv-sheet:first-of-type .cv-tagline {
+  font-size: 7.5pt;
+  line-height: 1.35;
+}
+
+html.cv-print-preview .cv-sheet:first-of-type .metric {
+  padding: 1.8mm 1.5mm;
+}
+
+html.cv-print-preview .cv-sheet:first-of-type .cv-france-strip {
+  padding: 1.5mm var(--pad-x);
+}
+
+html.cv-print-preview .cv-sheet:first-of-type .cv-body {
+  align-items: stretch;
+}
+
+html.cv-print-preview .cv-sheet:first-of-type .cv-main,
+html.cv-print-preview .cv-sheet:first-of-type .cv-aside {
+  padding-top: var(--print-pad-y);
+  padding-bottom: var(--print-pad-y);
+}
+
+html.cv-print-preview .cv-sheet:first-of-type .cv-aside {
+  min-height: 100%;
+}
+
+html.cv-print-preview .cv-sheet:first-of-type .cv-block {
+  margin-bottom: var(--print-block-gap);
+}
+
+html.cv-print-preview .cv-sheet:first-of-type h2 {
+  margin-bottom: 1.8mm;
+}
+
+html.cv-print-preview .cv-sheet:first-of-type .lead {
+  font-size: 8.25pt;
+  line-height: 1.42;
+}
+
+html.cv-print-preview .cv-sheet:first-of-type .offer-grid {
+  gap: 1.2mm;
+}
+
+html.cv-print-preview .cv-sheet:first-of-type .offer-card {
+  padding: 1.6mm 2mm;
+}
+
+html.cv-print-preview .cv-sheet:first-of-type .offer-card span {
+  font-size: 7pt;
+  line-height: 1.32;
+}
+
+html.cv-print-preview .cv-sheet:first-of-type .project-card--compact {
+  margin-bottom: 1.5mm;
+  padding: 2mm 2.5mm;
+}
+
+html.cv-print-preview .cv-sheet:first-of-type .project-intro {
+  margin-bottom: 1.2mm;
+  font-size: 7.75pt;
+  line-height: 1.38;
+}
+
+html.cv-print-preview .cv-sheet:first-of-type .project-facts dd {
+  font-size: 7.5pt;
+  line-height: 1.35;
+}
+
+html.cv-print-preview .cv-sheet:first-of-type .project-card--compact .project-tags {
+  display: none;
+}
+
+html.cv-print-preview .cv-sheet:first-of-type .role {
+  padding: 1.8mm 0;
+}
+
+html.cv-print-preview .cv-sheet:first-of-type .skill-group {
+  margin-bottom: 2mm;
+}
+
+html.cv-print-preview .cv-sheet-last {
+  min-height: var(--page-h);
+  display: flex;
+  flex-direction: column;
+}
+
+html.cv-print-preview .cv-sheet-last .cv-header--compact {
+  padding: 3.5mm var(--pad-x) 2.5mm;
+}
+
+html.cv-print-preview .cv-sheet-last .cv-block:first-of-type {
+  padding-top: var(--print-pad-y);
+}
+
+html.cv-print-preview .cv-sheet-last .cv-block {
+  margin-bottom: var(--print-block-gap);
+}
+
+html.cv-print-preview .cv-sheet-last .project-card {
+  margin-bottom: 2mm;
+  padding: 2.5mm 3mm;
+}
+
+html.cv-print-preview .cv-sheet-last .project-card--compact {
+  margin-bottom: 1.5mm;
+  padding: 2mm 2.5mm;
+}
+
+html.cv-print-preview .cv-sheet-last .project-grid {
+  gap: 2mm;
+}
+
+html.cv-print-preview .cv-sheet-last .project-mini {
+  padding: 2mm;
+}
+
+html.cv-print-preview .cv-sheet-last .cv-footer {
+  margin-top: auto;
+  padding-top: 2.5mm;
+  padding-bottom: var(--print-pad-y);
 }
 
 @media screen and (max-width: 820px) {
