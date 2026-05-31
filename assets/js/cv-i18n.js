@@ -34,7 +34,7 @@
       keyProjectsCont: "Key projects (continued)",
       earlierExp: "Earlier experience",
       earlierExpText:
-        "<strong>Digitsole</strong> (France) — Lead Android, fitness apps, AWS migration, Bluetooth LE · <strong>Knowlepsy</strong> (Tunis) — Medical BLE module for epilepsy care · <strong>WIMOBI era</strong> — Côté Puces marketplace, Resto'lib, Intigo, Coffreo, SearchDoc",
+        "<strong>Digitsole</strong> (France) — Lead Android, fitness apps, AWS migration, Bluetooth LE · <strong>Knowlepsy</strong> (Tunis) — Medical BLE module for epilepsy care · <strong>WIMOBI</strong> — Côté Puces marketplace, Resto'lib, Intigo, Coffreo, SearchDoc",
       coreExpertise: "Core expertise",
       skillMobile: "Mobile & architecture",
       skillRealtime: "Real-time & maps",
@@ -145,7 +145,7 @@
       keyProjectsCont: "Projets clés (suite)",
       earlierExp: "Expérience antérieure",
       earlierExpText:
-        "<strong>Digitsole</strong> (France) — Lead Android, apps fitness, migration AWS, Bluetooth LE · <strong>Knowlepsy</strong> (Tunis) — Module BLE médical pour épilepsie · <strong>Ère WIMOBI</strong> — marketplace Côté Puces, Resto'lib, Intigo, Coffreo, SearchDoc",
+        "<strong>Digitsole</strong> (France) — Lead Android, apps fitness, migration AWS, Bluetooth LE · <strong>Knowlepsy</strong> (Tunis) — Module BLE médical pour épilepsie · <strong>WIMOBI</strong> — marketplace Côté Puces, Resto'lib, Intigo, Coffreo, SearchDoc",
       coreExpertise: "Expertise clé",
       skillMobile: "Mobile & architecture",
       skillRealtime: "Temps réel & cartographie",
@@ -256,7 +256,7 @@
       keyProjectsCont: "Schlüsselprojekte (Fortsetzung)",
       earlierExp: "Frühere Erfahrung",
       earlierExpText:
-        "<strong>Digitsole</strong> (Frankreich) — Lead Android, Fitness-Apps, AWS-Migration, Bluetooth LE · <strong>Knowlepsy</strong> (Tunis) — Medizinisches BLE-Modul für Epilepsie · <strong>WIMOBI-Ära</strong> — Côté Puces Marktplatz, Resto'lib, Intigo, Coffreo, SearchDoc",
+        "<strong>Digitsole</strong> (Frankreich) — Lead Android, Fitness-Apps, AWS-Migration, Bluetooth LE · <strong>Knowlepsy</strong> (Tunis) — Medizinisches BLE-Modul für Epilepsie · <strong>WIMOBI</strong> — Côté Puces Marktplatz, Resto'lib, Intigo, Coffreo, SearchDoc",
       coreExpertise: "Kernkompetenzen",
       skillMobile: "Mobile & Architektur",
       skillRealtime: "Echtzeit & Karten",
