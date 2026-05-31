@@ -2,184 +2,372 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Samira Salah — CV</title>
-  <style>
-    @page { size: A4; margin: 14mm 16mm; }
-    * { box-sizing: border-box; }
-    body {
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-size: 10.5pt;
-      line-height: 1.45;
-      color: #111;
-      max-width: 210mm;
-      margin: 0 auto;
-      padding: 14mm 16mm;
-    }
-    h1 { font-size: 20pt; margin: 0 0 4px; letter-spacing: -0.02em; }
-    .tagline { font-size: 11pt; font-weight: 600; color: #222; margin: 0 0 8px; }
-    .contact { font-size: 9.5pt; color: #333; margin-bottom: 14px; }
-    .contact a { color: #111; text-decoration: none; }
-    h2 {
-      font-size: 10pt;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 3px;
-      margin: 14px 0 8px;
-      color: #222;
-    }
-    p { margin: 0 0 8px; }
-    ul { margin: 4px 0 8px; padding-left: 18px; }
-    li { margin-bottom: 3px; }
-    .role { margin-bottom: 10px; }
-    .role-head { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
-    .role-head strong { font-size: 10.5pt; }
-    .role-meta { font-size: 9.5pt; color: #444; white-space: nowrap; }
-    .role-title { font-size: 10pt; color: #333; margin: 2px 0 4px; }
-    .skills-grid { columns: 2; column-gap: 24px; font-size: 10pt; }
-    .skills-grid li { break-inside: avoid; }
-    .projects { font-size: 10pt; }
-    .projects li { margin-bottom: 5px; }
-    @media print {
-      body { padding: 0; }
-      a { color: #111; }
-    }
-  </style>
+  <link rel="stylesheet" href="cv.css">
+  <!-- Open in browser; Print → Save as PDF if needed -->
 </head>
 <body>
-  <h1>Samira Salah</h1>
-  <p class="tagline">Senior Freelance Android &amp; Mobile Engineer · France &amp; EU</p>
-  <p class="contact">
-    Bergneustadt, Germany · HB IT Services<br>
-    <a href="mailto:samirasalahsalah@gmail.com">samirasalahsalah@gmail.com</a> · +49 152 51534047<br>
-    <a href="https://www.linkedin.com/in/samira-salah-22a93883/">linkedin.com/in/samira-salah-22a93883</a> ·
-    <a href="https://samirasalah.github.io/">samirasalah.github.io</a>
-  </p>
+  <article class="cv" aria-label="Samira Salah curriculum vitae">
 
-  <h2>Professional summary</h2>
-  <p>
-    Senior mobile engineer (8+ years) — Kotlin, Jetpack Compose, and Flutter. One accountable owner from architecture through Play Store, App Store, and App Gallery releases. Track record in public sector (UAE), enterprise (Schneider Electric, France), regulated healthcare (Germany), and production VoIP. AI-accelerated delivery with Cursor and Gemini — architecture, quality, and releases stay under senior control.
-  </p>
+    <header class="cv-header">
+      <div class="cv-header-inner">
+        <div class="cv-identity">
+          <h1>Samira Salah</h1>
+          <p class="cv-title">Senior Freelance Android &amp; Mobile Engineer</p>
+          <p class="cv-subtitle">
+            Production mobile delivery for France &amp; EU — public sector, enterprise B2B, regulated healthcare, and real-time communications. Contracts via HB IT Services.
+          </p>
+        </div>
+        <div class="cv-badge">
+          <strong>Available · Freelance</strong>
+          France &amp; EU · remote or on-site<br>
+          Bergneustadt, Germany<br>
+          Updated May 2026
+        </div>
+      </div>
+    </header>
 
-  <h2>Core skills</h2>
-  <ul class="skills-grid">
-    <li>Android: Kotlin, Jetpack Compose, Clean Architecture, MVVM/MVI, Hilt, Koin</li>
-    <li>Flutter: MVVM, Provider, store releases (Play Store &amp; App Store)</li>
-    <li>Real-time: SIP VoIP (sip_ua), WebSocket, FCM, Twilio video, TTS</li>
-    <li>Public sector &amp; maps: Esri, HERE, Google Maps, Huawei Maps, GMS/HMS</li>
-    <li>AI: OCR document capture, OpenAI extraction, Cursor &amp; Gemini-assisted delivery</li>
-    <li>Ops: REST, Firebase, AWS, OAuth, CI/CD, Azure DevOps, Python pipelines</li>
-  </ul>
-
-  <h2>Experience</h2>
-
-  <div class="role">
-    <div class="role-head">
-      <strong>WIMOBI</strong>
-      <span class="role-meta">Jan 2017 — Present · Remote EU</span>
+    <div class="cv-highlights" aria-label="Career highlights">
+      <div class="cv-highlight"><strong>8+</strong><span>Years senior mobile</span></div>
+      <div class="cv-highlight"><strong>Play · App · Gallery</strong><span>Store releases</span></div>
+      <div class="cv-highlight"><strong>Public sector</strong><span>UAE government apps</span></div>
+      <div class="cv-highlight"><strong>Real-time</strong><span>VoIP · video · audio</span></div>
     </div>
-    <p class="role-title">Senior Mobile Tech Lead</p>
-    <ul>
-      <li>Production Android &amp; Flutter for EU and MENA clients; current engagement: Proxym Middle East (UAE public sector).</li>
-    </ul>
-  </div>
 
-  <div class="role">
-    <div class="role-head">
-      <strong>PROXYM Middle East</strong>
-      <span class="role-meta">May 2024 — Present · Dubai, UAE · Remote</span>
+    <div class="cv-body">
+      <aside class="cv-sidebar">
+        <section aria-labelledby="cv-contact">
+          <h2 id="cv-contact">Contact</h2>
+          <ul class="contact-list">
+            <li><strong>Email</strong><a href="mailto:samirasalahsalah@gmail.com">samirasalahsalah@gmail.com</a></li>
+            <li><strong>Phone</strong>+49 152 51534047</li>
+            <li><strong>LinkedIn</strong><a href="https://www.linkedin.com/in/samira-salah-22a93883/">linkedin.com/in/samira-salah-22a93883</a></li>
+            <li><strong>Portfolio</strong><a href="https://samirasalah.github.io/">samirasalah.github.io</a></li>
+            <li><strong>Business</strong>HB IT Services · Bergneustadt, DE</li>
+          </ul>
+        </section>
+
+        <section aria-labelledby="cv-freelance">
+          <h2 id="cv-freelance">Engagement</h2>
+          <div class="freelance-box">
+            <strong>Senior freelance · France &amp; EU</strong>
+            Team reinforcement, delivery phases, and fixed-scope missions. One senior owner from architecture through store release, handover, and documentation.
+          </div>
+        </section>
+
+        <section aria-labelledby="cv-skills">
+          <h2 id="cv-skills">Technical skills</h2>
+          <div class="skill-group">
+            <h3>Android &amp; architecture</h3>
+            <div class="skill-tags">
+              <span>Kotlin</span><span>Jetpack Compose</span><span>Clean Architecture</span>
+              <span>MVVM</span><span>MVI</span><span>Hilt</span><span>Koin</span>
+              <span>Data Binding</span><span>Coroutines</span><span>Room</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>Cross-platform</h3>
+            <div class="skill-tags">
+              <span>Flutter</span><span>Dart</span><span>Provider</span><span>MVVM</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>Real-time &amp; media</h3>
+            <div class="skill-tags">
+              <span>SIP VoIP</span><span>sip_ua</span><span>WebSocket</span><span>FCM</span>
+              <span>Twilio</span><span>Text-to-Speech</span><span>Background services</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>Maps &amp; dual-store</h3>
+            <div class="skill-tags">
+              <span>GMS / HMS</span><span>Google Maps</span><span>HERE</span><span>Esri</span>
+              <span>Play Store</span><span>App Store</span><span>App Gallery</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>AI &amp; product</h3>
+            <div class="skill-tags">
+              <span>OCR</span><span>OpenAI APIs</span><span>Cursor</span><span>Gemini</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>Backend &amp; DevOps</h3>
+            <div class="skill-tags">
+              <span>REST</span><span>Retrofit</span><span>Firebase</span><span>AWS</span>
+              <span>OAuth</span><span>CI/CD</span><span>Azure DevOps</span><span>Python</span>
+            </div>
+          </div>
+        </section>
+
+        <section aria-labelledby="cv-lang">
+          <h2 id="cv-lang">Languages</h2>
+          <ul class="lang-list">
+            <li><span>English</span><em>Professional</em></li>
+            <li><span>French</span><em>Professional</em></li>
+            <li><span>Arabic</span><em>Native</em></li>
+            <li><span>German</span><em>A2+ · improving</em></li>
+          </ul>
+        </section>
+
+        <section aria-labelledby="cv-edu">
+          <h2 id="cv-edu">Education</h2>
+          <div class="edu-block">
+            <strong>Licence, Computer Technology</strong>
+            <span>ISET Sousse, Tunisia · 2013</span>
+          </div>
+          <div class="edu-block">
+            <strong>Computer Science</strong>
+            <span>Erriadh High School · 2009</span>
+          </div>
+        </section>
+
+        <section aria-labelledby="cv-cred">
+          <h2 id="cv-cred">Certifications</h2>
+          <ul class="cred-list">
+            <li>Generative AI for Software Development</li>
+            <li>Gemini CLI — Code &amp; Create</li>
+            <li>Pair Programming with an LLM</li>
+            <li>Jetpack Compose · Udemy</li>
+            <li>Advanced Flutter UI · Coursera</li>
+            <li>AWS Amplify &amp; Firebase</li>
+          </ul>
+        </section>
+      </aside>
+
+      <main class="cv-main">
+        <section aria-labelledby="cv-summary">
+          <h2 id="cv-summary">Professional profile</h2>
+          <p class="summary">
+            <strong>Senior mobile engineer with 8+ years</strong> building production Android and Flutter applications for demanding environments — UAE government programs, global enterprise (Schneider Electric, France), regulated healthcare in Germany, and B2B real-time communications.
+          </p>
+          <p class="summary">
+            I operate as a <strong>single accountable senior owner</strong>: scoping, architecture, implementation, store submissions, and handover. Comfortable leading delivery on live codebases, greenfield products, and dual-store (GMS/HMS) releases. AI-accelerated engineering with Cursor and Gemini — always reviewed, architecture-led, and production-hardened.
+          </p>
+          <ul class="value-list">
+            <li>End-to-end ownership through Play Store, App Store &amp; App Gallery</li>
+            <li>Public sector &amp; regulated domains (healthcare, government)</li>
+            <li>Real-time voice, video &amp; hands-free audio in production</li>
+            <li>Clean Architecture, modular codebases, release discipline</li>
+          </ul>
+        </section>
+
+        <section aria-labelledby="cv-exp">
+          <h2 id="cv-exp">Professional experience</h2>
+
+          <article class="role">
+            <div class="role-head">
+              <strong>PROXYM Middle East</strong>
+              <span class="role-meta">May 2024 — Present · Dubai, UAE · Remote</span>
+            </div>
+            <p class="role-title">Software Team Lead Android</p>
+            <ul>
+              <li>Technical lead on <strong>UAE government mobile programs</strong> — Maskan (FTA), Dubai Chambers, Dubai Culture, Dubai Police (Dispatcher, IServe).</li>
+              <li>Own architecture decisions, feature delivery, code quality, and coordination with product, backend, and QA on production codebases.</li>
+              <li>Dual-store strategy: extend live apps to Huawei (HMS) without breaking Google builds or duplicating product logic.</li>
+              <li>AI-assisted delivery with Cursor and Gemini for implementation speed — all output reviewed and adapted to project standards.</li>
+            </ul>
+            <div class="role-stack">
+              <span>Kotlin</span><span>Dagger Hilt</span><span>Koin</span><span>Retrofit</span>
+              <span>GMS/HMS</span><span>OpenAI</span><span>OCR</span><span>Play Store</span><span>App Gallery</span>
+            </div>
+          </article>
+
+          <article class="role">
+            <div class="role-head">
+              <strong>WIMOBI</strong>
+              <span class="role-meta">Jan 2017 — Present · Remote EU · Bergneustadt, DE</span>
+            </div>
+            <p class="role-title">Senior Mobile Tech Lead</p>
+            <ul>
+              <li>Agency studio delivering production <strong>Android and Flutter</strong> for EU and MENA clients across public sector, enterprise, health, mobility, and consumer apps.</li>
+              <li>Current client engagement: Proxym Middle East (UAE public sector). Previous deliveries include Digitsole, Côté Puces, Runnrz, and multiple WIMOBI-era consumer products.</li>
+              <li>Full lifecycle ownership: technical scoping, architecture, implementation, store releases, and client handover.</li>
+            </ul>
+            <div class="role-stack">
+              <span>Android</span><span>Flutter</span><span>Kotlin</span><span>Firebase</span><span>REST</span>
+            </div>
+          </article>
+
+          <article class="role">
+            <div class="role-head">
+              <strong>Schneider Electric</strong>
+              <span class="role-meta">May 2023 — Mar 2024 · France · Remote</span>
+            </div>
+            <p class="role-title">Android Team Leader</p>
+            <ul>
+              <li>Led the Android team on global B2B app <strong>mySchneider</strong> — architecture modules (MAP), code review culture, dependency hygiene, and predictable Play Store releases.</li>
+              <li>Governed client integrations and MAP updates across multiple stakeholders without slowing production delivery.</li>
+              <li>Maintained CI/CD pipelines on Azure DevOps; Python automation; GitHub and Dependabot for dependency management.</li>
+            </ul>
+            <div class="role-stack">
+              <span>Kotlin</span><span>Java</span><span>Python</span><span>Hilt</span>
+              <span>Azure DevOps</span><span>GitHub</span><span>Dependabot</span><span>Play Store</span>
+            </div>
+          </article>
+
+          <article class="role">
+            <div class="role-head">
+              <strong>Comunik VoIP (ComunikCRM)</strong>
+              <span class="role-meta">Sep 2023 — Feb 2024 · Freelance · Remote</span>
+            </div>
+            <p class="role-title">Flutter Developer</p>
+            <ul>
+              <li>Built <strong>Comunik Phone</strong> — enterprise SIP softphone for Android and iOS with hold, transfer, and conference calling.</li>
+              <li>Reliable incoming calls when backgrounded; consistent UX in foreground and background on real mobile networks.</li>
+              <li>Softphone architecture, WebSocket credential provisioning, FCM integration, and design-system refactor through to production release.</li>
+            </ul>
+            <div class="role-stack">
+              <span>Flutter</span><span>sip_ua</span><span>SIP</span><span>WebSocket</span><span>FCM</span><span>MVVM</span>
+            </div>
+          </article>
+
+          <article class="role">
+            <div class="role-head">
+              <strong>CodeCooperation GmbH</strong>
+              <span class="role-meta">Dec 2020 — Dec 2021 · Germany · Remote</span>
+            </div>
+            <p class="role-title">Tech Lead &amp; Flutter Developer</p>
+            <ul>
+              <li>Flutter tech lead for <strong>Gesundheitspersonal</strong> — two healthcare apps: <strong>Doctor</strong> (video care) and <strong>Translatly</strong> (live translation).</li>
+              <li>Low-latency video and translation in Germany's regulated healthcare market — GDPR-conscious delivery, two apps, two stores.</li>
+              <li>End-to-end Play Store and App Store submissions; architecture, features, and team engineering standards.</li>
+            </ul>
+            <div class="role-stack">
+              <span>Flutter</span><span>Kotlin</span><span>Twilio</span><span>Firebase</span><span>App Store</span><span>Play Store</span>
+            </div>
+          </article>
+        </section>
+      </main>
     </div>
-    <p class="role-title">Software Team Lead Android</p>
-    <ul>
-      <li>Technical lead on UAE government mobile programs: Maskan (FTA VAT refund), Dubai Chambers, Dubai Culture, Dubai Police (Dispatcher, IServe).</li>
-      <li>Maskan: greenfield architecture, OCR document capture, App-to-App/Web auth, Google Wallet, Play Store ownership.</li>
-      <li>Dubai Chambers: OpenAI document extraction, GMS→HMS migration, dual-store releases (Play Store &amp; App Gallery).</li>
-      <li>Cursor and Gemini used to accelerate implementation and refactors — reviewed and production-hardened.</li>
-    </ul>
-  </div>
 
-  <div class="role">
-    <div class="role-head">
-      <strong>Schneider Electric</strong>
-      <span class="role-meta">May 2023 — Mar 2024 · France · Remote</span>
+    <!-- Page 2 -->
+    <div class="cv-page">
+      <section aria-labelledby="cv-exp2">
+        <h2 id="cv-exp2">Experience (continued)</h2>
+
+        <article class="role">
+          <div class="role-head">
+            <strong>Knowlepsy</strong>
+            <span class="role-meta">May 2023 — Aug 2023 · Tunis, Tunisia</span>
+          </div>
+          <p class="role-title">Senior Flutter Developer</p>
+          <ul>
+            <li>Epilepsy care module — background BLE capture from medical devices with reliable server sync across changing network conditions.</li>
+            <li>Strengthened connectivity handling for richer, more dependable patient monitoring data.</li>
+          </ul>
+          <div class="role-stack"><span>Flutter</span><span>BLE</span><span>Background tasks</span><span>REST</span></div>
+        </article>
+
+        <article class="role">
+          <div class="role-head">
+            <strong>Digitsole</strong>
+            <span class="role-meta">Jun 2021 — Sep 2022 · France · via Proxym Group</span>
+          </div>
+          <p class="role-title">Android Consultant · Lead Android</p>
+          <ul>
+            <li>Lead Android on <strong>Digitsole Running &amp; Walk</strong> — connected coaching with live insole biomechanics and spoken guidance during activity.</li>
+            <li>Migrated backend from Firebase to AWS while keeping Bluetooth sensor streams reliable for daily users.</li>
+            <li>OAuth 2.0, real-time audio coaching (TTS), push notifications, and Google Maps integration.</li>
+          </ul>
+          <div class="role-stack"><span>Kotlin</span><span>Room</span><span>AWS Amplify</span><span>Bluetooth LE</span><span>TTS</span></div>
+        </article>
+
+        <article class="role">
+          <div class="role-head">
+            <strong>Côté Puces</strong>
+            <span class="role-meta">Sep 2021 — Feb 2022 · France</span>
+          </div>
+          <p class="role-title">Android Developer</p>
+          <ul>
+            <li>End-to-end Android development for French marketplace — brocante, antiques, and interiors for bargain hunters, dealers, and designers.</li>
+            <li>Listing discovery, seller/buyer flows, and polished UX for a niche retail audience.</li>
+          </ul>
+          <div class="role-stack"><span>Kotlin</span><span>Android SDK</span><span>REST</span><span>MVVM</span></div>
+        </article>
+
+        <article class="role">
+          <div class="role-head">
+            <strong>WIMOBI — earlier deliveries</strong>
+            <span class="role-meta">2017 — 2021</span>
+          </div>
+          <p class="role-title">Senior Android / Flutter Developer</p>
+          <ul>
+            <li><strong>Runnrz</strong> (France) — full iOS→Android migration; walk, run, and cycling with live map tracking; Play Store release.</li>
+            <li>High-traffic consumer apps: restaurant social, ride-hailing, and logistics (Resto'lib, Intigo) — location, payments, and push-heavy UX.</li>
+            <li>Additional production apps: Coffreo, SearchDoc, NumCode, Halel, UVote, Bazary.</li>
+          </ul>
+          <div class="role-stack"><span>Kotlin</span><span>Flutter</span><span>Mapbox</span><span>Firebase</span><span>Google Maps</span></div>
+        </article>
+      </section>
+
+      <section aria-labelledby="cv-projects">
+        <h2 id="cv-projects">Key projects &amp; impact</h2>
+
+        <article class="project-detail">
+          <div class="project-detail-head">
+            <strong>Maskan — FTA VAT Refund (UAE)</strong>
+            <em>Technical Leader · Android · Play Store</em>
+          </div>
+          <p><span class="label">Context · </span>Greenfield government product for UAE nationals — VAT refund on new home construction with strict policy rules and secure citizen data.</p>
+          <p><span class="label">Delivered · </span>Modular baseline architecture, core refund journeys, App-to-App and App-to-Web authentication, Google Wallet, OCR document capture, Play Store release ownership.</p>
+          <p><span class="label">Impact · </span>Faster proof submission for citizens; greenfield delivery on a controlled cycle without architectural shortcuts. Engineering accelerated with Cursor and Gemini under senior architecture control.</p>
+        </article>
+
+        <article class="project-detail">
+          <div class="project-detail-head">
+            <strong>Dubai Chambers — Official App</strong>
+            <em>Software Team Lead Android · Play Store &amp; App Gallery</em>
+          </div>
+          <p><span class="label">Context · </span>Live government app serving Dubai's business community — extend to Huawei while maintaining a single shared codebase.</p>
+          <p><span class="label">Delivered · </span>OpenAI integration for structured data extraction from uploaded trade documents; GMS→HMS migration (push, ML, maps); dual-store release ownership.</p>
+          <p><span class="label">Impact · </span>More accurate document handling and shorter delivery cycles on a production government codebase.</p>
+        </article>
+
+        <article class="project-detail">
+          <div class="project-detail-head">
+            <strong>mySchneider — Schneider Electric (France)</strong>
+            <em>Android Team Leader · Play Store</em>
+          </div>
+          <p><span class="label">Context · </span>Global B2B Android app with MAP module updates, client integrations, and many cross-functional stakeholders.</p>
+          <p><span class="label">Delivered · </span>Team leadership, architect module governance, code review, dependency hygiene, prod-to-Play Store release pipeline.</p>
+          <p><span class="label">Impact · </span>Predictable Play Store delivery for a globally used Schneider application.</p>
+        </article>
+
+        <div class="project-grid-compact">
+          <div class="project-chip">
+            <strong>Comunik Phone</strong>
+            B2B SIP softphone · sip_ua · Play Store &amp; App Store
+          </div>
+          <div class="project-chip">
+            <strong>Gesundheitspersonal</strong>
+            Doctor video care &amp; Translatly · Germany · GDPR context
+          </div>
+          <div class="project-chip">
+            <strong>Dubai Police Dispatcher</strong>
+            MDVR local network · plate alerts · TTS · Esri / HERE
+          </div>
+          <div class="project-chip">
+            <strong>Dubai Police IServe</strong>
+            Fleet reservation &amp; vehicle access · legacy modernization
+          </div>
+          <div class="project-chip">
+            <strong>Dubai Culture</strong>
+            Cultural services extension · production codebase
+          </div>
+          <div class="project-chip">
+            <strong>Runnrz</strong>
+            iOS→Android fitness port · Mapbox · France · Play Store
+          </div>
+        </div>
+      </section>
     </div>
-    <p class="role-title">Android Team Leader</p>
-    <ul>
-      <li>Led Android team on global B2B <strong>mySchneider</strong> app: MAP modules, code review, dependency hygiene, Play Store releases.</li>
-      <li>Python CI/CD on Azure DevOps, GitHub, Dependabot.</li>
-    </ul>
-  </div>
 
-  <div class="role">
-    <div class="role-head">
-      <strong>Comunik VoIP</strong>
-      <span class="role-meta">Sep 2023 — Feb 2024 · Freelance · Remote</span>
-    </div>
-    <p class="role-title">Flutter Developer</p>
-    <ul>
-      <li><strong>Comunik Phone</strong> — enterprise SIP softphone (sip_ua, WebSocket, FCM); hold, transfer, conference; Play Store &amp; App Store.</li>
-    </ul>
-  </div>
-
-  <div class="role">
-    <div class="role-head">
-      <strong>Knowlepsy</strong>
-      <span class="role-meta">May 2023 — Aug 2023 · Tunis, Tunisia</span>
-    </div>
-    <p class="role-title">Senior Flutter Developer</p>
-    <ul>
-      <li>Epilepsy care module — background BLE capture from medical devices with server sync.</li>
-    </ul>
-  </div>
-
-  <div class="role">
-    <div class="role-head">
-      <strong>Digitsole</strong>
-      <span class="role-meta">Jun 2021 — Sep 2022 · France · via Proxym Group</span>
-    </div>
-    <p class="role-title">Android Consultant</p>
-    <ul>
-      <li>Lead Android on Running &amp; Walk companion apps; AWS migration, Bluetooth LE, spoken coaching (TTS).</li>
-    </ul>
-  </div>
-
-  <div class="role">
-    <div class="role-head">
-      <strong>Côté Puces</strong>
-      <span class="role-meta">Sep 2021 — Feb 2022 · France</span>
-    </div>
-    <p class="role-title">Android Developer</p>
-    <ul>
-      <li>End-to-end Android development for French brocante and antiques marketplace.</li>
-    </ul>
-  </div>
-
-  <div class="role">
-    <div class="role-head">
-      <strong>CodeCooperation GmbH</strong>
-      <span class="role-meta">Dec 2020 — Dec 2021 · Germany</span>
-    </div>
-    <p class="role-title">Tech Lead &amp; Flutter Developer</p>
-    <ul>
-      <li>Flutter tech lead — <strong>Gesundheitspersonal</strong> (Doctor video care, Translatly live translation); Play Store &amp; App Store releases.</li>
-    </ul>
-  </div>
-
-  <h2>Selected production projects</h2>
-  <ul class="projects">
-    <li><strong>Maskan</strong> (FTA, UAE) — VAT refund app with OCR; Play Store</li>
-    <li><strong>Dubai Chambers</strong> — OpenAI document extraction; Play Store &amp; App Gallery</li>
-    <li><strong>mySchneider</strong> (Schneider Electric) — global B2B Android; Play Store</li>
-    <li><strong>Comunik Phone</strong> — B2B SIP softphone; Play Store &amp; App Store</li>
-    <li><strong>Gesundheitspersonal</strong> (Germany) — healthcare video &amp; translation apps</li>
-    <li><strong>Runnrz</strong> (France) — iOS→Android fitness app; Play Store</li>
-  </ul>
-
-  <h2>Education &amp; credentials</h2>
-  <p><strong>Licence, Computer Technology</strong> — ISET Sousse, Tunisia · 2013</p>
-  <p><strong>Continuous learning:</strong> Generative AI for Software Development; Gemini CLI; Pair Programming with LLM; Jetpack Compose (Udemy); Advanced Flutter UI (Coursera); AWS Amplify &amp; Firebase</p>
-  <p><strong>Languages:</strong> English (professional) · French (professional) · Arabic (native) · German (A2+, improving)</p>
-
-  <p style="margin-top:12px;font-size:9pt;color:#666;">Last updated: May 2026 · Full portfolio: samirasalah.github.io</p>
+    <footer class="cv-footer">
+      <span>HB IT Services · Registered EU business · Quotes &amp; invoices in EUR</span>
+      <span>Detailed case studies &amp; references: samirasalah.github.io</span>
+    </footer>
+  </article>
 </body>
 </html>

@@ -1,6 +1,6 @@
 # Samira Salah — Portfolio (GitHub Pages)
 
-Professional one-page portfolio — EN / FR / DE, AI positioning, case work, CV download.
+Professional one-page portfolio — EN / FR / DE, AI positioning, case work, CV.
 
 **Live URL:** https://samirasalah.github.io/
 
@@ -30,15 +30,13 @@ This clones `samirasalah.github.io`, syncs this folder, commits, and pushes to `
 | `css/style.css` | Layout & theme |
 | `js/i18n.js` | UI translations (EN/FR/DE) |
 | `js/projects-i18n.js` | Project card translations |
-| `assets/Samira-Salah-CV.pdf` | Downloadable CV (generated from `assets/cv.html`) |
-| `assets/cv.html` | Source CV for edits / print to PDF |
-| `scripts/generate-cv-pdf.sh` | Regenerate PDF via Chrome headless (optional) |
+| `assets/cv.html` + `assets/cv.css` | CV (two-page template — open in browser; Print → PDF if needed) |
 | `images/samira-salah.jpeg` | Profile photo |
 | `robots.txt` / `sitemap.xml` | SEO |
 | `scripts/wire-i18n.py` | Helper to wire new project cards |
 
 ## Customize
 
-- **CV:** Replace `assets/Samira-Salah-CV.pdf` with your latest PDF (keep the filename or update links in `index.html`).
+- **CV:** Edit `assets/cv.html` and `assets/cv.css`. Open `assets/cv.html` in a browser; use Print → Save as PDF if a PDF is needed.
 - **Calendly:** Add a booking URL next to “Book a call” in the hero if you use Calendly.
 - **Play Store links:** Update package IDs in project cards when needed.
