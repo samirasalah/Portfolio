@@ -948,8 +948,13 @@ h2 {
   }
 
 .cv-print-compact .cv-sheet:first-of-type .cv-tagline {
-    display: none;
-  }
+  display: block;
+  font-size: 7pt;
+  line-height: 1.32;
+  max-width: 108mm;
+  margin-top: 0.4mm;
+  color: #cbd5e1;
+}
 
 .cv-print-compact .cv-sheet:first-of-type .cv-badge {
     padding: 1.8mm 2.2mm;
