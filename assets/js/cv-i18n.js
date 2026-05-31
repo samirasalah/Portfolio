@@ -477,6 +477,20 @@
     return "en";
   }
 
+  function setI18nContent(el, val) {
+    if (el.getAttribute("data-cv-i18n-html") === "true") {
+      el.innerHTML = val;
+      return;
+    }
+    if (typeof val === "string" && val.includes("<")) {
+      const tmp = document.createElement("div");
+      tmp.innerHTML = val;
+      el.textContent = tmp.textContent.replace(/\s+/g, " ").trim();
+      return;
+    }
+    el.textContent = val;
+  }
+
   function applyLang(lang) {
     if (!LANGS.includes(lang)) lang = "en";
     const t = T[lang];
@@ -487,8 +501,7 @@
       const key = el.getAttribute("data-cv-i18n");
       const val = resolve(t, key);
       if (val == null) return;
-      if (el.getAttribute("data-cv-i18n-html") === "true") el.innerHTML = val;
-      else el.textContent = val;
+      setI18nContent(el, val);
     });
 
     try {
