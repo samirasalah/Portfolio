@@ -1,31 +1,38 @@
 /**
- * CV print layout — compact mode is always on so screen matches PDF export.
- * beforeprint re-applies classes as a safety net for Safari/Chrome timing.
+ * CV print layout — compact always on (screen = print structure).
+ * White preview chrome only for ?preview=print and during print dialog.
  */
 (function () {
+  function isPrintPreviewUrl() {
+    return new URLSearchParams(window.location.search).get("preview") === "print";
+  }
+
   function enableCompactLayout() {
-    document.documentElement.classList.add("cv-print-preview");
     document.querySelector(".cv")?.classList.add("cv-print-compact");
   }
 
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", enableCompactLayout);
-  } else {
+  function enablePrintPreviewChrome() {
+    document.documentElement.classList.add("cv-print-preview");
     enableCompactLayout();
   }
 
-  window.addEventListener("beforeprint", enableCompactLayout);
-
-  if (window.matchMedia) {
-    const mq = window.matchMedia("print");
-    if (mq.addEventListener) {
-      mq.addEventListener("change", (e) => {
-        if (e.matches) enableCompactLayout();
-      });
-    } else if (mq.addListener) {
-      mq.addListener((e) => {
-        if (e.matches) enableCompactLayout();
-      });
+  function disablePrintPreviewChrome() {
+    if (!isPrintPreviewUrl()) {
+      document.documentElement.classList.remove("cv-print-preview");
     }
   }
+
+  function bootstrap() {
+    enableCompactLayout();
+    if (isPrintPreviewUrl()) enablePrintPreviewChrome();
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", bootstrap);
+  } else {
+    bootstrap();
+  }
+
+  window.addEventListener("beforeprint", enablePrintPreviewChrome);
+  window.addEventListener("afterprint", disablePrintPreviewChrome);
 })();
