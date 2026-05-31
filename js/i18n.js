@@ -13,9 +13,9 @@
   const T = {
     en: {
       meta: {
-        title: "Samira Salah — Senior Mobile Engineer · Android & Flutter · France & EU",
+        title: "Samira Salah — Senior Mobile Developer · Android & Flutter · France & EU",
         description:
-          "Senior Mobile Engineer — Android, Flutter, real-time media. Schneider Electric (100+ countries), UAE government, healthcare Germany. Product-minded delivery for public sector and consumer audiences.",
+          "Senior Mobile Developer — Android, Flutter, real-time media. Schneider Electric (100+ countries), UAE government, healthcare Germany. Product-minded delivery for public sector and consumer audiences.",
       },
       skip: "Skip to content",
       nav: {
@@ -32,9 +32,9 @@
       },
       hero: {
         eyebrow:
-          'Senior Mobile Engineer · <span data-geo-scope>Germany & EU · remote or on-site</span>',
-        trade: 'Senior Android & Flutter Engineer · available — <strong>HB IT Services</strong>',
-        title: 'Senior Mobile Engineer — <span class="accent">public sector</span>, consumer products & <span class="accent">real-time media</span>',
+          'Senior Mobile Developer · <span data-geo-scope>Germany & EU · remote or on-site</span>',
+        trade: 'Senior Android & Flutter Developer · available — <strong>HB IT Services</strong>',
+        title: 'Senior Mobile Developer — <span class="accent">public sector</span>, consumer products & <span class="accent">real-time media</span>',
         mission:
           'Passionate about digital experiences that make <strong>information, culture and public services</strong> more accessible — for millions of users across Europe.',
         lead:
@@ -249,20 +249,20 @@
       },
       contact: {
         label: "Contact",
-        title: "Senior mobile engineering · France & EU",
+        title: "Senior mobile development · France & EU",
         intro:
-          "Available for senior mobile engineering roles — public sector, consumer products and real-time media. On-site or remote across France and the EU. Also open to freelance missions via HB IT Services.",
+          "Available for senior mobile developer roles — public sector, consumer products and real-time media. On-site or remote across France and the EU. Also open to freelance missions via HB IT Services.",
         bizLabel: "Contracts & invoicing",
         bizName: "<strong>HB IT Services</strong> · Bergneustadt, Germany",
         bizNote: "Registered EU business · quotes & invoices in EUR · VAT details on request.",
       },
-      footer: "© {year} Samira Salah · HB IT Services · Senior Mobile Engineer",
+      footer: "© {year} Samira Salah · HB IT Services · Senior Mobile Developer",
     },
     fr: {
       meta: {
-        title: "Samira Salah — Ingénieure mobile senior · Android & Flutter · France & UE",
+        title: "Samira Salah — Développeuse mobile senior · Android & Flutter · France & UE",
         description:
-          "Ingénieure mobile senior — Android, Flutter, médias temps réel. Schneider Electric (100+ pays), gouvernement EAU, santé Allemagne. Delivery orientée produit pour le grand public et le service public.",
+          "Développeuse mobile senior — Android, Flutter, médias temps réel. Schneider Electric (100+ pays), gouvernement EAU, santé Allemagne. Delivery orientée produit pour le grand public et le service public.",
       },
       skip: "Aller au contenu",
       nav: {
@@ -279,9 +279,9 @@
       },
       hero: {
         eyebrow:
-          'Ingénieure mobile senior · <span data-geo-scope>Allemagne & UE · remote ou sur site</span>',
-        trade: 'Ingénieure senior Android & Flutter · disponible — <strong>HB IT Services</strong>',
-        title: 'Ingénieure mobile senior — <span class="accent">secteur public</span>, grand public & <span class="accent">médias temps réel</span>',
+          'Développeuse mobile senior · <span data-geo-scope>Allemagne & UE · remote ou sur site</span>',
+        trade: 'Développeuse senior Android & Flutter · disponible — <strong>HB IT Services</strong>',
+        title: 'Développeuse mobile senior — <span class="accent">secteur public</span>, grand public & <span class="accent">médias temps réel</span>',
         mission:
           'Passionnée par des expériences numériques qui rendent <strong>l\'information, la culture et les services publics</strong> plus accessibles — pour des millions d\'usagers en Europe.',
         lead:
@@ -299,7 +299,7 @@
         panelLabel: "Comment je travaille",
         panelTitle: "Pilotage senior — <em>production d'abord</em>",
         panelSummary:
-          "Ingénierie production-first et architecture pragmatique — cadrage, implémentation, releases et passation. Collaboration étroite avec produit, design, QA et backend.",
+          "Delivery production-first et architecture pragmatique — cadrage, implémentation, releases et passation. Collaboration étroite avec produit, design, QA et backend.",
         panelB1: "Delivery de bout en bout — architecture jusqu'au Play Store, App Store et App Gallery",
         panelB2: "Produits orientés usagers — secteur public, santé, grand public & médias temps réel",
         panelB3: "France : Schneider, Runnrz, Digitsole, Côté Puces · UE : Gesundheitspersonal (DE) · TN : Comunik",
@@ -323,12 +323,12 @@
       why: {
         label: "Mon approche",
         title: "Pourquoi les équipes m'embauchent",
-        intro: "Ingénierie production-first — architecture pragmatique, onboarding rapide et collaboration étroite avec produit, design, QA et backend.",
+        intro: "Delivery production-first — architecture pragmatique, onboarding rapide et collaboration étroite avec produit, design, QA et backend.",
         w1t: "Architecture pragmatique",
         w1b: "Modularité et DI qui scale — sans sur-ingénierie ni ralentissement de l'équipe.",
         w2t: "Onboarding rapide sur code legacy",
         w2b: "Productive sur apps gouvernementales et enterprise en jours, pas en mois.",
-        w3t: "Ingénierie production-first",
+        w3t: "Delivery production-first",
         w3b: "Releases stores, conformité, stabilité et sessions fiables sur réseaux réels.",
         w4t: "Collaboration transverse",
         w4b: "Alignement clair avec produit, design, backend, QA et owners release.",
@@ -496,20 +496,20 @@
       },
       contact: {
         label: "Contact",
-        title: "Ingénierie mobile senior · France & UE",
+        title: "Développement mobile senior · France & UE",
         intro:
-          "Disponible pour des missions d'ingénierie mobile senior — secteur public, produits grand public et médias temps réel. Sur site ou à distance en France et en UE. Missions freelance possibles via HB IT Services.",
+          "Disponible pour des missions de développeuse mobile senior — secteur public, produits grand public et médias temps réel. Sur site ou à distance en France et en UE. Missions freelance possibles via HB IT Services.",
         bizLabel: "Contrats & facturation",
         bizName: "<strong>HB IT Services</strong> · Bergneustadt, Allemagne",
         bizNote: "Entreprise UE enregistrée · devis et factures en EUR · TVA sur demande.",
       },
-      footer: "© {year} Samira Salah · HB IT Services · Ingénieure mobile senior",
+      footer: "© {year} Samira Salah · HB IT Services · Développeuse mobile senior",
     },
     de: {
       meta: {
-        title: "Samira Salah — Senior Mobile Engineer · Android & Flutter · Frankreich & EU",
+        title: "Samira Salah — Senior Mobile Developer · Android & Flutter · Frankreich & EU",
         description:
-          "Senior Mobile Engineer — Android, Flutter, Echtzeit-Media. Schneider Electric (100+ Länder), VAE-Regierung, Healthcare Deutschland. Produktorientierte Delivery für Public Sector und Consumer.",
+          "Senior Mobile Developer — Android, Flutter, Echtzeit-Media. Schneider Electric (100+ Länder), VAE-Regierung, Healthcare Deutschland. Produktorientierte Delivery für Public Sector und Consumer.",
       },
       skip: "Zum Inhalt springen",
       nav: {
@@ -526,9 +526,9 @@
       },
       hero: {
         eyebrow:
-          'Senior Mobile Engineer · <span data-geo-scope>Deutschland & EU · remote oder vor Ort</span>',
-        trade: 'Senior Android & Flutter Engineer · verfügbar — <strong>HB IT Services</strong>',
-        title: 'Senior Mobile Engineer — <span class="accent">öffentlicher Sektor</span>, Consumer-Produkte & <span class="accent">Echtzeit-Media</span>',
+          'Senior Mobile Developer · <span data-geo-scope>Deutschland & EU · remote oder vor Ort</span>',
+        trade: 'Senior Android & Flutter Developer · verfügbar — <strong>HB IT Services</strong>',
+        title: 'Senior Mobile Developer — <span class="accent">öffentlicher Sektor</span>, Consumer-Produkte & <span class="accent">Echtzeit-Media</span>',
         mission:
           'Begeistert von digitalen Erlebnissen, die <strong>Information, Kultur und öffentliche Dienste</strong> zugänglicher machen — für Millionen Nutzer in Europa.',
         lead:
@@ -743,14 +743,14 @@
       },
       contact: {
         label: "Kontakt",
-        title: "Senior Mobile Engineering · Frankreich & EU",
+        title: "Senior Mobile Development · Frankreich & EU",
         intro:
-          "Verfügbar für Senior-Mobile-Engineering-Rollen — Public Sector, Consumer-Produkte und Echtzeit-Media. Vor Ort oder remote in Frankreich und der EU. Freelance-Aufträge über HB IT Services möglich.",
+          "Verfügbar für Senior-Mobile-Developer-Rollen — Public Sector, Consumer-Produkte und Echtzeit-Media. Vor Ort oder remote in Frankreich und der EU. Freelance-Aufträge über HB IT Services möglich.",
         bizLabel: "Verträge & Rechnungen",
         bizName: "<strong>HB IT Services</strong> · Bergneustadt, Deutschland",
         bizNote: "Registriertes EU-Unternehmen · Angebote & Rechnungen in EUR · USt-Details auf Anfrage.",
       },
-      footer: "© {year} Samira Salah · HB IT Services · Senior Mobile Engineer",
+      footer: "© {year} Samira Salah · HB IT Services · Senior Mobile Developer",
     },
   };
 
