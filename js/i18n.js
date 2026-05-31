@@ -13,9 +13,9 @@
   const T = {
     en: {
       meta: {
-        title: "Samira Salah — Senior Freelance Android & Mobile Developer · France & EU",
+        title: "Samira Salah — Senior Freelance Android Developer · France & EU",
         description:
-          "Senior mobile developer — Kotlin, Compose, Flutter. Public sector, media-scale real-time (video, VoIP), team lead. Production apps for millions of users across Europe.",
+          "Senior Android developer — Kotlin, Jetpack Compose. Public sector, media-scale real-time (video, VoIP), team lead. Production apps for millions of users across Europe.",
       },
       skip: "Skip to content",
       nav: {
@@ -36,11 +36,11 @@
         eyebrow:
           'Senior mobile freelance · <span data-geo-scope>Germany & EU · remote or on-site</span>',
         trade: 'Freelance <strong>senior</strong> · available — <strong>HB IT Services</strong>',
-        title: 'Senior Android & Mobile Developer — <span class="accent">public sector</span>, enterprise & <span class="accent">real-time</span>',
+        title: 'Senior Android Developer — <span class="accent">public sector</span>, enterprise & <span class="accent">real-time</span>',
         mission:
           'Passionate about digital experiences that make <strong>information, culture and public services</strong> more accessible — for millions of users across Europe.',
         lead:
-          'One <strong>senior owner</strong> for Kotlin, Jetpack Compose, and Flutter — from <strong>Schneider Electric (France)</strong> and <strong>regulated healthcare</strong> to <strong>UAE government programs</strong> and <strong>production VoIP & video</strong>. Clean architecture, store releases, and reliable sessions on real networks.',
+          'One <strong>senior owner</strong> for Kotlin and Jetpack Compose — from <strong>Schneider Electric (France)</strong> and <strong>regulated healthcare</strong> to <strong>UAE government programs</strong> and <strong>production VoIP & video</strong>. Clean architecture, store releases, and reliable sessions on real networks.',
         proof1n: "8+",
         proof1: "years · senior mobile lead",
         proof2n: "100+",
@@ -149,9 +149,9 @@
         s4t: "AI-assisted delivery",
         s4d: "AI-assisted development (Cursor, Gemini) for implementation acceleration — architecture, code review & production decisions under senior ownership",
         e1h: "Android & architecture",
-        e1p: 'Kotlin, Jetpack Compose, Clean Architecture, MVVM/MVI, Hilt & Koin, legacy Java migration, and releases on <span class="store-name">Play Store</span>, <span class="store-name">App Gallery</span> & <span class="store-name">App Store</span> (Flutter).',
-        e2h: "Real-time & Flutter",
-        e2p: "sip_ua SIP softphones, WebSocket provisioning, background call services, FCM; Text-to-Speech, audio coaching, and background services for hands-free UX; Flutter MVVM/Provider; Twilio video for healthcare.",
+        e1p: 'Kotlin, Jetpack Compose, Clean Architecture, MVVM/MVI, Hilt & Koin, legacy Java migration, and releases on <span class="store-name">Play Store</span>, <span class="store-name">App Gallery</span> & <span class="store-name">App Store</span>.',
+        e2h: "Real-time communications",
+        e2p: "sip_ua SIP softphones, WebSocket provisioning, background call services, FCM; Text-to-Speech, audio coaching, and background services for hands-free UX; Twilio video for healthcare.",
         e3h: "Public sector & maps",
         e3p: "UAE government programs (Maskan, Chambers, Culture, Police); OCR capture and OpenAI document extraction; Esri, HERE, Google Maps, Huawei Maps; MDVR socket on local network, plate-recognition alerts via TTS.",
         e4h: "Integrations & ops",
@@ -262,9 +262,9 @@
     },
     fr: {
       meta: {
-        title: "Samira Salah — Développeuse mobile senior freelance · France & UE",
+        title: "Samira Salah — Développeuse Android senior freelance · France & UE",
         description:
-          "Développeuse mobile senior — Kotlin, Compose, Flutter. Secteur public, médias & temps réel (vidéo, VoIP), lead technique. Apps en production pour des millions d'usagers en Europe.",
+          "Développeuse Android senior — Kotlin, Jetpack Compose. Secteur public, médias & temps réel (vidéo, VoIP), lead technique. Apps en production pour des millions d'usagers en Europe.",
       },
       skip: "Aller au contenu",
       nav: {
@@ -285,11 +285,11 @@
         eyebrow:
           'Mobile senior freelance · <span data-geo-scope>Allemagne & UE · remote ou sur site</span>',
         trade: 'Freelance <strong>senior</strong> · disponible — <strong>HB IT Services</strong>',
-        title: 'Développeuse mobile senior — <span class="accent">secteur public</span>, entreprise & <span class="accent">temps réel</span>',
+        title: 'Développeuse Android senior — <span class="accent">secteur public</span>, entreprise & <span class="accent">temps réel</span>',
         mission:
           'Passionnée par des expériences numériques qui rendent <strong>l\'information, la culture et les services publics</strong> plus accessibles — pour des millions d\'usagers en Europe.',
         lead:
-          'Un seul <strong>interlocuteur senior</strong> en Kotlin, Jetpack Compose et Flutter — de <strong>Schneider Electric (France)</strong> et la <strong>santé réglementée</strong> aux <strong>programmes gouvernementaux EAU</strong> et la <strong>VoIP & vidéo en production</strong>. Architecture propre, releases stores et fiabilité sur réseaux réels.',
+          'Un seul <strong>interlocuteur senior</strong> en Kotlin et Jetpack Compose — de <strong>Schneider Electric (France)</strong> et la <strong>santé réglementée</strong> aux <strong>programmes gouvernementaux EAU</strong> et la <strong>VoIP & vidéo en production</strong>. Architecture propre, releases stores et fiabilité sur réseaux réels.',
         proof1n: "8+",
         proof1: "ans · lead mobile senior",
         proof2n: "100+",
@@ -399,8 +399,8 @@
         s4d: "Développement assisté par l'IA (Cursor, Gemini) pour accélérer l'implémentation — architecture, revues de code & décisions production sous pilotage senior",
         e1h: "Android et architecture",
         e1p: 'Kotlin, Jetpack Compose, Clean Architecture, MVVM/MVI, Hilt et Koin, migration Java, publications sur <span class="store-name">Play Store</span>, <span class="store-name">App Gallery</span> et <span class="store-name">App Store</span>.',
-        e2h: "Temps réel & Flutter",
-        e2p: "Softphones SIP sip_ua, provisioning WebSocket, services d'appel background, FCM ; Text-to-Speech, coaching audio et services background pour une UX mains libres ; Flutter MVVM/Provider ; vidéo Twilio pour la santé.",
+        e2h: "Communications temps réel",
+        e2p: "Softphones SIP sip_ua, provisioning WebSocket, services d'appel background, FCM ; Text-to-Speech, coaching audio et services background pour une UX mains libres ; vidéo Twilio pour la santé.",
         e3h: "Secteur public & cartographie",
         e3p: "Programmes gouvernementaux EAU (Maskan, Chambers, Culture, Police) ; capture OCR et extraction OpenAI ; Esri, HERE, Google Maps, Huawei Maps ; MDVR en socket réseau local, alertes plaques signalées via TTS.",
         e4h: "Intégrations et exploitation",
@@ -511,9 +511,9 @@
     },
     de: {
       meta: {
-        title: "Samira Salah — Senior Freelance Mobile Developer · Frankreich & EU",
+        title: "Samira Salah — Senior Freelance Android Developer · Frankreich & EU",
         description:
-          "Senior Mobile Developer — Kotlin, Compose, Flutter. Öffentlicher Sektor, Media & Echtzeit (Video, VoIP), Team Lead. Production-Apps für Millionen Nutzer in Europa.",
+          "Senior Android Developer — Kotlin, Jetpack Compose. Öffentlicher Sektor, Media & Echtzeit (Video, VoIP), Team Lead. Production-Apps für Millionen Nutzer in Europa.",
       },
       skip: "Zum Inhalt springen",
       nav: {
@@ -534,11 +534,11 @@
         eyebrow:
           'Senior Mobile Freelance · <span data-geo-scope>Deutschland & EU · remote oder vor Ort</span>',
         trade: 'Senior-<strong>Freelance</strong> · verfügbar — <strong>HB IT Services</strong>',
-        title: 'Senior Android- & Mobile-Entwicklerin — <span class="accent">öffentlicher Sektor</span>, Enterprise & <span class="accent">Echtzeit</span>',
+        title: 'Senior Android-Entwicklerin — <span class="accent">öffentlicher Sektor</span>, Enterprise & <span class="accent">Echtzeit</span>',
         mission:
           'Begeistert von digitalen Erlebnissen, die <strong>Information, Kultur und öffentliche Dienste</strong> zugänglicher machen — für Millionen Nutzer in Europa.',
         lead:
-          'Eine <strong>senior Ansprechpartnerin</strong> für Kotlin, Jetpack Compose und Flutter — von <strong>Schneider Electric (Frankreich)</strong> und <strong>reguliertem Healthcare</strong> bis <strong>Regierungsprogrammen in den VAE</strong> und <strong>Produktions-VoIP & Video</strong>. Saubere Architektur, Store-Releases und Zuverlässigkeit in echten Netzen.',
+          'Eine <strong>senior Ansprechpartnerin</strong> für Kotlin und Jetpack Compose — von <strong>Schneider Electric (Frankreich)</strong> und <strong>reguliertem Healthcare</strong> bis <strong>Regierungsprogrammen in den VAE</strong> und <strong>Produktions-VoIP & Video</strong>. Saubere Architektur, Store-Releases und Zuverlässigkeit in echten Netzen.',
         proof1n: "8+",
         proof1: "Jahre · Senior Mobile Lead",
         proof2n: "100+",
@@ -648,8 +648,8 @@
         s4d: "KI-gestützte Entwicklung (Cursor, Gemini) zur Implementierungs-Beschleunigung — Architektur, Code-Reviews & Production-Entscheidungen in Senior-Verantwortung",
         e1h: "Android und Architektur",
         e1p: 'Kotlin, Jetpack Compose, Clean Architecture, MVVM/MVI, Hilt und Koin, Java-Migration, Releases im <span class="store-name">Play Store</span>, <span class="store-name">App Gallery</span> und <span class="store-name">App Store</span>.',
-        e2h: "Echtzeit & Flutter",
-        e2p: "sip_ua SIP-Softphones, WebSocket-Provisioning, Background-Call-Services, FCM; Text-to-Speech, Audio-Coaching und Background-Services für freihändige UX; Flutter MVVM/Provider; Twilio-Video für Healthcare.",
+        e2h: "Echtzeit-Kommunikation",
+        e2p: "sip_ua SIP-Softphones, WebSocket-Provisioning, Background-Call-Services, FCM; Text-to-Speech, Audio-Coaching und Background-Services für freihändige UX; Twilio-Video für Healthcare.",
         e3h: "Öffentlicher Sektor & Karten",
         e3p: "Regierungsprogramme VAE (Maskan, Chambers, Culture, Police); OCR-Erfassung und OpenAI-Dokumentenextraktion; Esri, HERE, Google Maps, Huawei Maps; MDVR-Socket im lokalen Netzwerk, Kennzeichen-Alerts per TTS.",
         e4h: "Integrationen und Betrieb",
