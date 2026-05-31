@@ -7,7 +7,9 @@
 
   function cvUrlForLang(lang) {
     if (!LANGS.includes(lang)) lang = "en";
-    return lang === "en" ? "assets/cv.html" : `assets/cv.html?lang=${lang}`;
+    const params = new URLSearchParams({ preview: "print" });
+    if (lang !== "en") params.set("lang", lang);
+    return `assets/cv.html?${params.toString()}`;
   }
 
   const T = {

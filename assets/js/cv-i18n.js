@@ -519,6 +519,8 @@
   });
 
   async function bootstrap() {
+    applyLang(getLang());
+
     const params = new URLSearchParams(window.location.search);
     const urlLang = params.get("lang");
     let saved = null;
