@@ -73,6 +73,8 @@ Modifier **uniquement ces variables** pour un changement global cohérent :
 --print-block-gap: 2mm;          /* Entre blocs page 1 */
 --print-section-gap: 2.5mm;      /* Entre sections page 2 */
 --print-page2-exp-top: 5mm;      /* Avant EXPÉRIENCE page 2 */
+--print-h2-margin-bottom: 1mm;   /* Sous titres de section (Profil, Autres projets…) */
+--print-h2-margin-top: 2mm;      /* Au-dessus titres page 2 (Autres projets, Exp. antérieure) */
 --card-shadow: 0 1px 3px …;      /* Ombre cartes projets / profil / expertise */
 ```
 

@@ -23,6 +23,8 @@
   --print-block-gap: 2mm;
   --print-section-gap: 2.5mm;
   --print-page2-exp-top: 5mm;
+  --print-h2-margin-bottom: 1mm;
+  --print-h2-margin-top: 2mm;
   --card-shadow: 0 1px 3px rgba(15, 23, 42, 0.09), 0 1px 2px rgba(15, 23, 42, 0.05);
 }
 
@@ -263,12 +265,18 @@ body {
 .cv-block--compact { margin-bottom: 2mm; }
 
 h2 {
-  margin: 0 0 2.5mm;
+  margin: 0 0 2mm;
   font-size: 7pt;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--accent-mid);
+}
+
+/* Page 2 — section titles after Expérience */
+.cv-sheet-last .cv-block[aria-labelledby="cv-projects"] > h2,
+.cv-sheet-last .cv-block[aria-labelledby="cv-earlier"] > h2 {
+  margin-top: 2.5mm;
 }
 
 .cv-main h2 {
@@ -373,9 +381,13 @@ h2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1.5mm;
+  align-items: stretch;
 }
 
 .offer-grid--expertise .offer-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   min-height: 100%;
 }
 
@@ -401,6 +413,7 @@ h2 {
 
 .offer-card span {
   display: block;
+  flex: 1 1 auto;
   font-size: 7pt;
   line-height: 1.36;
   color: var(--ink-soft);
@@ -792,13 +805,14 @@ h2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2mm 2.5mm;
-  margin-top: 1mm;
-  align-items: start;
+  margin-top: 0;
+  align-items: stretch;
 }
 
 .project-mini {
   display: flex;
   flex-direction: column;
+  align-self: stretch;
   padding: 2mm;
   background: var(--paper);
   border: 1px solid var(--line);
@@ -806,6 +820,13 @@ h2 {
   box-shadow: var(--card-shadow);
   break-inside: avoid;
   page-break-inside: avoid;
+}
+
+.project-mini::after {
+  content: "";
+  flex: 1 1 0;
+  min-height: 0;
+  order: 1;
 }
 
 .project-mini .project-sector {
@@ -844,7 +865,12 @@ h2 {
   margin-right: 1mm;
 }
 
-.project-mini .project-tags { margin-top: 1mm; }
+.project-mini .project-tags {
+  order: 2;
+  flex-shrink: 0;
+  margin-top: 0;
+  padding-top: 1mm;
+}
 
 /* Earlier experience */
 .earlier-exp {
@@ -972,7 +998,11 @@ h2 {
 }
 
 .cv-print-compact .cv-sheet:first-of-type h2 {
-  margin-bottom: 1.2mm;
+  margin-bottom: var(--print-h2-margin-bottom);
+}
+
+.cv-print-compact .cv-sheet:first-of-type .cv-main .cv-block:not(:first-of-type) > h2 {
+  margin-top: var(--print-h2-margin-top);
 }
 
 .cv-print-compact .cv-sheet:first-of-type .profile-panel {
@@ -987,6 +1017,7 @@ h2 {
 
 .cv-print-compact .cv-sheet:first-of-type .offer-grid {
   gap: 1.2mm;
+  align-items: stretch;
 }
 
 .cv-print-compact .cv-sheet:first-of-type .offer-card {
@@ -1063,8 +1094,8 @@ h2 {
   }
 
 .cv-print-compact .cv-aside .cv-block h2 {
-    margin-bottom: 1mm;
-  }
+  margin-bottom: var(--print-h2-margin-bottom);
+}
 
 .cv-print-compact .cv-aside .lang-list li {
   padding: 0.65mm 0;
@@ -1153,17 +1184,21 @@ h2 {
   margin-bottom: 1.5mm;
 }
 
-.cv-print-compact .cv-sheet-last .cv-block:first-of-type > h2,
+.cv-print-compact .cv-sheet-last .cv-block[aria-labelledby="cv-projects"] > h2,
+.cv-print-compact .cv-sheet-last .cv-block[aria-labelledby="cv-earlier"] > h2 {
+  margin-top: var(--print-h2-margin-top);
+}
+
 .cv-print-compact .cv-sheet-last .cv-block h2 {
-  margin-bottom: 1.2mm;
+  margin-bottom: var(--print-h2-margin-bottom);
 }
 
 .cv-print-compact .cv-sheet-last .project-grid {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1.5mm 1.2mm;
-  margin-top: 1.2mm;
+  margin-top: 0;
   margin-bottom: 0;
-  align-items: start;
+  align-items: stretch;
 }
 
 .cv-print-compact .cv-sheet-last .project-card,
@@ -1222,6 +1257,7 @@ h2 {
   break-inside: avoid;
   page-break-inside: avoid;
   padding: 1.6mm 1.4mm;
+  align-self: stretch;
 }
 
 .cv-print-compact .cv-sheet-last .project-mini .project-sector {
