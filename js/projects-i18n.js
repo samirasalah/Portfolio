@@ -27,11 +27,11 @@ window.portfolioProjects = {
   maskan: {
     fr: {
       domain: "Gouvernement · EAU · FTA",
-      role: "Technical Leader · Android",
+      role: "Responsable technique · Android",
       value:
         'Application officielle FTA <strong>Maskan</strong> — remboursements TVA mobiles pour les nationaux EAU, dépôt de justificatifs et services citoyens.',
       c: "Produit public greenfield : règles FTA, données citoyens sécurisées, authentification UAE — et capture des justificatifs sans ressaisie manuelle.",
-      d: "Architecture modulaire, parcours remboursement, authentification App-to-App et App-to-Web, Google Wallet, capture <strong>OCR</strong> ; ownership Play Store. <strong>Cursor</strong> et <strong>Gemini</strong> pour accélérer implémentation, refactors et intégrations — sous contrôle architecture senior.",
+      d: "Architecture modulaire, parcours remboursement, authentification App-to-App et App-to-Web, Google Wallet, capture <strong>OCR</strong> ; responsabilité Play Store. <strong>Cursor</strong> et <strong>Gemini</strong> pour accélérer implémentation, refactors et intégrations — sous contrôle architecture senior.",
       i: "Justificatifs déposés plus vite ; service national publié sur Play Store et App Gallery.",
     },
     de: {
@@ -47,11 +47,11 @@ window.portfolioProjects = {
   chamber: {
     fr: {
       domain: "Gouvernement · EAU",
-      role: "Software Team Lead Android · Proxym Middle East",
+      role: "Responsable d'équipe Android · Proxym Middle East",
       value:
         'Application officielle <strong>Dubai Chambers</strong> — accès mobile aux services chambre de commerce pour entreprises et entrepreneurs aux EAU.',
       c: "Faire évoluer une app gouvernementale en production avec traitement documentaire IA et un second canal store — sans dupliquer le produit ni casser les releases.",
-      d: "<strong>Team lead</strong> Android ; intégration continue de fonctionnalités sur la codebase production ; logique <strong>OCR et extraction OpenAI</strong> sur documents commerciaux ; <strong>pilotage du processus de release</strong> Play Store et App Gallery ; migration GMS→HMS sur codebase partagée. <strong>Cursor</strong> et <strong>Gemini</strong> pour accélérer la delivery — revus et durcis pour la production.",
+      d: "<strong>Responsable d'équipe</strong> Android ; intégration continue de fonctionnalités sur la codebase production ; logique <strong>OCR et extraction OpenAI</strong> sur documents commerciaux ; <strong>pilotage du processus de release</strong> Play Store et App Gallery ; migration GMS→HMS sur codebase partagée. <strong>Cursor</strong> et <strong>Gemini</strong> pour accélérer la livraison — revus et durcis pour la production.",
       i: "Traitement documentaire plus fiable et cycles de release prévisibles sur une codebase gouvernementale en production — Google Play et App Gallery.",
     },
     de: {
@@ -125,7 +125,7 @@ window.portfolioProjects = {
       value:
         'Coaching connecté pour coureurs et marcheurs — biomécanique en direct et guidage vocal pendant l\'effort.',
       c: "Maintenir des flux capteurs Bluetooth fiables pendant une migration cloud, tout en ajoutant un coaching vocal en temps réel.",
-      d: "Lead Android sur deux apps compagnons ; SDK <strong>Zhor-Tech ZT Core Kit</strong> (connexion BLE semelles & flux capteurs) ; migration cloud AWS Amplify ; workflow strings <strong>Crowdin</strong> ; coaching vocal temps réel.",
+      d: "Responsabilité Android sur deux apps compagnons ; SDK <strong>Zhor-Tech ZT Core Kit</strong> (connexion BLE semelles & flux capteurs) ; migration cloud AWS Amplify ; workflow strings <strong>Crowdin</strong> ; coaching vocal temps réel.",
       i: "Retour forme pendant la course ou la marche — sans s'arrêter pour lire l'écran ; base utilisateurs préservée pendant la migration.",
     },
     de: {
@@ -201,7 +201,7 @@ window.portfolioProjects = {
   gesundheit: {
     fr: {
       domain: "Santé · DE",
-      role: "Tech Lead & Flutter · CodeCooperation GmbH · Allemagne",
+      role: "Responsable technique · Flutter · CodeCooperation GmbH · Allemagne",
       value:
         'Plateforme <strong>Gesundheitspersonal</strong> — apps <strong>Doctor</strong> (téléconsultation vidéo) et <strong>Translatly</strong> (traduction live) pour patients et équipes soignantes en Allemagne.',
       c: "Vidéo et traduction à faible latence sur un marché santé régulé (RGPD) — deux apps, deux stores.",

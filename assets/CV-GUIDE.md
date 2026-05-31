@@ -178,6 +178,7 @@ API console : `cvI18n.applyLang('fr')`.
 
 Samira détient une **Licence** (ISET Sousse), pas un titre d’ingénieur·e. Utiliser :
 - **FR** : *Développeuse mobile senior freelance* — éviter *Ingénieure*
+- **FR typographie** : phrase en minuscules sauf noms propres (Schneider, Play Store…) ; éviter l'anglais capitalisé (*Lead*, *Delivery*, *Team Lead*)
 - **EN** : *Senior Mobile Developer* — éviter *Engineer* si cohérence stricte avec le diplôme
 - **DE** : *Senior Mobile-Entwicklerin* — éviter *Ingenieurin*
 
