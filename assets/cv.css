@@ -33,6 +33,38 @@ body {
   background: #dde4ed;
 }
 
+.cv-export-hint {
+  max-width: 210mm;
+  margin: 10px auto 0;
+  padding: 8px 14px;
+  font-size: 9pt;
+  line-height: 1.45;
+  color: var(--ink-soft);
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(30, 64, 175, 0.08);
+}
+
+.cv-export-hint strong { color: var(--accent); }
+
+.cv-export-hint kbd {
+  display: inline-block;
+  padding: 1px 5px;
+  font-family: inherit;
+  font-size: 8pt;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  box-shadow: 0 1px 0 var(--line);
+}
+
+.cv-export-hint em { font-style: normal; font-weight: 600; color: var(--ink); }
+
+@media print {
+  .cv-export-hint { display: none !important; }
+}
+
 .cv {
   width: 210mm;
   margin: 14px auto;
