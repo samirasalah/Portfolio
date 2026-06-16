@@ -22,7 +22,7 @@
   --print-pad-bottom: 5mm;
   --print-block-gap: 2mm;
   --print-section-gap: 2.5mm;
-  --print-page2-exp-top: 5mm;
+  --print-page2-exp-top: 2mm;
   --print-h2-margin-bottom: 1mm;
   --print-h2-margin-top: 2mm;
   --elevation-1: 0 1px 1px rgba(15, 23, 42, 0.04);
@@ -152,6 +152,44 @@ body {
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: 4px;
+}
+
+.cv-badge-brand {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1.5mm;
+  margin-bottom: 1.5mm;
+}
+
+.cv-badge-brand strong {
+  font-size: 8pt;
+  color: #fff;
+  letter-spacing: -0.01em;
+}
+
+.cv-hb-logo {
+  display: block;
+  flex-shrink: 0;
+}
+
+.cv-hb-logo--sm {
+  width: 16px;
+  height: 16px;
+}
+
+.cv-badge-status {
+  margin: 0 0 1px;
+}
+
+.cv-badge-status strong {
+  display: block;
+  font-size: 7.75pt;
+  color: #fff;
+}
+
+.cv-badge-lines {
+  margin: 0;
 }
 
 .cv-badge strong {
@@ -856,10 +894,8 @@ h2 {
 }
 
 .project-mini::after {
-  content: "";
-  flex: 1 1 0;
-  min-height: 0;
-  order: 1;
+  content: none;
+  display: none;
 }
 
 .project-mini .project-sector {
@@ -927,6 +963,12 @@ h2 {
   color: var(--ink-muted);
 }
 
+.cv-footer-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.5mm;
+}
+
 .cv-footer-link a {
   color: var(--accent-mid);
   text-decoration: none;
@@ -960,9 +1002,19 @@ h2 {
 
 .cv-print-compact .cv-sheet + .cv-sheet {
   border-top: none;
+  break-before: page;
+  page-break-before: always;
 }
 
 /* Page 1 — tighter vertical rhythm */
+.cv-print-compact .cv-sheet:first-of-type .cv-badge {
+  padding: 2mm 2.5mm;
+}
+
+.cv-print-compact .cv-sheet:first-of-type .cv-badge-brand {
+  margin-bottom: 1mm;
+}
+
 .cv-print-compact .cv-sheet:first-of-type .cv-header {
   padding: 0 var(--pad-x) 3mm;
 }
@@ -1082,8 +1134,22 @@ h2 {
 }
 
 .cv-print-compact .cv-sheet:first-of-type .project-card--compact {
+  margin-bottom: 1.6mm;
+  padding: 2.4mm 2.8mm 2mm 3mm;
+}
+
+.cv-print-compact .cv-sheet:first-of-type .project-card--compact .project-intro {
   margin-bottom: 1.1mm;
-  padding: 2mm 2mm 1.8mm 2.6mm;
+  line-height: 1.34;
+}
+
+.cv-print-compact .cv-sheet:first-of-type .cv-aside .cv-block--skills .skill-group {
+  margin-bottom: 1.2mm;
+}
+
+.cv-print-compact .cv-aside .skill-tags li {
+  padding: 0.35mm 1.1mm;
+  font-size: 6pt;
 }
 
 .cv-print-compact .cv-sheet:first-of-type .project-card--compact .project-head {
@@ -1249,11 +1315,11 @@ h2 {
 }
 
 .cv-print-compact .cv-sheet-last .project-grid {
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 1.8mm 1.5mm;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.8mm 2mm;
   margin-top: 0;
   margin-bottom: 0;
-  align-items: stretch;
+  align-items: start;
 }
 
 .cv-print-compact .cv-sheet-last .project-card,
@@ -1319,7 +1385,7 @@ h2 {
   break-inside: avoid;
   page-break-inside: avoid;
   padding: 1.6mm 1.4mm;
-  align-self: stretch;
+  align-self: start;
   background: var(--aside);
   border: 1px solid var(--card-border);
   border-radius: 4px;
@@ -1416,10 +1482,16 @@ h2 {
     opacity: 1 !important;
   }
 
-  /* Structural parity — same content as ?preview=print even if JS is slow */
-  .cv-sheet {
-    break-after: page;
-    page-break-after: always;
+  /* Page 1 only — do not force a break after; page 2 starts via break-before on sheet 2 */
+  .cv-sheet:first-of-type {
+    break-after: auto;
+    page-break-after: auto;
+  }
+
+  .cv-sheet-last,
+  .cv-sheet + .cv-sheet {
+    break-before: page;
+    page-break-before: always;
   }
 
   .cv-sheet-last,
@@ -1429,7 +1501,7 @@ h2 {
   }
 
   .cv-sheet-last .project-grid {
-    grid-template-columns: 1fr 1fr 1fr !important;
+    grid-template-columns: 1fr 1fr !important;
   }
 
   .project-card--compact .project-facts > div,
@@ -1487,13 +1559,15 @@ h2 {
     box-shadow: none;
   }
 
-  .cv-print-compact .cv-sheet {
-    break-after: page;
-    page-break-after: always;
+  .cv-print-compact .cv-sheet:first-of-type {
+    break-after: auto;
+    page-break-after: auto;
   }
 
   .cv-print-compact .cv-sheet-last,
-  .cv-print-compact .cv-sheet:last-child {
+  .cv-print-compact .cv-sheet + .cv-sheet {
+    break-before: page;
+    page-break-before: always;
     break-after: auto;
     page-break-after: auto;
   }

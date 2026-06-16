@@ -34,6 +34,7 @@
         eyebrow:
           'Senior Mobile Developer · <span data-geo-scope>Germany & EU · remote or on-site</span>',
         trade: 'Senior Android & Flutter Developer · available — <strong>HB IT Services</strong>',
+        hbTagline: "Mobile development · EU B2B",
         title: 'Senior Mobile Developer — <span class="accent">public sector</span>, consumer products & <span class="accent">real-time media</span>',
         mission:
           'Passionate about digital experiences that make <strong>information, culture and public services</strong> more accessible — for millions of users across Europe.',
@@ -282,6 +283,7 @@
         eyebrow:
           'Développeuse mobile senior · <span data-geo-scope>Allemagne & UE · remote ou sur site</span>',
         trade: 'Développeuse senior Android & Flutter · disponible — <strong>HB IT Services</strong>',
+        hbTagline: "Développement mobile · B2B UE",
         title: 'Développeuse mobile senior — <span class="accent">secteur public</span>, grand public & <span class="accent">médias temps réel</span>',
         mission:
           'Passionnée par des expériences numériques qui rendent <strong>l\'information, la culture et les services publics</strong> plus accessibles — pour des millions d\'usagers en Europe.',
@@ -530,6 +532,7 @@
         eyebrow:
           'Senior Mobile Developer · <span data-geo-scope>Deutschland & EU · remote oder vor Ort</span>',
         trade: 'Senior Android & Flutter Developer · verfügbar — <strong>HB IT Services</strong>',
+        hbTagline: "Mobile-Entwicklung · B2B EU",
         title: 'Senior Mobile Developer — <span class="accent">öffentlicher Sektor</span>, Consumer-Produkte & <span class="accent">Echtzeit-Media</span>',
         mission:
           'Begeistert von digitalen Erlebnissen, die <strong>Information, Kultur und öffentliche Dienste</strong> zugänglicher machen — für Millionen Nutzer in Europa.',

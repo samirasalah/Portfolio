@@ -7,7 +7,7 @@
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
   <title>Samira Salah — CV</title>
-  <link rel="stylesheet" href="cv.css?v=16">
+  <link rel="stylesheet" href="cv.css?v=18">
   <link rel="alternate" hreflang="en" href="cv.html">
   <link rel="alternate" hreflang="fr" href="cv.html?lang=fr">
   <link rel="alternate" hreflang="de" href="cv.html?lang=de">
@@ -51,17 +51,21 @@
             <p class="cv-tagline" data-geo-tagline>Production mobile for Germany &amp; EU — consumer, public sector, video &amp; real-time</p>
           </div>
           <div class="cv-badge">
-            <strong data-cv-i18n="badgeTitle">Freelance senior · disponible</strong>
-            <span class="cv-badge-lines">
+            <div class="cv-badge-brand">
+              <img src="../images/hb-logo-mark.svg" alt="" class="cv-hb-logo" width="26" height="26" decoding="async">
+              <strong>HB IT Services</strong>
+            </div>
+            <p class="cv-badge-status"><strong data-cv-i18n="badgeTitle">Freelance senior · disponible</strong></p>
+            <p class="cv-badge-lines">
               <span data-geo-scope>Allemagne &amp; UE · remote ou sur site</span><br>
               <span data-geo-location data-geo-fallback="Bergneustadt, Germany">Bergneustadt, Germany</span><br>
-              <span data-cv-i18n="badgeBiz">HB IT Services · facturation EUR</span>
-            </span>
+              <span data-cv-i18n="badgeBiz">facturation EUR</span>
+            </p>
           </div>
         </div>
         <ul class="cv-contact">
           <li><a href="mailto:samirasalahsalah@gmail.com">samirasalahsalah@gmail.com</a></li>
-          <li><a href="tel:+352661505374">+352 661 505 374</a></li>
+          <li><a href="tel:+4915251534047">+49 152 51534047</a></li>
           <li><a href="https://www.linkedin.com/in/samira-salah-22a93883/">LinkedIn</a></li>
           <li><a href="https://samirasalah.github.io/">samirasalah.github.io</a></li>
         </ul>
@@ -170,21 +174,7 @@
               <ul class="project-tags"><li>Flutter</li><li>Twilio Video</li><li>Play Store</li><li>App Store</li></ul>
             </article>
 
-            <article class="project-card project-card--compact">
-              <header class="project-head">
-                <div>
-                  <span class="project-sector" data-cv-i18n="projects.digitsole.sector">Consumer · France</span>
-                  <h3 class="project-name">Digitsole</h3>
-                </div>
-                <span class="project-meta" data-cv-i18n="projects.digitsole.meta">Lead Android · France</span>
-              </header>
-              <p class="project-intro" data-cv-i18n="projects.digitsole.intro">Connected coaching with live sensor feedback and spoken guidance.</p>
-              <dl class="project-facts">
-                <div><dt data-cv-i18n="roleLabel">Role</dt><dd data-cv-i18n="projects.digitsole.roleText">Lead Android on two apps; BLE streams and real-time voice coaching.</dd></div>
-                <div><dt data-cv-i18n="impact">Impact</dt><dd data-cv-i18n="projects.digitsole.impact">Hands-free live audio on a French consumer hardware product.</dd></div>
-              </dl>
-              <ul class="project-tags"><li>Kotlin</li><li>BLE</li><li>AWS</li></ul>
-            </article>
+            <!-- Digitsole moved to page 2 — keeps flagship block within one printed page -->
           </section>
         </main>
 
@@ -300,6 +290,14 @@
 
         <div class="project-grid">
           <article class="project-mini">
+            <span class="project-sector" data-cv-i18n="projects.digitsole.sector">Consumer · France</span>
+            <h3 class="project-name">Digitsole</h3>
+            <p class="project-mini-lead" data-cv-i18n="projects.digitsole.intro">Connected coaching with live sensor feedback and spoken guidance.</p>
+            <p><strong data-cv-i18n="roleLabel">Role</strong> <span data-cv-i18n="projects.digitsole.roleText">Lead Android on two apps; BLE streams and real-time voice coaching.</span></p>
+            <p><strong data-cv-i18n="impact">Impact</strong> <span data-cv-i18n="projects.digitsole.impact">Hands-free live audio on a French consumer hardware product.</span></p>
+            <ul class="project-tags"><li>Kotlin</li><li>BLE</li><li>AWS</li></ul>
+          </article>
+          <article class="project-mini">
             <span class="project-sector" data-cv-i18n="projects.cotepuces.sector">Marketplace · France</span>
             <h3 class="project-name">Côté Puces</h3>
             <p class="project-mini-lead" data-cv-i18n="projects.cotepuces.intro">French brocante &amp; antiques marketplace.</p>
@@ -354,6 +352,7 @@
             <p><strong data-cv-i18n="roleLabel">Role</strong> <span data-cv-i18n="projects.culture.roleText">Jetpack Compose UI and API integrations on a live government codebase.</span></p>
             <p><strong data-cv-i18n="impact">Impact</strong> <span data-cv-i18n="projects.culture.impact">More cultural services on mobile for Dubai residents and partners.</span></p>
             <ul class="project-tags"><li>Kotlin</li><li>Jetpack Compose</li></ul>
+          </article>
         </div>
       </section>
 
@@ -363,7 +362,10 @@
       </section>
 
       <footer class="cv-footer">
-        <span data-cv-i18n="footerL">HB IT Services · TVA intracom. DE462790976 · Devis &amp; factures en EUR</span>
+        <span class="cv-footer-brand">
+          <img src="../images/hb-logo-mark.svg" alt="" class="cv-hb-logo cv-hb-logo--sm" width="16" height="16" decoding="async">
+          <span data-cv-i18n="footerL">TVA intracom. DE462790976 · Devis &amp; factures en EUR</span>
+        </span>
         <span class="cv-footer-link">
           <span data-cv-i18n="footerRLabel">Full case studies:</span>
           <a href="https://samirasalah.github.io/">samirasalah.github.io</a>
@@ -398,7 +400,7 @@
     };
   </script>
   <script src="js/geo-location.js?v=15"></script>
-  <script src="js/cv-i18n.v8.js?v=18"></script>
+  <script src="js/cv-i18n.v8.js?v=19"></script>
   <script src="js/cv-print-check.js?v=11"></script>
   <script>
     document.addEventListener("DOMContentLoaded", window.__CV_applyCopy);

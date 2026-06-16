@@ -1,0 +1,7 @@
+# Confidential billing lives outside this repo — see ../hb-it-billing/ (never publish)
+assets/billing/
+
+# Local / deploy tooling
+.deploy-workdir/
+.deploy-publish/
+.DS_Store

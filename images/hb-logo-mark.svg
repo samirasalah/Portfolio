@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" role="img" aria-label="HB IT Services">
+  <defs>
+    <linearGradient id="hb-brand-grad" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#6b9bff"/>
+      <stop offset="100%" stop-color="#8b7cf8"/>
+    </linearGradient>
+  </defs>
+  <rect width="40" height="40" rx="10" fill="url(#hb-brand-grad)"/>
+  <rect x="14" y="10" width="12" height="19" rx="2.5" fill="none" stroke="rgba(255,255,255,0.32)" stroke-width="1.1"/>
+  <text x="20" y="24.5" text-anchor="middle" font-family="Segoe UI, system-ui, sans-serif" font-size="10.5" font-weight="700" fill="#ffffff" letter-spacing="-0.3">HB</text>
+  <rect x="11" y="33" width="18" height="2.5" rx="1.25" fill="#45e0a0"/>
+</svg>
