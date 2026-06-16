@@ -31,7 +31,7 @@ window.portfolioProjects = {
       value:
         'Application officielle FTA <strong>Maskan</strong> — remboursements TVA mobiles pour les nationaux EAU, dépôt de justificatifs et services citoyens.',
       c: "Produit public greenfield : règles FTA, données citoyens sécurisées, authentification UAE — et capture des justificatifs sans ressaisie manuelle.",
-      d: "Architecture modulaire, parcours remboursement, authentification App-to-App et App-to-Web, Google Wallet, capture <strong>OCR</strong> ; responsabilité Play Store. <strong>Cursor</strong> et <strong>Gemini</strong> pour accélérer implémentation, refactors et intégrations — sous contrôle architecture senior.",
+      d: "Architecture modulaire <strong>Jetpack Compose</strong>, parcours remboursement, authentification App-to-App et App-to-Web, Google Wallet, capture <strong>OCR</strong> ; responsabilité Play Store. <strong>Cursor</strong> et <strong>Gemini</strong> pour accélérer implémentation, refactors et intégrations — sous contrôle architecture senior.",
       i: "Justificatifs déposés plus vite ; service national publié sur Play Store et App Gallery.",
     },
     de: {
@@ -40,7 +40,7 @@ window.portfolioProjects = {
       value:
         'Offizielle FTA-App <strong>Maskan</strong> — mobile MwSt.-Erstattung für VAE-Staatsangehörige, Belegübermittlung und Bürger-Services.',
       c: "Greenfield-Behördenprodukt: FTA-Regeln, sichere Bürgerdaten, UAE-Auth — und Belegerfassung ohne manuelle Eingabe.",
-      d: "Modulare Basisarchitektur, Erstattungsflows, App-to-App- und App-to-Web-Auth, Google Wallet, <strong>OCR</strong>-Erfassung; Play-Store-Ownership. <strong>Cursor</strong> und <strong>Gemini</strong> für schnellere Umsetzung, Refactors und Integration — unter Senior-Architekturkontrolle.",
+      d: "Modulare <strong>Jetpack Compose</strong>-Basisarchitektur, Erstattungsflows, App-to-App- und App-to-Web-Auth, Google Wallet, <strong>OCR</strong>-Erfassung; Play-Store-Ownership. <strong>Cursor</strong> und <strong>Gemini</strong> für schnellere Umsetzung, Refactors und Integration — unter Senior-Architekturkontrolle.",
       i: "Schnellere Belegübermittlung; nationaler Bürger-Service auf Play Store und App Gallery.",
     },
   },
@@ -51,7 +51,7 @@ window.portfolioProjects = {
       value:
         'Application officielle <strong>Dubai Chambers</strong> — accès mobile aux services chambre de commerce pour entreprises et entrepreneurs aux EAU.',
       c: "Faire évoluer une app gouvernementale en production avec traitement documentaire IA et un second canal store — sans dupliquer le produit ni casser les releases.",
-      d: "<strong>Responsable d'équipe</strong> Android ; intégration continue de fonctionnalités sur la codebase production ; logique <strong>OCR et extraction OpenAI</strong> sur documents commerciaux ; <strong>pilotage du processus de release</strong> Play Store et App Gallery ; migration GMS→HMS sur codebase partagée. <strong>Cursor</strong> et <strong>Gemini</strong> pour accélérer la livraison — revus et durcis pour la production.",
+      d: "<strong>Responsable d'équipe</strong> Android sur codebase <strong>Jetpack Compose</strong> en production ; intégration continue de fonctionnalités ; logique <strong>OCR et extraction OpenAI</strong> sur documents commerciaux ; <strong>pilotage du processus de release</strong> Play Store et App Gallery ; migration GMS→HMS sur codebase partagée. <strong>Cursor</strong> et <strong>Gemini</strong> pour accélérer la livraison — revus et durcis pour la production.",
       i: "Traitement documentaire plus fiable et cycles de release prévisibles sur une codebase gouvernementale en production — Google Play et App Gallery.",
     },
     de: {
@@ -60,7 +60,7 @@ window.portfolioProjects = {
       value:
         'Offizielle <strong>Dubai Chambers</strong>-App — mobiler Zugang zu Handelskammer-Services für Unternehmen und Gründer in den VAE.',
       c: "Live-Behörden-App um KI-Dokumentenverarbeitung und einen zweiten Store-Kanal erweitern — ohne Produktduplikation oder gebrochene Production-Releases.",
-      d: "<strong>Team Lead</strong> Android; fortlaufende Feature-Integration auf der Production-Codebase; <strong>OCR- und OpenAI-Extraktionslogik</strong> für Handelsdokumente; <strong>Release-Prozess-Ownership</strong> Play Store und App Gallery; GMS→HMS-Migration auf gemeinsamer Codebasis. <strong>Cursor</strong> und <strong>Gemini</strong> zur Delivery-Beschleunigung — geprüft und produktionsreif.",
+      d: "<strong>Team Lead</strong> Android auf Live-<strong>Jetpack Compose</strong>-Codebase; fortlaufende Feature-Integration; <strong>OCR- und OpenAI-Extraktionslogik</strong> für Handelsdokumente; <strong>Release-Prozess-Ownership</strong> Play Store und App Gallery; GMS→HMS-Migration auf gemeinsamer Codebasis. <strong>Cursor</strong> und <strong>Gemini</strong> zur Delivery-Beschleunigung — geprüft und produktionsreif.",
       i: "Genauere Dokumentenverarbeitung und planbare Release-Zyklen auf einer Live-Behörden-Codebase — Play Store und App Gallery.",
     },
   },
@@ -70,7 +70,7 @@ window.portfolioProjects = {
       value:
         'Application mobile <strong>Dubai Culture</strong> — programmes culturels, institutions et services pour les résidents et partenaires.',
       c: "Livrer sur une codebase en production avec exigences qualité strictes et releases backend coordonnées.",
-      d: "Fonctionnalités Android et intégrations API, en coordination produit, backend et QA.",
+      d: "UI <strong>Jetpack Compose</strong> et intégrations API, en coordination produit, backend et QA.",
       i: "Davantage de services culturels accessibles sur mobile pour les résidents et partenaires de Dubaï.",
     },
     de: {
@@ -78,7 +78,7 @@ window.portfolioProjects = {
       value:
         'Mobile <strong>Dubai-Culture</strong>-App — Kulturprogramme, Institutionen und Services für Bewohner und Partner.',
       c: "Delivery auf Live-Codebase mit hohen Qualitätsanforderungen und koordinierten Backend-Releases.",
-      d: "Android-Features und API-Integration, abgestimmt mit Produkt, Backend und QA.",
+      d: "<strong>Jetpack Compose</strong>-UI und API-Integration, abgestimmt mit Produkt, Backend und QA.",
       i: "Mehr Kulturservices mobil erreichbar für Bewohner und Partner in Dubai.",
     },
   },
