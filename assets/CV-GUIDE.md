@@ -145,13 +145,16 @@ Activation automatique (`cv-print-check.js`) :
 
 ### Langue active
 
-Ordre de résolution (`getLang()`) :
+Ordre de résolution (`getLang()`) — **CV = anglais par défaut** (indépendant de la geo) :
 
-1. `?lang=fr|en|de`
-2. `localStorage` `portfolio-lang`
-3. Geo IP France → `fr`
-4. `html lang`
+1. `window.__CV_LANG` (redirects `cv-fr.html` / `cv-de.html`)
+2. `?lang=fr|en|de`
+3. `localStorage` `portfolio-lang` (choix explicite mémorisé)
+4. `html lang` (`cv.html` → `en`)
 5. Défaut `en`
+
+La geo (`?geo=` / IP) ne change **que** ville + tagline, pas la langue UI du CV.  
+Pour le FR/DE : `?lang=fr`, `cv-fr.html`, ou le lien CV du portfolio déjà en FR/DE.
 
 API console : `cvI18n.applyLang('fr')`.
 
@@ -182,7 +185,7 @@ Samira détient une **Licence** (ISET Sousse), pas un titre d’ingénieur·e. U
 - **EN** : *Senior Mobile Developer* — éviter *Engineer* si cohérence stricte avec le diplôme
 - **DE** : *Senior Mobile-Entwicklerin* — éviter *Ingenieurin*
 
-La section **Formation** (`eduLine`) reste la source de vérité pour le diplôme.
+La section **Formation** (`eduHtml`) et **Certifications** (`certHtml`) sont la source de vérité pour diplôme et certificats (liens DeepLearning.AI inclus).
 
 ---
 
@@ -218,16 +221,14 @@ Exemples :
 - CV Allemagne (UI FR) : `assets/cv.html?lang=fr&geo=de&preview=print`
 - Portfolio : `index.html?geo=fr` (ou IP France → **français par défaut**)
 
-### Langue par défaut (portfolio + CV)
+### Langue par défaut
 
-Sans `?lang=` ni choix mémorisé (`localStorage` / `portfolio-lang`) :
+| Surface | Sans `?lang=` ni choix mémorisé |
+|---------|----------------------------------|
+| **`cv.html`** | **Anglais** (toujours — geo n’intervient pas) |
+| **Portfolio** (`index.html`) | IP France / `?geo=fr` → français ; sinon navigateur / anglais |
 
-| Geo | Langue initiale |
-|-----|-----------------|
-| IP France ou `?geo=fr` | **Français** |
-| Autre | Langue du navigateur, sinon anglais |
-
-Un choix explicite (`?lang=en`, sélecteur EN/FR/DE) **prime** sur la geo.
+Un choix explicite (`?lang=`, sélecteur EN/FR/DE) **prime** partout.
 
 ### Attributs HTML
 

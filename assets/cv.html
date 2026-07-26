@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,7 +7,7 @@
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
   <title>Samira Salah — CV</title>
-  <link rel="stylesheet" href="cv.css?v=18">
+  <link rel="stylesheet" href="cv.css?v=19">
   <link rel="alternate" hreflang="en" href="cv.html">
   <link rel="alternate" hreflang="fr" href="cv.html?lang=fr">
   <link rel="alternate" hreflang="de" href="cv.html?lang=de">
@@ -236,7 +236,20 @@
 
           <section class="cv-block" aria-labelledby="cv-edu">
             <h2 id="cv-edu" data-cv-i18n="education">Education</h2>
-            <p class="edu-line" data-cv-i18n="eduLine" data-cv-i18n-html="true"><strong>Licence, Computer Technology</strong>ISET Sousse, Tunisia · 2013</p>
+            <div class="edu-block" data-cv-i18n="eduHtml" data-cv-i18n-html="true">
+              <p class="edu-line"><strong>Applied Bachelor's in Computer Technology — Embedded and Mobile Systems</strong>Higher Institute of Technological Studies (ISET), Sousse, Tunisia · 2013</p>
+              <p class="edu-line"><strong>High school diploma — Computer Science track</strong>Erriadh High School, Tunisia · 2009</p>
+            </div>
+          </section>
+
+          <section class="cv-block" aria-labelledby="cv-cert">
+            <h2 id="cv-cert" data-cv-i18n="certifications">Certifications</h2>
+            <ul class="cert-list" data-cv-i18n="certHtml" data-cv-i18n-html="true">
+              <li><strong>Generative AI for Software Development</strong> — Professional Certificate, DeepLearning.AI (Feb 2026) · <a href="https://learn.deeplearning.ai/certificates/4398db03-3a02-4a9a-a895-3f19bb6119a6" target="_blank" rel="noopener noreferrer">Certificate</a></li>
+              <li><strong>Pair Programming with a Large Language Model</strong> — Google / DeepLearning.AI (Feb 2026) · <a href="https://learn.deeplearning.ai/accomplishments/239027ab-b9a7-486b-a4d7-57dc4dd65698" target="_blank" rel="noopener noreferrer">Certificate</a></li>
+              <li><strong>Gemini CLI: Code &amp; Create with an Open-Source Agent</strong> — DeepLearning.AI (Feb 2026) · <a href="https://learn.deeplearning.ai/accomplishments/e9150cbf-3e8d-453e-b33d-d7099168698b" target="_blank" rel="noopener noreferrer">Certificate</a></li>
+              <li>Jetpack Compose (Udemy) · Advanced Flutter UI (Coursera)</li>
+            </ul>
           </section>
         </aside>
       </div>
@@ -388,7 +401,7 @@
       },
     };
     window.__CV_applyCopy = function () {
-      var lang = (document.documentElement.lang || "fr").slice(0, 2);
+      var lang = (document.documentElement.lang || "en").slice(0, 2);
       var copy = window.__CV_COPY[lang];
       if (!copy) return;
       document.querySelectorAll('[data-cv-i18n="profileHook"]').forEach(function (el) {
@@ -400,7 +413,7 @@
     };
   </script>
   <script src="js/geo-location.js?v=15"></script>
-  <script src="js/cv-i18n.v8.js?v=19"></script>
+  <script src="js/cv-i18n.v8.js?v=25"></script>
   <script src="js/cv-print-check.js?v=11"></script>
   <script>
     document.addEventListener("DOMContentLoaded", window.__CV_applyCopy);

@@ -1,0 +1,30 @@
+---
+description: Never commit or push contracts, invoices, or payment data
+alwaysApply: true
+---
+
+# Confidential billing & contracts
+
+Billing templates and client contracts live in a **separate local package**, not in the portfolio:
+
+`/Users/samirasalah/Desktop/postuler/hb-it-billing/`
+
+**Never commit, push, or publish** anything from that package or from `portfolio/assets/billing/`.
+
+## Off-limits content
+
+- Contracts, invoices, IBAN/BIC, client-specific rates and addresses
+- Folder `hb-it-billing/clients/`
+- Any duplicate under `portfolio/assets/billing/`
+
+## Public portfolio (allowed)
+
+- Generic **HB IT Services** name
+- Public **USt-IdNr.** DE462790976 on CV/contact only
+- Generic "quotes & invoices in EUR" wording
+
+## Before git push or GitHub Pages deploy
+
+- Confirm `git status` has no billing/contract files
+- `deploy-github-pages.sh` excludes `assets/billing` — keep that exclude
+- Do not move `hb-it-billing` into the portfolio repo

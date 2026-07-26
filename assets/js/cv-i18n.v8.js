@@ -58,7 +58,15 @@
       skillDelivery: "Delivery & ops",
       languages: "Languages",
       education: "Education",
-      eduLine: "<strong>Licence, Computer Technology</strong>ISET Sousse, Tunisia · 2013",
+      eduHtml:
+        '<p class="edu-line"><strong>Applied Bachelor\'s in Computer Technology — Embedded and Mobile Systems</strong>Higher Institute of Technological Studies (ISET), Sousse, Tunisia · 2013</p>' +
+        '<p class="edu-line"><strong>High school diploma — Computer Science track</strong>Erriadh High School, Tunisia · 2009</p>',
+      certifications: "Certifications",
+      certHtml:
+        '<li><strong>Generative AI for Software Development</strong> — Professional Certificate, DeepLearning.AI (Feb 2026) · <a href="https://learn.deeplearning.ai/certificates/4398db03-3a02-4a9a-a895-3f19bb6119a6" target="_blank" rel="noopener noreferrer">Certificate</a></li>' +
+        '<li><strong>Pair Programming with a Large Language Model</strong> — Google / DeepLearning.AI (Feb 2026) · <a href="https://learn.deeplearning.ai/accomplishments/239027ab-b9a7-486b-a4d7-57dc4dd65698" target="_blank" rel="noopener noreferrer">Certificate</a></li>' +
+        '<li><strong>Gemini CLI: Code &amp; Create with an Open-Source Agent</strong> — DeepLearning.AI (Feb 2026) · <a href="https://learn.deeplearning.ai/accomplishments/e9150cbf-3e8d-453e-b33d-d7099168698b" target="_blank" rel="noopener noreferrer">Certificate</a></li>' +
+        "<li>Jetpack Compose (Udemy) · Advanced Flutter UI (Coursera)</li>",
       langEn: "English",
       langFr: "French",
       langAr: "Arabic",
@@ -228,7 +236,15 @@
       skillDelivery: "Livraison & ops",
       languages: "Langues",
       education: "Formation",
-      eduLine: "<strong>Licence, technologies informatiques</strong>ISET Sousse, Tunisie · 2013",
+      eduHtml:
+        '<p class="edu-line"><strong>Licence appliquée en Technologies de l\'Informatique — Systèmes Embarqués et Mobile</strong>Institut Supérieur des Études Technologiques (ISET), Sousse, Tunisie · 2013</p>' +
+        '<p class="edu-line"><strong>Baccalauréat — Sciences de l\'informatique</strong>Lycée Erriadh, Tunisie · 2009</p>',
+      certifications: "Certifications",
+      certHtml:
+        '<li><strong>Generative AI for Software Development</strong> — Professional Certificate, DeepLearning.AI (fév. 2026) · <a href="https://learn.deeplearning.ai/certificates/4398db03-3a02-4a9a-a895-3f19bb6119a6" target="_blank" rel="noopener noreferrer">Certificat</a></li>' +
+        '<li><strong>Pair Programming with a Large Language Model</strong> — Google / DeepLearning.AI (fév. 2026) · <a href="https://learn.deeplearning.ai/accomplishments/239027ab-b9a7-486b-a4d7-57dc4dd65698" target="_blank" rel="noopener noreferrer">Certificat</a></li>' +
+        '<li><strong>Gemini CLI: Code &amp; Create with an Open-Source Agent</strong> — DeepLearning.AI (fév. 2026) · <a href="https://learn.deeplearning.ai/accomplishments/e9150cbf-3e8d-453e-b33d-d7099168698b" target="_blank" rel="noopener noreferrer">Certificat</a></li>' +
+        "<li>Jetpack Compose (Udemy) · Advanced Flutter UI (Coursera)</li>",
       langEn: "Anglais",
       langFr: "Français",
       langAr: "Arabe",
@@ -392,8 +408,16 @@
       skillAi: "KI & Innovation",
       skillDelivery: "Delivery & Ops",
       languages: "Sprachen",
-      education: "Ausbildung",
-      eduLine: "<strong>Lizenz, Computertechnologie</strong>ISET Sousse, Tunesien · 2013",
+      education: "Bildung",
+      eduHtml:
+        '<p class="edu-line"><strong>Anwendungsorientierter Bachelor in Informationstechnologie — Eingebettete und mobile Systeme</strong>Institut für höhere technologische Studien (ISET), Sousse, Tunesien · 2013</p>' +
+        '<p class="edu-line"><strong>Abituräquivalent — Informatikzweig</strong>Sekundarschule Erriadh, Tunesien · 2009</p>',
+      certifications: "Zertifikate",
+      certHtml:
+        '<li><strong>Generative AI for Software Development</strong> — Professional Certificate, DeepLearning.AI (Feb. 2026) · <a href="https://learn.deeplearning.ai/certificates/4398db03-3a02-4a9a-a895-3f19bb6119a6" target="_blank" rel="noopener noreferrer">Zertifikat</a></li>' +
+        '<li><strong>Pair Programming with a Large Language Model</strong> — Google / DeepLearning.AI (Feb. 2026) · <a href="https://learn.deeplearning.ai/accomplishments/239027ab-b9a7-486b-a4d7-57dc4dd65698" target="_blank" rel="noopener noreferrer">Zertifikat</a></li>' +
+        '<li><strong>Gemini CLI: Code &amp; Create with an Open-Source Agent</strong> — DeepLearning.AI (Feb. 2026) · <a href="https://learn.deeplearning.ai/accomplishments/e9150cbf-3e8d-453e-b33d-d7099168698b" target="_blank" rel="noopener noreferrer">Zertifikat</a></li>' +
+        "<li>Jetpack Compose (Udemy) · Advanced Flutter UI (Coursera)</li>",
       langEn: "Englisch",
       langFr: "Französisch",
       langAr: "Arabisch",
@@ -508,6 +532,11 @@
     return path.split(".").reduce((o, k) => (o && o[k] !== undefined ? o[k] : null), obj);
   }
 
+  /**
+   * CV UI language — independent of geo (geo only drives location/tagline).
+   * Default is English (`cv.html` / html[lang=en]).
+   * Order: __CV_LANG → ?lang= → saved preference → html lang → en
+   */
   function getLang() {
     if (window.__CV_LANG && LANGS.includes(window.__CV_LANG)) return window.__CV_LANG;
     const params = new URLSearchParams(window.location.search);
@@ -517,16 +546,7 @@
       const saved = localStorage.getItem(PORTFOLIO_LANG_KEY);
       if (saved && LANGS.includes(saved)) return saved;
     } catch (_) { /* ignore */ }
-    try {
-      const geoRaw = sessionStorage.getItem("consultant-geo-v2");
-      if (geoRaw) {
-        const { data } = JSON.parse(geoRaw);
-        if (data && data.country_code === "FR") return "fr";
-      }
-    } catch (_) { /* ignore */ }
-    const geoParam = params.get("geo");
-    if (geoParam && geoParam.toLowerCase() === "fr") return "fr";
-    const htmlLang = document.documentElement.lang;
+    const htmlLang = (document.documentElement.lang || "").slice(0, 2);
     if (htmlLang && LANGS.includes(htmlLang)) return htmlLang;
     return "en";
   }
